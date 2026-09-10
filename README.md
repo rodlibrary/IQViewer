@@ -1,17 +1,5 @@
 [Constituent Correspondence Data Tool](https://github.com/wvulibraries/ccdt) is a platform to transform constituent correspondence maintained in Intranet Quorum into **information** and **information** into **insights.** The projects aims to provide a holistic interface for importing `flat-files` and provide tools to **research and visualize.**
 
-## Status
-[![CircleCI](https://circleci.com/gh/wvulibraries/ccdt.svg?style=svg)](https://circleci.com/gh/wvulibraries/ccdt)
-[![Maintainability](https://qlty.sh/gh/wvulibraries/projects/ccdt/maintainability.svg)](https://qlty.sh/gh/wvulibraries/projects/ccdt)
-[![Code Coverage](https://qlty.sh/gh/wvulibraries/projects/ccdt/coverage.svg)](https://qlty.sh/gh/wvulibraries/projects/ccdt)
-## Quick Start
-
- [Presentation](https://docs.google.com/presentation/d/1FyzvqbXJCVkH5S1Af2u6OOTHvzqgfDztlYbq4fLybr4/edit?usp=sharing) | [Documentation](https://github.com/wvulibraries/ccdt/wiki)
------------- | -------------
- [![Presentation](docs/images/i2.png)](https://docs.google.com/presentation/d/1FyzvqbXJCVkH5S1Af2u6OOTHvzqgfDztlYbq4fLybr4/edit#slide=id.g35f391192_00/edit?usp=sharing) | [![Documentation](docs/images/i1.png)](https://github.com/wvulibraries/ccdt/wiki)
-
-## Development and Contributing
-
 ## Database Setup
 
 After bringing up the project with docker run the setup script from your terminal with the following command to run the database migrations.
@@ -22,19 +10,3 @@ After bringing up the project with docker run the setup script from your termina
 To PHP Unit tests execute the following from your terminal
 `docker exec -it ccdt_php vendor/bin/phpunit` 
 
-**Ideas/Bugs/Questions**
-
-Feel free to share ideas/bugs/questions using [issues](https://github.com/wvulibraries/ccdt/issues)
-
-**Author(s)**
-
-[Ajay Kavui](http://pseudoaj.com) ([@pseudoaj](https://github.com/pseudoaj))
-[Tracy McCormick](http://tracyamccormick.com) ([@trmccormick](https://github.com/trmccormick))
-
-**Team**
-
-[WVU Libraries Systems Department](https://lib.wvu.edu/about/directory/departments/68/employees/)
-
-**Contributors**
-
-Following are the contributors for the project: [contributors](https://github.com/wvulibraries/ccdt/graphs/contributors)
