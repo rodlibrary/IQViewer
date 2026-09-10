@@ -1,4 +1,4 @@
-[Constituent Correspondence Data Tool](https://github.com/wvulibraries/ccdt) is a platform to transform constituent correspondence maintained in Intranet Quorum into **information** and **information** into **insights.** The projects aims to provide a holistic interface for importing `flat-files` and provide tools to **research and visualize.**
+[Constituent Correspondence Data Tool](https://github.com/wvulibraries/ccdt) is a platform to transform congressional constituent correspondence maintained in Intranet Quorum into **information** and **information** into **insights.** The projects aims to provide a holistic interface for importing `flat-files` and provide tools to **research and visualize.**
 
 ## Database Setup
 
