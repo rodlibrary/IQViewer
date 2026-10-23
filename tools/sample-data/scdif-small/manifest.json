@@ -1,0 +1,368 @@
+{
+  "args": {
+    "max_rows_per_file": null,
+    "quirk_rate": 0.01,
+    "seed": "20261023",
+    "total_records": 6000
+  },
+  "first_lines_adjusted": 1,
+  "generator": "generate_scdif.py",
+  "max_ids": {
+    "addr": 2000735,
+    "comm": 4501372,
+    "ev": 1009,
+    "hh": 30127,
+    "wf": 500390
+  },
+  "notes": [
+    "No header row in any file: import into a collection flagged as CMS so line 1 is not skipped.",
+    "total_rows counts lines containing data; blank and ******** lines are not counted.",
+    "Files are latin-1 encoded with CRLF line endings (a few LF-only rows when quirks are on)."
+  ],
+  "person_id_range": [
+    100002,
+    100167
+  ],
+  "persons": 166,
+  "quirks_applied": {
+    "blank": 7,
+    "lf": 4,
+    "quote": 8,
+    "sep": 5,
+    "short": 14
+  },
+  "record_types": {
+    "1A": {
+      "fields": 16,
+      "files": [
+        {
+          "bytes": 9441,
+          "name": "out_1a.dat",
+          "rows": 166
+        }
+      ],
+      "total_rows": 166
+    },
+    "1B": {
+      "fields": 22,
+      "files": [
+        {
+          "bytes": 18612,
+          "name": "out_1b.dat",
+          "rows": 185
+        }
+      ],
+      "total_rows": 185
+    },
+    "1C": {
+      "fields": 4,
+      "files": [
+        {
+          "bytes": 6195,
+          "name": "out_1c.dat",
+          "rows": 242
+        }
+      ],
+      "total_rows": 242
+    },
+    "1D": {
+      "fields": 7,
+      "files": [
+        {
+          "bytes": 436,
+          "name": "out_1d.dat",
+          "rows": 12
+        }
+      ],
+      "total_rows": 12
+    },
+    "1E": {
+      "fields": 6,
+      "files": [
+        {
+          "bytes": 8745,
+          "name": "out_1e.dat",
+          "rows": 221
+        }
+      ],
+      "total_rows": 221
+    },
+    "1G": {
+      "fields": 24,
+      "files": [
+        {
+          "bytes": 1844,
+          "name": "out_1g.dat",
+          "rows": 31
+        }
+      ],
+      "total_rows": 31
+    },
+    "2A": {
+      "fields": 21,
+      "files": [
+        {
+          "bytes": 46605,
+          "name": "out_2a.dat",
+          "rows": 350
+        }
+      ],
+      "total_rows": 350
+    },
+    "2B": {
+      "fields": 5,
+      "files": [
+        {
+          "bytes": 17129,
+          "name": "out_2b.dat",
+          "rows": 431
+        }
+      ],
+      "total_rows": 431
+    },
+    "2C": {
+      "fields": 8,
+      "files": [
+        {
+          "bytes": 26246,
+          "name": "out_2c.dat",
+          "rows": 345
+        }
+      ],
+      "total_rows": 345
+    },
+    "2D": {
+      "fields": 8,
+      "files": [
+        {
+          "bytes": 13657,
+          "name": "out_2d.dat",
+          "rows": 110
+        }
+      ],
+      "total_rows": 110
+    },
+    "2E": {
+      "fields": 5,
+      "files": [
+        {
+          "bytes": 682,
+          "name": "out_2e.dat",
+          "rows": 19
+        }
+      ],
+      "total_rows": 19
+    },
+    "3A": {
+      "fields": 11,
+      "files": [
+        {
+          "bytes": 8761,
+          "name": "out_3a.dat",
+          "rows": 96
+        }
+      ],
+      "total_rows": 96
+    },
+    "3B": {
+      "fields": 4,
+      "files": [
+        {
+          "bytes": 3166,
+          "name": "out_3b.dat",
+          "rows": 127
+        }
+      ],
+      "total_rows": 127
+    },
+    "3D": {
+      "fields": 8,
+      "files": [
+        {
+          "bytes": 31637,
+          "name": "out_3d.dat",
+          "rows": 285
+        }
+      ],
+      "total_rows": 285
+    },
+    "3E": {
+      "fields": 5,
+      "files": [
+        {
+          "bytes": 650,
+          "name": "out_3e.dat",
+          "rows": 25
+        }
+      ],
+      "total_rows": 25
+    },
+    "3F": {
+      "fields": 9,
+      "files": [
+        {
+          "bytes": 656,
+          "name": "out_3f.dat",
+          "rows": 6
+        }
+      ],
+      "total_rows": 6
+    },
+    "3L": {
+      "fields": 6,
+      "files": [
+        {
+          "bytes": 5753,
+          "name": "out_3l.dat",
+          "rows": 119
+        }
+      ],
+      "total_rows": 119
+    },
+    "5A": {
+      "fields": 4,
+      "files": [
+        {
+          "bytes": 1783,
+          "name": "out_5a.dat",
+          "rows": 35
+        }
+      ],
+      "total_rows": 35
+    },
+    "5B": {
+      "fields": 4,
+      "files": [
+        {
+          "bytes": 1603,
+          "name": "out_5b.dat",
+          "rows": 87
+        }
+      ],
+      "total_rows": 87
+    },
+    "5C": {
+      "fields": 7,
+      "files": [
+        {
+          "bytes": 232,
+          "name": "out_5c.dat",
+          "rows": 2
+        }
+      ],
+      "total_rows": 2
+    },
+    "6A": {
+      "fields": 17,
+      "files": [
+        {
+          "bytes": 35864,
+          "name": "out_6a.dat",
+          "rows": 200
+        }
+      ],
+      "total_rows": 200
+    },
+    "6B": {
+      "fields": 4,
+      "files": [
+        {
+          "bytes": 6027,
+          "name": "out_6b.dat",
+          "rows": 227
+        }
+      ],
+      "total_rows": 227
+    },
+    "6C": {
+      "fields": 4,
+      "files": [
+        {
+          "bytes": 13984,
+          "name": "out_6c.dat",
+          "rows": 524
+        }
+      ],
+      "total_rows": 524
+    },
+    "6D": {
+      "fields": 7,
+      "files": [
+        {
+          "bytes": 5358,
+          "name": "out_6d.dat",
+          "rows": 63
+        }
+      ],
+      "total_rows": 63
+    },
+    "6E": {
+      "fields": 7,
+      "files": [
+        {
+          "bytes": 4557,
+          "name": "out_6e.dat",
+          "rows": 44
+        }
+      ],
+      "total_rows": 44
+    },
+    "6F": {
+      "fields": 3,
+      "files": [
+        {
+          "bytes": 2994,
+          "name": "out_6f.dat",
+          "rows": 200
+        }
+      ],
+      "total_rows": 200
+    },
+    "7A": {
+      "fields": 27,
+      "files": [
+        {
+          "bytes": 416,
+          "name": "out_7a.dat",
+          "rows": 2
+        }
+      ],
+      "total_rows": 2
+    },
+    "7B": {
+      "fields": 3,
+      "files": [
+        {
+          "bytes": 93,
+          "name": "out_7b.dat",
+          "rows": 4
+        }
+      ],
+      "total_rows": 4
+    },
+    "7C": {
+      "fields": 4,
+      "files": [
+        {
+          "bytes": 147,
+          "name": "out_7c.dat",
+          "rows": 7
+        }
+      ],
+      "total_rows": 7
+    },
+    "8A": {
+      "fields": 6,
+      "files": [
+        {
+          "bytes": 96626,
+          "name": "out_8a.dat",
+          "rows": 1803
+        }
+      ],
+      "total_rows": 1803
+    }
+  },
+  "total_data_rows": 5968,
+  "version": "1.0"
+}
