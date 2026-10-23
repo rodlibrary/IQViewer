@@ -10,3 +10,8 @@ env/.*
 src/project-css/.env.testing
 src/project-css/.env
 
+
+# generated test data (tools/)
+scdif_data/
+scdif_redacted/
+tools/**/__pycache__/
