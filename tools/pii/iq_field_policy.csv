@@ -7,7 +7,7 @@ record_type,field_no,field_name,action,label,notes
 1A,6,Middle Name,redact,<MIDDLE_NAME>,Directly identifies a person; replaced in full.
 1A,7,Last Name,redact,<LAST_NAME>,Directly identifies a person; replaced in full.
 1A,8,Suffix,keep,,Kept for research value; ID numbers still removed.
-1A,9,Appellation,keep,,Kept for research value; ID numbers still removed.
+1A,9,Appellation,redact,<APPELLATION>,Can hold a full honorific with the person's name (e.g. 'The Honorable ...'); replaced in full.
 1A,10,Organization Name,scan,,Detected PII only.
 1A,11,Salutation,redact,<SALUTATION>,Directly identifies a person; replaced in full.
 1A,12,Date of Birth,redact,<DATE_OF_BIRTH>,Directly identifies a person; replaced in full.
@@ -357,7 +357,7 @@ ARCHIVE,2,First Name,redact,<FIRST_NAME>,Directly identifies a person; replaced 
 ARCHIVE,3,Middle Name,redact,<MIDDLE_NAME>,Directly identifies a person; replaced in full.
 ARCHIVE,4,Last Name,redact,<LAST_NAME>,Directly identifies a person; replaced in full.
 ARCHIVE,5,Suffix,keep,,Kept for research value; ID numbers still removed.
-ARCHIVE,6,Appellation,keep,,Kept for research value; ID numbers still removed.
+ARCHIVE,6,Appellation,redact,<APPELLATION>,Can hold a full honorific with the person's name (e.g. 'The Honorable ...'); replaced in full.
 ARCHIVE,7,Title,scan,,Detected PII only.
 ARCHIVE,8,Organization,scan,,Detected PII only.
 ARCHIVE,9,Address Line 1,redact,<ADDRESS_LINE_1>,Directly identifies a person; replaced in full.
