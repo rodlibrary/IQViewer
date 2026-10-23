@@ -7,6 +7,7 @@ from it: no Docker, composer or database. Python 3, standard library only.
 |---|---|
 | [`scdif/`](scdif/) | Make synthetic SCDIF files for import testing, and check them |
 | [`pii/`](pii/) | The field-by-field PII policy, and a script that applies it |
+| [`sample-data/`](sample-data/) | A small invented data set (tab-delimited, and one mixed pipe-delimited file) to try the importers |
 
 ## Make test data and import it
 
