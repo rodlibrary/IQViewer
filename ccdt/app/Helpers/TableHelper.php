@@ -468,7 +468,11 @@ class TableHelper {
         $tblNme = $filteredType . time();
       }
 
-      $fieldTypes = $csvHelper->determineTypes(!$cms, $fltFleAbsPth, 10000);
+      // Examine the whole file, not just the first 10,000 lines. Column sizes
+      // come from the longest / largest value seen, and in a large file the
+      // widest values often appear long after the first lines. With strict
+      // mode off MySQL silently truncates or clamps whatever does not fit.
+      $fieldTypes = $csvHelper->determineTypes(!$cms, $fltFleAbsPth, CSVHelper::SCAN_ALL);
      
       $fieldNames = ($cms ? (new CMSHelper)->cmsHeader($colID, $schema[0], count($fieldTypes)) : $schema);
 
