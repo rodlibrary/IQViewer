@@ -2,7 +2,7 @@ IQViewer is a fork of West Virginia's [Constituent Correspondence Data Tool](htt
 
 ## Quick Start
 
- [WVU Presentation](https://docs.google.com/presentation/d/1FyzvqbXJCVkH5S1Af2u6OOTHvzqgfDztlYbq4fLybr4/edit?usp=sharing) | [Documentation](https://github.com/wvulibraries/ccdt/wiki)
+ [WVU Presentation](https://docs.google.com/presentation/d/1FyzvqbXJCVkH5S1Af2u6OOTHvzqgfDztlYbq4fLybr4/edit?usp=sharing) | [WVU Documentation](https://github.com/wvulibraries/ccdt/wiki)
 ------------ | -------------
  [![Presentation](docs/images/i2.png)](https://docs.google.com/presentation/d/1FyzvqbXJCVkH5S1Af2u6OOTHvzqgfDztlYbq4fLybr4/edit#slide=id.g35f391192_00/edit?usp=sharing) | [![Documentation](docs/images/i1.png)](https://github.com/wvulibraries/ccdt/wiki)
 
