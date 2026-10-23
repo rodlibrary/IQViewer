@@ -142,7 +142,7 @@ saves.
 
     php artisan import:large-dataset export.txt "Collection name" [--delimiter=tab] [--chunk=10000] [--replace]
 
-The file goes in `storage/app/flatfiles/`. The command reads the whole file twice:
+The file goes in `data/flatfiles/` on your computer (the folder the app sees as `storage/app/flatfiles/`). The command reads the whole file twice:
 
 1. **Scan.** For each record type (the first field: `1A`, `2A`, ...) it finds the field names in the
    `recordtypes` layouts (the collection's own CMS layout first) and works out the type of every

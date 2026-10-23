@@ -21,7 +21,7 @@ needs a lot of disk space; start small). The same `--seed` and `--total-records`
 
 The files are tab-delimited with no header row. To import a single file with the tab-delimited importer, add it
 to a collection flagged as CMS. To import one mixed file with `import:large-dataset`, put the files in
-`ccdt/storage/app/flatfiles/` and use `--delimiter=tab` (see [docs/charts.md](../docs/charts.md)).
+`data/flatfiles/` and use `--delimiter=tab` (see [docs/charts.md](../docs/charts.md)).
 
 ## Test the PII policy
 
