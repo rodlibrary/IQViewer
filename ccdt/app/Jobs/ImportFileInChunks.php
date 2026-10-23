@@ -283,7 +283,7 @@ class ImportFileInChunks implements ShouldQueue
 
     /**
      * Same follow-up as FileImport: ID indexes (for charts that combine
-     * tables), a new updated_at, and the stored chart results.
+     * tables), a new updated_at, the stored chart results and the dashboard counts.
      */
     private function finishTable(string $table): void
     {
@@ -296,6 +296,9 @@ class ImportFileInChunks implements ShouldQueue
                 $row->touch();
                 if (config('charts.summary_on_import')) {
                     RefreshChartSummaries::dispatch($table)->onQueue('low')->delay(now()->addMinutes(2));
+                }
+                if (config('charts.dashboard_on_import')) {
+                    RefreshDashboard::dispatch($table)->onQueue('low')->delay(now()->addMinutes(2));
                 }
             }
         } catch (\Throwable $e) {

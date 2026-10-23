@@ -118,4 +118,25 @@ return [
     */
     'summary_min_ms' => 3000,
     'summary_on_import' => env('CHARTS_SUMMARY_ON_IMPORT', true),
+
+    /*
+    | Data dashboard (/dashboard): counts of every table, its distinct IDs, the
+    | most common values of its code and distribution fields (gender, city,
+    | state...) and its date trends. Counted after each import in the
+    | background (queue "low"); set CHARTS_DASHBOARD_ON_IMPORT=false to turn
+    | that off. Count existing tables with:  php artisan dashboard:refresh --all
+    | dashboard_budget_seconds stops counting one table after that long (0 = no
+    | limit); the dashboard then says the table is partly counted.
+    */
+    'dashboard_on_import' => env('CHARTS_DASHBOARD_ON_IMPORT', true),
+    'dashboard_budget_seconds' => 900,
+    'dashboard' => [
+        'sample_rows' => 100000,
+        'top_values' => 15,
+        'max_ids' => 8,
+        'max_distribution' => 10,
+        'max_code' => 10,
+        'max_other' => 6,
+        'max_trends' => 4,
+    ],
 ];

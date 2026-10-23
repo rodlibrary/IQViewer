@@ -13,11 +13,12 @@ IQViewer is a fork of West Virginia's [Constituent Correspondence Data Tool](htt
 5. [Configuration](#configuration)
 6. [Importing data](#importing-data)
 7. [Chart builder](#chart-builder)
-8. [Testing](#testing)
-9. [Troubleshooting](#troubleshooting)
-10. [Production notes](#production-notes)
-11. [Tools and test data](#tools-and-test-data)
-12. [Contributing](#contributing)
+8. [Data dashboard](#data-dashboard)
+9. [Testing](#testing)
+10. [Troubleshooting](#troubleshooting)
+11. [Production notes](#production-notes)
+12. [Tools and test data](#tools-and-test-data)
+13. [Contributing](#contributing)
 
 ## What is in this repository
 
@@ -184,6 +185,18 @@ Tables imported before the chart builder existed need their indexes built once
 (`php artisan table:create:index --all`). See [docs/charts.md](docs/charts.md) for how it works, what a chart may and may not
 use, performance and the optional settings.
 
+## Data dashboard
+
+**Dashboard** in the menu shows counts of everything imported: records per table, distinct people and IDs, the most
+common values of fields such as gender, city, state, type and status, and date trends. The numbers are counted in the
+background after each import, so the page opens instantly. After `git pull`, run the migration; for tables imported
+earlier, count them once:
+```
+docker exec -it ccdt_php php artisan migrate
+docker exec -it ccdt_php php artisan dashboard:refresh --all
+```
+See [docs/dashboard.md](docs/dashboard.md) for what is counted, the privacy rules and troubleshooting.
+
 ## Testing
 
 The PHP tests run inside the app container and use the separate `css_testing` database, so they do not touch your data:
@@ -191,6 +204,7 @@ The PHP tests run inside the app container and use the separate `css_testing` da
 docker exec -it ccdt_php vendor/bin/phpunit                          # everything
 docker exec -it ccdt_php vendor/bin/phpunit --filter Chart           # chart builder tests only
 docker exec -it ccdt_php vendor/bin/phpunit --filter LargeImport     # import:large-dataset helpers
+docker exec -it ccdt_php vendor/bin/phpunit --filter Dashboard       # data dashboard
 docker exec -it ccdt_php vendor/bin/phpunit tests/Unit               # unit tests only
 ```
 A green run ends with `OK (N tests, ...)`. If many tests fail with database errors, see Troubleshooting
@@ -215,6 +229,7 @@ The validator prints `N checks passed, 0 failed` and exits with status 1 if anyt
 2. Create a collection and import the sample data (above). Wait for the queue to finish (watch
    `data/logs/laravel.log`); the tables should list under the collection with their row counts.
 3. Open **Charts**, choose a table, pick a ready-made chart. A picture appears. Try the Hover and zoom view.
+   Open **Dashboard**: the tables show their counts once the background counting has finished (a couple of minutes after the import).
 4. Choose a second table of the same collection ("combine with") and draw a chart across the two.
 
 ## Troubleshooting
@@ -257,6 +272,7 @@ First, always: `docker ps` (is everything running?), `docker logs ccdt_php` (the
 | "The chart service is unavailable" | The `ccdt_charts` container is not running or not reachable. `docker ps`, `docker logs ccdt_charts`, then `docker-compose -f docker-compose.dev.yml up -d --build charts app`. |
 | Chart service answers "bad token" | `CHARTS_SERVICE_TOKEN` differs between the app (`env/.env.*`) and the charts container (a `.env` file next to the compose file). Make them the same or leave both empty. |
 | "The query took too long" | Add a filter (for example a date range) or choose a coarser grouping. Queries are limited to 30 seconds. |
+| The Dashboard says "Not counted yet" | Run `docker exec -it ccdt_php php artisan dashboard:refresh --all` (after `php artisan migrate`). More in [docs/dashboard.md](docs/dashboard.md#troubleshooting). |
 | A table is missing from the Charts list | Tables disabled by an administrator, tables in disabled collections, and users without access are hidden. |
 | No "combine with" choice, or a join is refused | Both tables must be in the same collection and share an indexed ID column. Run `docker exec -it ccdt_php php artisan table:create:index --all` for tables imported before the chart builder. |
 | Bars or points are missing | Groups with fewer than 10 records are hidden on purpose (privacy); the chart footnote says how many. |

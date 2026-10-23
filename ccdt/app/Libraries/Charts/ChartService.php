@@ -240,19 +240,7 @@ class ChartService
             }
         }
 
-        $t0 = microtime(true);
-        $this->prepareConnection();
-        $tops = [];
-        foreach ($builder->lookups($norm) as $which) {
-            $q = $builder->topValuesQuery($norm, $which);
-            $tops[$which] = array_map(function ($r) {
-                return ((array) $r)['v'];
-            }, $this->db()->select($q['sql'], $q['bindings']));
-        }
-        $q = $builder->query($norm, $tops);
-        $rows = $this->db()->select($q['sql'], $q['bindings']);
-        $shaped = $builder->shape($rows, $norm);
-        $queryMs = (int) round((microtime(true) - $t0) * 1000);
+        list($shaped, $queryMs) = $this->aggregate($builder, $norm);
 
         if (count($shaped['x']) > 0 && ($store || $queryMs >= (int) config('charts.summary_min_ms'))) {
             try {
@@ -268,6 +256,44 @@ class ChartService
             }
         }
         return [$shaped, $queryMs, false];
+    }
+
+    /**
+     * Run a validated spec on the read-only connection and shape the result
+     * (small groups hidden), without drawing it or storing it.
+     *
+     * @param ChartQueryBuilder $builder
+     * @param array             $norm    builder->normalize() output
+     * @return array [shaped, query_ms]
+     */
+    public function aggregate(ChartQueryBuilder $builder, array $norm)
+    {
+        $t0 = microtime(true);
+        $this->prepareConnection();
+        $tops = [];
+        foreach ($builder->lookups($norm) as $which) {
+            $q = $builder->topValuesQuery($norm, $which);
+            $tops[$which] = array_map(function ($r) {
+                return ((array) $r)['v'];
+            }, $this->db()->select($q['sql'], $q['bindings']));
+        }
+        $q = $builder->query($norm, $tops);
+        $rows = $this->db()->select($q['sql'], $q['bindings']);
+        $shaped = $builder->shape($rows, $norm);
+        return [$shaped, (int) round((microtime(true) - $t0) * 1000)];
+    }
+
+    /**
+     * A read-only SELECT on the chart connection with the statement time limit
+     * applied. For the data dashboard's counts: the SQL is built from names that
+     * came from the table's own DESCRIBE, never from user input.
+     *
+     * @return array rows as objects
+     */
+    public function select($sql, array $bindings = [])
+    {
+        $this->prepareConnection();
+        return $this->db()->select($sql, $bindings);
     }
 
     /**

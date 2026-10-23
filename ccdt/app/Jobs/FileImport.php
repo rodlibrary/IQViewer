@@ -81,6 +81,9 @@ class FileImport implements ShouldQueue
                 if (config('charts.summary_on_import')) {
                     RefreshChartSummaries::dispatch($this->tblNme)->onQueue('low')->delay(now()->addMinutes(2));
                 }
+                if (config('charts.dashboard_on_import')) {
+                    RefreshDashboard::dispatch($this->tblNme)->onQueue('low')->delay(now()->addMinutes(2));
+                }
             }
         } catch (\Throwable $e) {
             Log::warning("Import for table {$this->tblNme}: could not queue chart summaries: " . $e->getMessage());

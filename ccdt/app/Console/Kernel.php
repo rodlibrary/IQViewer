@@ -31,6 +31,7 @@ class Kernel extends ConsoleKernel
         Commands\optimizeSrchIndex::class,  
         Commands\indexTable::class,
         Commands\summaryTable::class,
+        Commands\dashboardRefresh::class,
     ];
 
     /**

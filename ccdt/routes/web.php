@@ -97,3 +97,12 @@ Route::prefix('charts')->name('charts.')->group(function() {
     Route::post('save', 'ChartController@save')->name('save');
     Route::post('delete', 'ChartController@delete')->name('delete');
 });
+
+// Data dashboard (counts of every imported table, read from stored snapshots);
+// same access as the chart builder, refreshing is for administrators
+Route::prefix('dashboard')->name('dashboard.')->group(function() {
+    Route::get('/', 'DashboardController@index')->name('index');
+    Route::get('data', 'DashboardController@data')->name('data');
+    Route::get('table/{id}', 'DashboardController@show')->name('show');
+    Route::post('refresh', 'DashboardController@refresh')->name('refresh');
+});

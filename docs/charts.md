@@ -128,6 +128,9 @@ query again, for every user:
 * `php artisan table:create:summary {table}` / `--all` builds them by hand
   (it can take several minutes per table on millions of rows).
 
+For counts of everything that has been imported (not charts you build yourself), see the
+[data dashboard](dashboard.md).
+
 ## Hover and zoom
 
 Under **Hover and zoom** (next to **Image** above the chart) the same numbers
