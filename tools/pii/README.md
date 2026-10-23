@@ -64,7 +64,7 @@ cluster and run `sbatch` from it.
 Changing a field to `redact` or `keep_all`: re-run step 3 only. Changing a field from `redact`/`keep_all` to
 `scan`/`keep`: re-run steps 2 and 3 (until then the field shows as `<UNSCANNED>`).
 
-For email alerts: `sbatch --mail-type=END,FAIL --mail-user=you@uni.edu iq_analyze.script`.
+For email alerts: `sbatch --mail-type=END,FAIL --mail-user=Your@email iq_analyze.script`.
 
 The Python scripts also run on a local computer (for example in PowerShell); the IQ scripts then use a single
 process.
