@@ -138,6 +138,33 @@ Horizontal bar charts have hover but no zoom. The choice is remembered in the
 browser. The image view (matplotlib) is unchanged and is what **Download PNG**
 saves.
 
+## Importing a pipe-delimited export (`import:large-dataset`)
+
+    php artisan import:large-dataset export.txt "Collection name" [--delimiter=tab] [--chunk=10000] [--replace]
+
+The file goes in `storage/app/flatfiles/`. The command reads the whole file twice:
+
+1. **Scan.** For each record type (the first field: `1A`, `2A`, ...) it finds the field names in the
+   `recordtypes` layouts (the collection's own CMS layout first) and works out the type of every
+   column with the same rules as the tab-delimited import. Digits-only columns without a leading zero
+   become `INT` (or `BIGINT` from 10 digits); any other value makes the column text, so zip codes and
+   dates with blanks stay text.
+2. **Load.** It creates one table per record type, named `<type>_<name>` (for example `2a_mycases`),
+   with one typed column per field, adds them to the collection, and sends the rows to the queue in
+   chunks (`ProcessChunkedFile`). When the inserts are done each table gets its ID indexes and its
+   chart results are queued, exactly as for the tab-delimited import.
+
+Rows shorter than the layout are padded with blanks; rows with more fields have the extra text folded
+into the last column. If the layout has fewer fields than the rows, the extra trailing fields are named
+`Field#`. A record type with no layout gets generated `Field#` names. Lines that are blank or are not
+records are skipped and counted in the log. Lines that are not UTF-8 are read as Latin-1.
+An existing table is left alone unless you pass `--replace`, which drops and recreates it (and removes
+its entry from the collection). The 8 queue workers the command starts now start after all chunks are
+queued, so the jobs are not picked up while the file is still being read.
+
+The search text (`srchindex`) leaves out the record type, flags, dates, CMS and sequence numbers and
+any `ID` field except Constituent ID; `ID` is matched as a whole word, so "Individual" is not dropped.
+
 ## Performance
 
 Measured on synthetic SCDIF data (1.7M communication rows, 2.2M topic rows,

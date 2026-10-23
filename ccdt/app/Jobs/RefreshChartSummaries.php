@@ -60,13 +60,15 @@ class RefreshChartSummaries implements ShouldQueue
     }
 
     /**
-     * Is a FileImport for this table still waiting in, or being run from, the jobs table?
+     * Is a FileImport (or a chunk of a large-dataset import) for this table still waiting in, or being run from, the jobs table?
      */
     private function importsPending()
     {
         try {
             return DB::table('jobs')
-                ->where('payload', 'like', '%FileImport%')
+                ->where(function ($q) {
+                    $q->where('payload', 'like', '%FileImport%')->orWhere('payload', 'like', '%ProcessChunkedFile%');
+                })
                 ->where('payload', 'like', '%' . $this->tblNme . '%')
                 ->exists();
         } catch (\Throwable $e) {

@@ -229,6 +229,18 @@ class CSVHelper {
          // call checkFile process the passed file
          $checkArray = $this->checkFile($hasheader, $fltFleAbsPth, $readCount);
 
+         // checkFile returns false when the file cannot be opened
+         return is_array($checkArray) ? $this->fieldTypesFromCheck($checkArray) : [];
+     }
+
+     /**
+      * Turns the per-column findings of checkFile() into field types.
+      *
+      * @param array $checkArray one entry per column: [0] = 1 while every value
+      *   was a plain integer, [1] = longest value seen, [2] = a non-integer was seen
+      * @return array one entry per column: [type, size, longest value]
+      */
+     public function fieldTypesFromCheck(array $checkArray) {
          $fieldType = [];
 
          // determine final field types

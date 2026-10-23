@@ -3,9 +3,23 @@
 namespace App\Jobs;
 
 /**
- * Artisan Command for Importing Large Datasets
+ * Job behind the Import Large Dataset command
  * Command Execution Example: php artisan import:large-dataset name_of_file.txt name_of_collection
- * Command sends out jobs of 100,000 records that will be processed individually in batches, which saves a lot of time in the impot stage.
+ *
+ * The file is a mixed, delimited (default "|") export whose first field is the
+ * record type (1A, 2A, ...). The import runs in two passes over the file:
+ *
+ *   1. scan: for every record type, find its layout (field names from the
+ *      recordtypes table) and the type and size of every column, with the same
+ *      rules as the tab-delimited import (see App\Helpers\LargeImportScan);
+ *   2. load: create one table per record type, with one typed column per field,
+ *      register it in the collection, and send the rows in chunks to
+ *      ProcessChunkedFile jobs that insert them in batches.
+ *
+ * Typed columns (rather than one text column per line) are what lets the chart
+ * builder, searches and exports work on the data. When the rows are in, each
+ * table gets ID indexes and its ready-made chart results are queued.
+ *
  * @author Logan Witzenburg (witzenbl@uni.edu)
 */
 
@@ -15,10 +29,18 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Log;
-use App\Jobs\ProcessChunkedFile;
+use App\Helpers\CSVHelper;
+use App\Helpers\CustomStringHelper;
+use App\Helpers\LargeImportHelper;
+use App\Helpers\LargeImportScan;
+use App\Helpers\TableHelper;
+use App\Helpers\TableIndexHelper;
+use App\Models\CMSRecords;
+use App\Models\Collection;
+use App\Models\Table;
 use Symfony\Component\Process\Process;
 
 class ImportFileInChunks implements ShouldQueue
@@ -31,27 +53,27 @@ class ImportFileInChunks implements ShouldQueue
     
     protected string $filename;
     protected string $tableName;
+    protected int $collectionId;
+    protected string $delimiter;
+    protected int $chunkSize;
+    protected bool $replace;
 
-    public function __construct(string $filename, string $tableName)
+    /** rows held in memory across all record types before everything is sent */
+    const MAX_BUFFERED = 100000;
+
+    public function __construct(string $filename, string $tableName, int $collectionId = 0, string $delimiter = '|', int $chunkSize = 10000, bool $replace = false)
     {
         $this->filename = $filename;
         $this->tableName = $tableName;
+        $this->collectionId = $collectionId;
+        $this->delimiter = $delimiter;
+        $this->chunkSize = max(100, $chunkSize);
+        $this->replace = $replace;
     }
 
     public function handle(): void
     {
         try {
-            // STEP 0: Spawn 8 background worker processes directly inside PHP
-            $workerProcesses = [];
-            $numWorkers = 8;
-
-            for ($i = 0; $i < $numWorkers; $i++) {
-                // This for loop starts the artisan workers like you would to process other import jobs.
-                $process = new Process([PHP_BINARY, base_path('artisan'), 'queue:work', '--stop-when-empty', '--tries=3']);
-                $process->start(); 
-                $workerProcesses[] = $process;
-                // -------------------------------------------------------------------------------------
-            }
             // This checks to see if the file you are tyring to import is in the flatfiles directory or not.
             // In order for the command to work, it has to be in the flatfiles folder. 
             $filePath = storage_path("app/flatfiles/" . $this->filename);
@@ -60,124 +82,109 @@ class ImportFileInChunks implements ShouldQueue
                 throw new \Exception("File not found at path: {$filePath}");
             }
 
-            $cleanTable = trim($this->tableName, "`");
-            // -------------------------------------------------------------------------------------------
-            // STEP 1: Ensure target schema exists
-            if (!Schema::hasTable($cleanTable)) {
-                Schema::create($cleanTable, function (Blueprint $table) {
-                    $table->id();
-                    $table->string("record_type")->nullable();
-                    $table->string("constituent_id")->nullable();
-                    $table->longText("data")->nullable();
-                    $table->text("srchindex")->nullable();
-                    $table->timestamps();
-                });
+            $collection = Collection::find($this->collectionId);
+            if (!$collection) {
+                throw new \Exception("Collection {$this->collectionId} was not found.");
             }
-            // --------------------------------------------------------------------------------------------
 
-            // STEP 2. Metadata definitions for dynamic search index building
-            $excludeKeywords = [
-                'RECORD TYPE', 'ID', 'FLAG', 'DATE', 'CMSID', 
-                'SEQUENCE NUMBER', 'CREATED_AT', 'UPDATED_AT'
-            ];
-            // This code dynamically checks what record type the file contents are using RecordTypesSeeder.php.
-            $schemaMap = [
-                '1A' => ['Record Type', 'Constituent ID', 'Individual Type', 'Prefix', 'First Name', 'Middle Name', 'Last Name', 'Suffix', 'Appellation', 'Salutation', 'Date of Birth', 'No Mail Flag', 'Deceased Flag'],
-                '1B' => ['Record Type', 'Constituent ID', 'Address ID', 'Address Type', 'Primary Flag', 'Default Address Flag', 'Title', 'Organization Name', 'Address line 1', 'Address line 2', 'Address line 3', 'Address line 4', 'City', 'State', 'Zip Code', 'Carrier Route', 'County', 'Country', 'District', 'Precinct', 'No Mail Flag', 'Agency Code'],
-                '1C' => ['Record Type', 'Constituent ID', 'Constituent Code Type', 'Constituent Code'],
-                '1D' => ['Record Type', 'Constituent ID', '1D Sequence Number', 'Constituent Text Type', 'Constituent Text'],
-                '1E' => ['Record Type', 'Constituent ID', 'Constituent Phone or email Type', 'Phone Number Email or URL'],
-                '2A' => ['Record Type', 'Constituent ID', 'Correspondence ID', 'Correspondence Type', 'Staff', 'Date In', 'Date Out', 'Tickler date', 'Update Date', 'Response Type', 'Address ID', 'Household Flag', 'Household ID'],
-                '2B' => ['Record Type', 'Constituent ID', 'Correspondence ID', 'Correspondence Code', 'Position'],
-                '2C' => ['Record Type', 'Constituent ID', 'Correspondence ID', '2C Sequence Number', 'Document Type', 'Correspondence Document Name', 'File Location'],
-                '2D' => ['Record Type', 'Constituent ID', 'Correspondence ID', '2D Sequence Number', 'Text Type', 'Correspondence Text'],
-                '2E' => ['Record Type', 'Constituent ID', 'Correspondence ID', 'Merge Field Name', 'Merge Data'],
-                '3A' => ['Record Type', 'Constituent ID', 'Casework ID', 'Staff', 'Start Date', 'End Date', 'Tickler date', 'Update Date', 'Casework Description', 'Casework Status', 'Agency ID'],
-                '3B' => ['Record Type', 'Constituent ID', 'Casework ID', 'Casework Code'],
-                '3D' => ['Record Type', 'Constituent ID', 'Casework ID', '3D Sequence Number', 'Text Type', 'Casework Text'],
-                '3E' => ['Record Type', 'Constituent ID', 'Casework ID', 'Party ID'],
-                '4A' => ['Record Type', 'Constituent ID', 'Casework ID', 'Transaction Type', 'Staff', 'Start Date', 'End Date', 'Tickler date', 'Update Date', 'Response Type', 'Address ID', 'Household Flag', 'Household ID', 'Contacted Party ID'],
-                '4B' => ['Record Type', 'Constituent ID', 'Casework ID', 'Transaction ID', 'Transaction Code', 'Position'],
-                '4C' => ['Record Type', 'Constituent ID', 'Casework ID', 'Transaction ID', '4C Sequence Number', 'Document Type', 'Casework Transaction Document Name', 'File Location'],
-                '4D' => ['Record Type', 'Constituent ID', 'Casework ID', 'Transaction ID', '4D Sequence Number', 'Text Type', 'Transaction Text'],
-                '4E' => ['Record Type', 'Constituent ID', 'Casework ID', 'Transaction ID', 'Merge Field Name', 'Merge Data'],
-                '4F' => ['Record Type', 'Constituent ID', 'Casework ID', 'Transaction ID', 'Party ID'],
-                '5A' => ['Record Type', 'Household ID', 'Household Salutation', 'Constituent ID', 'Primary Contact Flag'],
-                '7A' => ['Record Type', 'Event ID', 'Event Description', 'Contact', 'Country', 'Organization', 'Start Date', 'Start Time', 'End Date', 'End Time', 'Location', 'Status', 'Private Flag', 'Notes', 'Schedule Date', 'Scheduled by', 'Revision Date', 'Revised By'],
-                '7B' => ['Record Type', 'Event ID', 'Event Code'],
-                '7C' => ['Record Type', 'Event ID', 'User ID'],
-                '8A' => ['Record Type', 'Code Type', 'Code', 'Code Description', 'Inactive Flag'],
-                '8C' => ['Record Type', 'Letter Code', 'Letter Description', 'Document Name', 'Owner', 'Creation Date', 'Revision Date', 'Archive Flag'],
-                '8D' => ['Record Type', 'Letter Code', 'Merge Field Name'],
-                '8E' => ['Record Type', 'Letter Code', 'Correspondence or Transaction Code', 'Code Type'],
-            ];
-            // -----------------------------------------------------------------------------------------------------------------------
-            // STEP 3. Stream file and dispatch chunks safely to ProcessChunkedFile.php, another newer file I wrote.
-            $handle = fopen($filePath, "r");
-            $chunk = [];
-            $chunkSize = 10000;
+            $csv = new CSVHelper;
+            $format = [new CustomStringHelper, 'formatFieldName'];
 
-            while (($line = fgets($handle)) !== false) {
-                $trimmed = trim($line);
-                if (empty($trimmed)) continue;
+            // -------------------------------------------------------------------------------------------
+            // STEP 1: scan the file: layout and column types for every record type
+            $scan = new LargeImportScan($csv);
+            $ignored = 0;
+            $this->eachRecord($filePath, function ($recordType, $tokens) use ($scan) {
+                $scan->add($recordType, $tokens);
+            }, $ignored);
 
-                $f = explode("|", $trimmed);
-                $recType = strtoupper($f[0] ?? '');
+            if (count($scan->recordTypes()) === 0) {
+                throw new \Exception("No records were found in {$this->filename}. Is the delimiter \"{$this->delimiter}\" right?");
+            }
+            Log::info("ImportFileInChunks {$this->filename}: scanned " . count($scan->recordTypes()) . " record types; ignored {$ignored} lines that are not records.");
 
-                $searchTerms = [];
+            // -------------------------------------------------------------------------------------------
+            // STEP 2: create a typed table for every record type
+            $plans = [];
+            foreach ($scan->recordTypes() as $recordType) {
+                $plan = $scan->resolve($recordType, function ($type, $count) use ($collection) {
+                    return $this->findLayout($type, $count, $collection);
+                });
+                $table = LargeImportHelper::tableName($this->tableName, $recordType);
 
-                if (isset($schemaMap[$recType])) {
-                    foreach ($schemaMap[$recType] as $idx => $fieldName) {
-                        $val = trim($f[$idx] ?? '');
-                        if ($val === '') continue;
-
-                        $upperField = strtoupper($fieldName);
-                        $isExcluded = false;
-
-                        foreach ($excludeKeywords as $kw) {
-                            if (str_contains($upperField, $kw)) {
-                                if ($upperField === 'CONSTITUENT ID') {
-                                    break;
-                                }
-                                $isExcluded = true;
-                                break;
-                            }
-                        }
-
-                        if (!$isExcluded) {
-                            $searchTerms[] = $val;
-                        }
+                if (Schema::hasTable($table)) {
+                    if (!$this->replace) {
+                        Log::warning("ImportFileInChunks: table {$table} already exists, record type {$recordType} was not imported. Use --replace to drop and recreate it.");
+                        continue;
                     }
-                } else {
-                    $searchTerms = array_slice($f, 1);
+                    Schema::drop($table);
+                    Table::where('tblNme', $table)->delete();
                 }
 
-                $chunk[] = [
-                    "record_type"    => $f[0] ?? null,
-                    "constituent_id" => $f[1] ?? null,
-                    "data"           => $trimmed,
-                    "srchindex"      => implode(' ', array_filter($searchTerms)),
-                    "created_at"     => now(),
-                    "updated_at"     => now(),
-                ];
+                $columns = LargeImportHelper::columnNames($plan['header'], $format);
+                $types = $csv->fieldTypesFromCheck($plan['check']);
+                (new TableHelper)->createTable($filePath, $this->filename, $table, $columns, $types, $collection->id);
 
-                if (count($chunk) === $chunkSize) {
-                    ProcessChunkedFile::dispatch($chunk, $cleanTable);
-                    unset($chunk);
-                    $chunk = [];
+                $plan['table'] = $table;
+                $plan['columns'] = $columns;
+                $plans[$recordType] = $plan;
+                Log::info("ImportFileInChunks: created {$table} for record type {$recordType} ({$plan['rows']} rows, {$plan['count']} columns"
+                    . ($plan['known'] ? '' : ', layout unknown: generated field names')
+                    . ($plan['extended'] ? ", {$plan['extended']} trailing fields beyond the layout named Field#" : '')
+                    . ($plan['padded'] ? ", {$plan['padded']} short rows padded" : '')
+                    . ($plan['folded'] ? ", {$plan['folded']} long rows folded" : '') . ').');
+            }
+
+            // -------------------------------------------------------------------------------------------
+            // STEP 3: stream the file again and send the rows in chunks
+            $buffers = [];
+            $buffered = 0;
+            $now = date('Y-m-d H:i:s');
+            $flush = function ($recordType) use (&$buffers, &$buffered, &$plans) {
+                if (!empty($buffers[$recordType])) {
+                    ProcessChunkedFile::dispatch($buffers[$recordType], $plans[$recordType]['table']);
+                    $buffered -= count($buffers[$recordType]);
+                    $buffers[$recordType] = [];
+                }
+            };
+            $this->eachRecord($filePath, function ($recordType, $tokens) use (&$buffers, &$buffered, &$plans, $flush, $now) {
+                if (!isset($plans[$recordType])) {
+                    return;
+                }
+                $plan = $plans[$recordType];
+                $values = LargeImportHelper::normalize($tokens, $plan['count'], $this->delimiter);
+
+                $row = array_combine($plan['columns'], $values);
+                $row['srchindex'] = LargeImportHelper::searchIndex($plan['header'], $values, $plan['known']);
+                $row['created_at'] = $now;
+                $row['updated_at'] = $now;
+
+                $buffers[$recordType][] = $row;
+                $buffered++;
+                if (count($buffers[$recordType]) >= $this->chunkSize) {
+                    $flush($recordType);
+                }
+                if ($buffered >= self::MAX_BUFFERED) {
+                    foreach (array_keys($buffers) as $type) {
+                        $flush($type);
+                    }
                     gc_collect_cycles();
                 }
+            }, $ignored);
+            foreach (array_keys($buffers) as $recordType) {
+                $flush($recordType);
             }
+            unset($buffers);
 
-            if (!empty($chunk)) {
-                ProcessChunkedFile::dispatch($chunk, $cleanTable);
-                unset($chunk);
+            // -------------------------------------------------------------------------------------------
+            // STEP 4: spawn 8 background worker processes to drain the queue, and wait for them
+            $workerProcesses = [];
+            for ($i = 0; $i < 8; $i++) {
+                // This for loop starts the artisan workers like you would to process other import jobs.
+                $process = new Process([PHP_BINARY, base_path('artisan'), 'queue:work', '--stop-when-empty', '--tries=3']);
+                $process->start();
+                $workerProcesses[] = $process;
             }
-
-            fclose($handle);
-
-            // -----------------------------------------------------------------------------------------------------------
-            // STEP 4: Wait for the 8 background processes to finish processing
             while (count($workerProcesses) > 0) {
                 foreach ($workerProcesses as $key => $process) {
                     if (!$process->isRunning()) {
@@ -187,13 +194,113 @@ class ImportFileInChunks implements ShouldQueue
                 usleep(250000);
             }
 
+            // -------------------------------------------------------------------------------------------
+            // STEP 5: when the last inserts are done, index the ID columns and queue the chart results
+            $this->waitForInserts(array_column($plans, 'table'));
+            foreach ($plans as $plan) {
+                $this->finishTable($plan['table']);
+            }
+            Log::info("ImportFileInChunks {$this->filename}: finished, " . count($plans) . ' tables.');
+
         } catch (\Throwable $e) {
             Log::error("ImportFileInChunks Error on {$this->tableName}: " . $e->getMessage(), [
                 "trace" => $e->getTraceAsString()
             ]);
             throw $e;
         }
-        // ------------------------------------------------------------------------------------------
+    }
+
+    /**
+     * Call $each($recordType, $tokens) for every record of the file.
+     *
+     * @param int $ignored counts the lines that were not records (blank, separators)
+     */
+    private function eachRecord(string $filePath, callable $each, int &$ignored): void
+    {
+        $ignored = 0;
+        $handle = fopen($filePath, 'r');
+        while (($line = fgets($handle)) !== false) {
+            $tokens = LargeImportHelper::tokens($line, $this->delimiter);
+            if ($tokens === null) {
+                $ignored++;
+                continue;
+            }
+            $each(strtoupper($tokens[0]), $tokens);
+        }
+        fclose($handle);
+    }
+
+    /**
+     * Field names for a record type: the recordtypes layout with at least as
+     * many fields as the rows usually have (the smallest such layout; the
+     * collection's own CMS id first), or null when the type is not known.
+     */
+    private function findLayout(string $recordType, int $count, Collection $collection): ?array
+    {
+        if (!CMSRecords::isCMSRecord($recordType)) {
+            return null;
+        }
+        $found = CMSRecords::findClosestCMSHeader($recordType, $count);
+        if (count($found) === 0) {
+            // every layout is shorter than the rows: take the largest (the scan adds
+            // generated names for the extra trailing fields)
+            $found = CMSRecords::getCMSHeader($recordType);
+            if (count($found) === 0) {
+                return null;
+            }
+            return unserialize($found[0]->fieldNames);
+        }
+        foreach ($found as $layout) {
+            if ($collection->cmsId !== null && (string) $layout->cmsId === (string) $collection->cmsId) {
+                return unserialize($layout->fieldNames);
+            }
+        }
+        return unserialize($found[0]->fieldNames);
+    }
+
+    /**
+     * Wait (up to two hours) until no ProcessChunkedFile job for these tables is
+     * left in the queue: other workers may still be running the last ones.
+     */
+    private function waitForInserts(array $tables): void
+    {
+        $deadline = time() + 7200;
+        while (time() < $deadline) {
+            $pending = false;
+            foreach ($tables as $table) {
+                if (DB::table('jobs')->where('payload', 'like', '%ProcessChunkedFile%')->where('payload', 'like', '%' . $table . '%')->exists()) {
+                    $pending = true;
+                    break;
+                }
+            }
+            if (!$pending) {
+                return;
+            }
+            sleep(5);
+        }
+        Log::warning('ImportFileInChunks: gave up waiting for insert jobs to finish; indexing anyway.');
+    }
+
+    /**
+     * Same follow-up as FileImport: ID indexes (for charts that combine
+     * tables), a new updated_at, and the stored chart results.
+     */
+    private function finishTable(string $table): void
+    {
+        try {
+            if (config('charts.index_on_import')) {
+                (new TableIndexHelper)->addMissing($table);
+            }
+            $row = Table::where('tblNme', $table)->first();
+            if ($row) {
+                $row->touch();
+                if (config('charts.summary_on_import')) {
+                    RefreshChartSummaries::dispatch($table)->onQueue('low')->delay(now()->addMinutes(2));
+                }
+            }
+        } catch (\Throwable $e) {
+            Log::warning("ImportFileInChunks: follow-up for {$table} failed: " . $e->getMessage());
+        }
     }
 }
 // ----------------------------------------------------------------
