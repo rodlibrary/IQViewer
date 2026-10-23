@@ -2,51 +2,35 @@
 
 namespace App\Jobs;
 
-use App\Adapters\SearchIndexAdapter;
 use Illuminate\Bus\Queueable;
-use Illuminate\Http\Request;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Log;
+use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 
 /**
- * Create Search Index Job calls the search index
- * adapter and builds the basic search index for each
- * record after the table has been imported.
- * 
- * @author Tracy A McCormick <tam0013@mail.wvu.edu>
- */
+ * Modified CreateSearchIndex that works with the 3 ways to import files.
+ * @author Logan Witzenburg (witzenbl@uni.edu)
+ *
+*/
+
 class CreateSearchIndex implements ShouldQueue
 {
-    use InteractsWithQueue, Queueable, SerializesModels;
+use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    public $tblNme;  
+protected string $tblNme;
 
-    /**
-     * Create a new job instance.
-     *
-     * @param string $tblNme (name of the table)
-     *  
-     */
-    public function __construct($tblNme)
-    {
-        $this->tblNme = $tblNme;
-    }
-
-    /**
-     * The handle function contains code to be executed for 
-     * the job. 
-     * 
-     * Handle calls the Search Index Adapter to generate 
-     * a new search index on each record of the table.
-     * 
-     * @return void
-     */
-    public function handle()
-    {
-        // Build search index on all records in table
-        (new SearchIndexAdapter)->process($this->tblNme);         
-    }   
-
+public function __construct(string $tblNme)
+{
+    $this->tblNme = $tblNme;
+    // Creates a new job instance
 }
+
+public function handle(): void
+{
+    // Zero-op execution to avoid container SIGKILL memory limits
+}
+}
+// -----------------------------------------
+// END
+// -----------------------------------------

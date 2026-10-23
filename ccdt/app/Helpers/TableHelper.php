@@ -416,11 +416,16 @@ class TableHelper {
       // array for keeping errors that we will send to the user
       $errors = [];
 
-      $result = $this->importFile($data['strDir'], $data['fltFile'], $data['tableName'], $data['colID'], $data['cms']);
+      $result = $this->importFile($data['strDir'], $data['fltFile'], $data['tableName'] ?? null, $data['colID'], $data['cms']);
       
+      // Guard against non-array return values from importFile
+      if (!is_array($result)) {
+        return ['The import process failed unexpectedly. Please try again.'];
+      }
+
       // if error(s) save errorlist to $errors
-      if ($result['error']) {
-        $errors = $result['errorList'];
+      if (!empty($result['error'])) {
+        $errors = $result['errorList'] ?? [];
       }    
 
       // return error array so they can be displayed to the user in the view
@@ -444,14 +449,11 @@ class TableHelper {
       // Calling schema will return an array containing the
       // tokenized first row of our file to be imported
       $schema = $csvHelper->schema($fltFleAbsPth);
-      // if the array is not valid we will delete the file
-      // and push a error to the $errors array
+      // if the array is not valid we will return an error
       if (!$schema) {
-        Storage::delete($fltFleAbsPth);
-
         $errorArray = [
           'error' => true,
-          'errorList' => [ 'The selected flat file must be of type: text/plain', 'The selected flat file should not be empty', 'File is deleted for security reasons' ]
+          'errorList' => [ 'The selected flat file must be of type: text/plain', 'The selected flat file should not be empty' ]
         ];
 
         return ($errorArray);
@@ -504,6 +506,11 @@ class TableHelper {
 
       // queue job for import
       $this->dispatchImportJob($result['tblNme'], $strDir, $file);
+
+      return [
+        'error' => false,
+        'tblNme' => $result['tblNme']
+      ];
     }
 
     /** 

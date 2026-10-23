@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
+        Commands\ImportLargeDataset::class,
         Commands\exportTable::class,
         Commands\importTable::class,
         Commands\dropTable::class,

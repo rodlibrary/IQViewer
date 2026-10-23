@@ -3,70 +3,46 @@
 namespace App\Jobs;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Http\Request;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-
+use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-
-use App\Jobs\OptimizeSearch;
-
-use Log;
+use Illuminate\Support\Facades\Log;
 
 /**
- * Optimize Search Index dispatches OptimizeSearch job(s)
- * each job updates at most 500 records at a time. Jobs may 
- * run concurrently depending on how many queue workers are
- * currently configured. Currently this is setup for the low 
- * queue.
- * 
- * @author Tracy A McCormick <tam0013@mail.wvu.edu>
+ * Updated OptimizeSearchIndex which dispatches OptimizeSearch jobs across a collection, and they show up in the low priority in the queues.
+ * Works with all 3 ways to import.
+ * @author Logan Witzenburg (witzenbl@uni.edu)
  */
+
 class OptimizeSearchIndex implements ShouldQueue
 {
-    use InteractsWithQueue, Queueable, SerializesModels;
+    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    private $tblNme;  
+    protected string $tblNme;
+    // Creates new job instance
 
-    /**
-     * Create a new job instance.
-     *
-     * @param string $tblNme (name of the table)
-     *  
-     */
-    public function __construct($tblNme)
+    public function __construct(string $tblNme)
     {
         $this->tblNme = $tblNme;
     }
 
-    /**
-     * The handle function contains code to be executed for 
-     * the job. 
-     * 
-     * handle first gets the record count of the table and dispatches OptimizeSearch jobs.
-     * lookups Completed are the number of jobs we have dispatched. Once no more records
-     * remain the job ends.
-     * 
-     * @return void
-     */
     public function handle()
     {
-        $recordCount = DB::table($this->tblNme)->count();
-        $recordsRemaining = true;
-        $lookupsCompleted = 0;
-        $chunkSize = 500;         
-
-        while($recordsRemaining){
-            dispatch(new OptimizeSearch($this->tblNme, $chunkSize*$lookupsCompleted, $chunkSize))->onQueue('low');              
-
-            if($recordCount < $chunkSize + ($chunkSize*$lookupsCompleted)){
-                $recordsRemaining = false;
-            }
-
-            $lookupsCompleted++;
-        }         
-    }    
-
+        $cleanTable = trim($this->tblNme, "`");
+        
+        // Fast index lookup for max ID (instant execution on 15M rows)
+        $maxIdRow = DB::selectOne("SELECT id FROM `{$cleanTable}` ORDER BY id DESC LIMIT 1");
+        $maxId = $maxIdRow ? (int) $maxIdRow->id : 0;
+        $chunkSize = 50000;
+        // -------------------------------------
+        for ($start = 0; $start <=$maxId; $start +=$chunkSize) {
+            dispatch(new OptimizeSearch($cleanTable, $start,$chunkSize))->onQueue('default');
+        }
+    }
 }
+// -----------------------------------------
+// END
+// ----------------------------------------
+

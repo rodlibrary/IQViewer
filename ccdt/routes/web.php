@@ -83,3 +83,6 @@ Route::prefix('admin/jobs')->name('jobs.')->group(function() {
     Route::get('forget/{id}', 'JobsController@forget')->name('forget');
     Route::get('flush', 'JobsController@flush')->name('flush');
 });
+
+// Alias for search route expected by search.blade.php
+Route::post('data/{curTable}', [App\Http\Controllers\DataViewController::class, 'search'])->name('dataSearch');
