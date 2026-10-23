@@ -33,8 +33,8 @@ an office adds at the end of a record). Presidio does not detect street addresse
 
 ## Workflow (SLURM cluster)
 
-The `.script` files are written for a cluster: they use `/data/hartwigd/pii` as the working folder and
-`/data/hartwigd/pve` as the Python virtual environment. **Change those paths (`INPUT_DIR`, `OUTPUT_DIR`, `VENV` and
+The `.script` files are written for a cluster: they use `/data/$USER/pii` as the working folder and
+`/data/$USER/pve` as the Python virtual environment. **Change those paths (`INPUT_DIR`, `OUTPUT_DIR`, `VENV` and
 the `#SBATCH --output/--error` lines) for your own account before use.** Put all the files in one folder on the
 cluster and run `sbatch` from it.
 
@@ -42,7 +42,7 @@ cluster and run `sbatch` from it.
    outside the working folder and convert it:
    ```
    python convert_to_scdif.py --inspect original.txt        # masked; safe to share
-   python convert_to_scdif.py original.txt --output_dir /data/hartwigd/pii
+   python convert_to_scdif.py original.txt --output_dir /data/$USER/pii
    ```
    Read the report in `pii_conversion_reports`. Rejected records (`*_rejected.txt`) are not converted or
    anonymized and contain PII.
