@@ -1,0 +1,1808 @@
+8A	PERS	OUTREACH DATABASE	Contacts from the Outreach Database		
+8A	PERS	NEWSLETTER	NEWSLETTER		
+8A	PERS	BOY SCOUT - STUDENT	Boy Scout - Student		
+8A	PERS	VIP	Very Important Person		
+8A	PERS	DECEASED	Deceased		
+8A	PERS	NO.MAIL	Do Not Mail		
+8A	PERS	EO	Elected Official	Y	
+8A	PERS	NO.MERGE	Do Not Merge	Y	
+8A	PERS	FW	Frequent Writer		
+8A	PERS	EMAIL.OPTIN	Email Optin to Newsletter Subscription		
+8A	PERS	EMAIL.OPTOUT	Unsubscribe to Email Newsletter		
+8A	PERS	MOC.ALL	Member of Congress		
+8A	PERS	ARCHIVE - OUTREACH	Archived Outreach Database Record		
+8A	PERS	LIST.001	Mailing list 1		
+8A	PERS	LIST.002	Mailing list 2		
+8A	PERS	LIST.003	Mailing list 3		
+8A	PERS	LIST.004	Mailing list 4		
+8A	PERS	LIST.005	Mailing list 5		
+8A	PERS	LIST.006	Mailing list 6		
+8A	PERS	LIST.007	Mailing list 7		
+8A	PERS	LIST.008	Mailing list 8		
+8A	PERS	LIST.009	Mailing list 9		
+8A	PERS	LIST.010	Mailing list 10		
+8A	PERS	LIST.011	Mailing list 11		
+8A	PERS	LIST.012	Mailing list 12		
+8A	PERS	LIST.013	Mailing list 13		
+8A	PERS	LIST.014	Mailing list 14		
+8A	PERS	LIST.015	Mailing list 15		
+8A	PERS	LIST.016	Mailing list 16		
+8A	PERS	LIST.017	Mailing list 17		
+8A	PERS	LIST.018	Mailing list 18		
+8A	PERS	LIST.019	Mailing list 19		
+8A	PERS	LIST.020	Mailing list 20		
+
+8A	PERS	LIST.021	Mailing list 21		
+8A	PERS	LIST.022	Mailing list 22		
+8A	PERS	LIST.023	Mailing list 23		
+8A	PERS	LIST.024	Mailing list 24		
+8A	PERS	LIST.025	Mailing list 25		
+8A	PERS	LIST.026	Mailing list 26		
+8A	PERS	LIST.027	Mailing list 27		
+8A	PERS	LIST.028	Mailing list 28		
+8A	PERS	LIST.029	Mailing list 29		
+8A	PERS	LIST.030	Mailing list 30		
+8A	PERS	LIST.031	Mailing list 31		
+8A	PERS	LIST.032	Mailing list 32		
+8A	PERS	LIST.033	Mailing list 33		
+8A	PERS	LIST.034	Mailing list 34		
+8A	PERS	LIST.035	Mailing list 35		
+8A	PERS	LIST.036	Mailing list 36		
+8A	PERS	LIST.037	Mailing list 37		
+8A	PERS	LIST.038	Mailing list 38		
+8A	PERS	LIST.039	Mailing list 39		
+8A	PERS	LIST.040	Mailing list 40		
+8A	PERS	LIST.041	Mailing list 41		
+8A	PERS	LIST.042	Mailing list 42	Y	
+8A	PERS	LIST.043	Mailing list 43		
+8A	PERS	LIST.044	Mailing list 44		
+8A	PERS	LIST.045	Mailing list 45		
+8A	PERS	LIST.046	Mailing list 46		
+8A	PERS	LIST.047	Mailing list 47		
+8A	PERS	LIST.048	Mailing list 48		
+8A	PERS	LIST.049	Mailing list 49		
+8A	PERS	LIST.050	Mailing list 50		
+8A	PERS	LIST.051	Mailing list 51		
+8A	PERS	LIST.052	Mailing list 52		
+8A	PERS	LIST.053	Mailing list 53	Y	
+8A	PERS	LIST.054	Mailing list 54		
+8A	PERS	LIST.055	Mailing list 55		
+8A	PERS	LIST.056	Mailing list 56		
+8A	PERS	LIST.057	Mailing list 57	Y	
+8A	PERS	LIST.058	Mailing list 58		
+8A	PERS	LIST.059	Mailing list 59		
+8A	PERS	LIST.060	Mailing list 60	Y	
+8A	PERS	LIST.061	Mailing list 61		
+8A	PERS	LIST.062	Mailing list 62		
+8A	PERS	LIST.063	Mailing list 63		
+8A	PERS	LIST.064	Mailing list 64		
+8A	PERS	LIST.065	Mailing list 65		
+8A	PERS	LIST.066	Mailing list 66		
+8A	PERS	LIST.067	Mailing list 67		
+8A	PERS	LIST.068	Mailing list 68		
+8A	PERS	LIST.069	Mailing list 69	Y	
+8A	PERS	LIST.070	Mailing list 70		
+8A	PERS	LIST.071	Mailing list 71		
+8A	PERS	LIST.072	Mailing list 72		
+8A	PERS	LIST.073	Mailing list 73		
+8A	PERS	LIST.074	Mailing list 74		
+8A	PERS	LIST.075	Mailing list 75		
+8A	PERS	LIST.076	Mailing list 76		
+8A	PERS	LIST.077	Mailing list 77		
+8A	PERS	LIST.078	Mailing list 78	Y	
+8A	PERS	LIST.079	Mailing list 79		
+8A	PERS	LIST.080	Mailing list 80		
+8A	PERS	LIST.081	Mailing list 81	Y	
+8A	PERS	LIST.082	Mailing list 82		
+8A	PERS	LIST.083	Mailing list 83
+8A	PERS	LIST.084	Mailing list 84		
+8A	PERS	LIST.085	Mailing list 85	Y	
+8A	PERS	LIST.086	Mailing list 86		
+8A	PERS	LIST.087	Mailing list 87		
+8A	PERS	LIST.088	Mailing list 88		
+8A	PERS	LIST.089	Mailing list 89	Y	
+8A	PERS	LIST.090	Mailing list 90		
+8A	PERS	LIST.091	Mailing list 91		
+8A	PERS	LIST.092	Mailing list 92		
+8A	PERS	LIST.093	Mailing list 93		
+8A	PERS	LIST.094	Mailing list 94		
+8A	PERS	LIST.095	Mailing list 95		
+8A	PERS	LIST.096	Mailing list 96	Y	
+8A	PERS	LIST.097	Mailing list 97		
+8A	PERS	LIST.098	Mailing list 98		
+8A	PERS	LIST.099	Mailing list 99		
+8A	PERS	LIST.100	Mailing list 100		
+8A	PERS	LIST.101	Mailing list 101		
+8A	PERS	LIST.102	Mailing list 102		
+8A	PERS	LIST.103	Mailing list 103		
+8A	PERS	LIST.104	Mailing list 104		
+8A	PERS	LIST.105	Mailing list 105		
+8A	PERS	LIST.106	Mailing list 106		
+8A	PERS	LIST.107	Mailing list 107		
+8A	PERS	LIST.108	Mailing list 108	Y	
+8A	PERS	LIST.109	Mailing list 109		
+8A	PERS	LIST.110	Mailing list 110		
+8A	PERS	LIST.111	Mailing list 111		
+8A	PERS	LIST.112	Mailing list 112		
+8A	PERS	LIST.113	Mailing list 113	Y	
+8A	PERS	LIST.114	Mailing list 114		
+8A	PERS	LIST.115	Mailing list 115		
+8A	PERS	LIST.116	Mailing list 116		
+8A	PERS	LIST.117	Mailing list 117		
+8A	PERS	LIST.118	Mailing list 118	Y	
+8A	PERS	LIST.119	Mailing list 119		
+8A	PERS	LIST.120	Mailing list 120	Y	
+8A	PERS	LIST.121	Mailing list 121		
+8A	PERS	LIST.122	Mailing list 122		
+8A	PERS	LIST.123	Mailing list 123		
+8A	PERS	LIST.124	Mailing list 124		
+8A	PERS	LIST.125	Mailing list 125		
+8A	PERS	LIST.126	Mailing list 126		
+8A	PERS	LIST.127	Mailing list 127	Y	
+8A	PERS	LIST.128	Mailing list 128		
+8A	PERS	LIST.129	Mailing list 129	Y	
+8A	PERS	LIST.130	Mailing list 130	Y	
+8A	PERS	LIST.131	Mailing list 131		
+8A	PERS	LIST.132	Mailing list 132		
+8A	PERS	LIST.133	Mailing list 133		
+8A	PERS	LIST.134	Mailing list 134		
+8A	PERS	LIST.135	Mailing list 135	Y	
+8A	PERS	LIST.136	Mailing list 136		
+8A	PERS	LIST.137	Mailing list 137		
+8A	PERS	LIST.138	Mailing list 138		
+8A	PERS	LIST.139	Mailing list 139		
+8A	PERS	LIST.140	Mailing list 140		
+8A	PERS	LIST.141	Mailing list 141		
+8A	PERS	LIST.142	Mailing list 142		
+8A	PERS	LIST.143	Mailing list 143		
+8A	PERS	LIST.144	Mailing list 144		
+8A	PERS	LIST.145	Mailing list 145		
+8A	PERS	LIST.146	Mailing list 146		
+8A	PERS	LIST.147	Mailing list 147		
+8A	PERS	LIST.148	Mailing list 148		
+8A	PERS	LIST.149	Mailing list 149	Y	
+8A	PERS	LIST.150	Mailing list 150		
+8A	PERS	LIST.151	Mailing list 151	Y	
+8A	PERS	LIST.152	Mailing list 152	Y	
+8A	PERS	LIST.153	Mailing list 153		
+8A	PERS	LIST.154	Mailing list 154		
+8A	PERS	LIST.155	Mailing list 155		
+8A	PERS	LIST.156	Mailing list 156		
+8A	PERS	LIST.157	Mailing list 157		
+8A	PERS	LIST.158	Mailing list 158		
+8A	PERS	LIST.159	Mailing list 159		
+8A	PERS	LIST.160	Mailing list 160		
+8A	PERS	LIST.161	Mailing list 161		
+8A	PERS	LIST.162	Mailing list 162	Y	
+8A	PERS	LIST.163	Mailing list 163		
+8A	PERS	LIST.164	Mailing list 164		
+8A	PERS	LIST.165	Mailing list 165		
+8A	PERS	LIST.166	Mailing list 166		
+8A	PERS	LIST.167	Mailing list 167		
+8A	PERS	LIST.168	Mailing list 168	Y	
+8A	PERS	LIST.169	Mailing list 169		
+8A	PERS	LIST.170	Mailing list 170		
+8A	PERS	LIST.171	Mailing list 171		
+8A	PERS	LIST.172	Mailing list 172	Y	
+8A	PERS	LIST.173	Mailing list 173	Y	
+8A	PERS	LIST.174	Mailing list 174		
+8A	PERS	LIST.175	Mailing list 175		
+8A	PERS	LIST.176	Mailing list 176		
+8A	PERS	LIST.177	Mailing list 177		
+8A	PERS	LIST.178	Mailing list 178		
+8A	PERS	LIST.179	Mailing list 179		
+8A	PERS	LIST.180	Mailing list 180		
+8A	PERS	LIST.181	Mailing list 181		
+8A	PERS	LIST.182	Mailing list 182		
+8A	PERS	LIST.183	Mailing list 183	Y	
+8A	PERS	LIST.184	Mailing list 184		
+8A	PERS	LIST.185	Mailing list 185		
+8A	PERS	LIST.186	Mailing list 186		
+8A	PERS	LIST.187	Mailing list 187		
+8A	PERS	LIST.188	Mailing list 188		
+8A	PERS	LIST.189	Mailing list 189	Y	
+8A	PERS	LIST.190	Mailing list 190		
+8A	PERS	LIST.191	Mailing list 191		
+8A	PERS	LIST.192	Mailing list 192		
+8A	PERS	LIST.193	Mailing list 193		
+8A	PERS	LIST.194	Mailing list 194		
+8A	PERS	LIST.195	Mailing list 195		
+8A	PERS	LIST.196	Mailing list 196		
+8A	PERS	LIST.197	Mailing list 197	Y	
+8A	PERS	LIST.198	Mailing list 198		
+8A	PERS	LIST.199	Mailing list 199		
+8A	PERS	LIST.200	Mailing list 200		
+8A	PERS	LIST.201	Mailing list 201		
+8A	PERS	LIST.202	Mailing list 202	Y	
+8A	PERS	LIST.203	Mailing list 203		
+8A	PERS	LIST.204	Mailing list 204	Y	
+8A	PERS	LIST.205	Mailing list 205		
+8A	PERS	LIST.206	Mailing list 206		
+8A	PERS	LIST.207	Mailing list 207		
+8A	PERS	LIST.208	Mailing list 208		
+8A	PERS	LIST.209	Mailing list 209		
+8A	PERS	LIST.210	Mailing list 210		
+8A	PERS	LIST.211	Mailing list 211		
+8A	PERS	LIST.212	Mailing list 212		
+8A	PERS	LIST.213	Mailing list 213		
+8A	PERS	LIST.214	Mailing list 214	Y	
+8A	PERS	LIST.215	Mailing list 215		
+8A	PERS	LIST.216	Mailing list 216		
+8A	PERS	LIST.217	Mailing list 217		
+8A	PERS	LIST.218	Mailing list 218	Y	
+8A	PERS	LIST.219	Mailing list 219		
+8A	PERS	LIST.220	Mailing list 220		
+8A	PERS	LIST.221	Mailing list 221		
+8A	PERS	LIST.222	Mailing list 222		
+8A	PERS	LIST.223	Mailing list 223		
+8A	PERS	LIST.224	Mailing list 224		
+8A	PERS	LIST.225	Mailing list 225		
+8A	PERS	LIST.226	Mailing list 226		
+8A	PERS	LIST.227	Mailing list 227	Y	
+8A	PERS	LIST.228	Mailing list 228		
+8A	PERS	LIST.229	Mailing list 229		
+8A	PERS	LIST.230	Mailing list 230		
+8A	PERS	LIST.231	Mailing list 231		
+8A	PERS	LIST.232	Mailing list 232		
+8A	PERS	LIST.233	Mailing list 233	Y	
+8A	PERS	LIST.234	Mailing list 234		
+8A	PERS	LIST.235	Mailing list 235		
+8A	PERS	LIST.236	Mailing list 236		
+8A	PERS	LIST.237	Mailing list 237		
+8A	PERS	LIST.238	Mailing list 238		
+8A	PERS	LIST.239	Mailing list 239		
+8A	COM	FIN_BANK	concern about financial services and banking		
+8A	COM	FIN_TAX	support tax policy		
+8A	COM	FIN_CREDIT	information on consumer credit		
+8A	COM	FIN_SEC	information on securities regulation		287
+8A	COM	HEA_ACA	oppose the Affordable Care Act		395
+8A	COM	HEA_MEDICARE	concern about Medicare reimbursement		384
+8A	COM	HEA_VA	support veterans health care	Y	
+8A	COM	HEA_SC	concern about health see comments		139
+8A	COM	HEA_DRUG	support prescription drug costs	Y	353
+8A	COM	EDU_K12	information on K-12 education funding		
+8A	COM	EDU_LOAN	information on student loan relief	Y	
+8A	COM	EDU_HE	information on higher education		
+8A	COM	ENV_EPA	question about EPA rulemaking	Y	
+8A	COM	ENV_WATER	question about clean water		212
+8A	COM	ENV_ENERGY	information on energy policy		360
+8A	COM	AGR_FARM	oppose the farm bill		
+8A	COM	AGR_TRADE	oppose agricultural trade	Y	
+8A	COM	DEF_BUDGET	support defense appropriations	Y	
+8A	COM	DEF_VET	question about veterans benefits	Y	
+8A	COM	TRN_HWY	concern about highway funding		288
+8A	COM	TRN_AIR	question about air travel		
+8A	COM	JUD_NOM	concern about judicial nominations		
+8A	COM	JUD_GUN	question about firearms legislation		
+8A	COM	IMM_REFORM	support immigration reform	Y	
+8A	COM	IMM_VISA	support visa processing		
+8A	COM	TEL_NET	question about net neutrality	Y	
+8A	COM	TEL_PRIV	concern about data privacy		
+8A	COM	HOU_GSE	concern about GSE reform		
+8A	COM	HOU_FHA	oppose FHA lending		
+8A	COM	LAB_MINWAGE	question about the minimum wage		
+8A	COM	LAB_UNION	question about labor law		
+8A	COM	HOU_FHA-S1280	information on FHA lending (S.1280)		
+8A	COM	ENV_WATER-S1953	question about clean water (S.1953)	Y	165
+8A	COM	DEF_BUDGET-S3228	information on defense appropriations (S.3228)		
+8A	COM	DEF_VET-S3483	question about veterans benefits (S.3483)		
+8A	COM	IMM_REFORM-S429	oppose immigration reform (S.429)		
+8A	COM	HOU_FHA-S749	concern about FHA lending (S.749)	Y	
+8A	COM	HOU_GSE-S1449	concern about GSE reform (S.1449)		
+8A	COM	TRN_AIR-S1240	support air travel (S.1240)		111
+8A	COM	TEL_NET-S1448	oppose net neutrality (S.1448)		
+8A	COM	TRN_AIR-S1384	concern about air travel (S.1384)		178
+8A	COM	TEL_PRIV-S1594	question about data privacy (S.1594)	Y	
+8A	COM	FIN_BANK-S2882	support financial services and banking (S.2882)		399
+8A	COM	HEA_MEDICARE-S3039	concern about Medicare reimbursement (S.3039)		
+8A	COM	ENV_EPA-S550	support EPA rulemaking (S.550)	Y	199
+8A	COM	ENV_EPA-S3116	question about EPA rulemaking (S.3116)		183
+8A	COM	DEF_VET-S3139	concern about veterans benefits (S.3139)		
+8A	COM	LAB_MINWAGE-S1771	concern about the minimum wage (S.1771)		
+8A	COM	HOU_FHA-S2585	question about FHA lending (S.2585)	Y	
+8A	COM	ENV_ENERGY-S1013	question about energy policy (S.1013)		
+8A	COM	FIN_BANK-S872	support financial services and banking (S.872)		357
+8A	COM	EDU_HE-S3276	question about higher education (S.3276)		362
+8A	COM	IMM_VISA-S1587	information on visa processing (S.1587)	Y	
+8A	COM	LAB_UNION-S2203	support labor law (S.2203)		
+8A	COM	TEL_NET-S2857	support net neutrality (S.2857)		379
+8A	COM	ENV_ENERGY-S465	oppose energy policy (S.465)		
+8A	COM	HEA_MEDICARE-S3206	support Medicare reimbursement (S.3206)		
+8A	COM	TRN_AIR-S2078	oppose air travel (S.2078)	Y	184
+8A	COM	HEA_SC-S3494	oppose health see comments (S.3494)		
+8A	COM	HOU_FHA-S1753	oppose FHA lending (S.1753)	Y	
+8A	COM	EDU_K12-S3266	concern about K-12 education funding (S.3266)		
+8A	COM	ENV_ENERGY-S1348	oppose energy policy (S.1348)		
+8A	COM	DEF_BUDGET-S113	oppose defense appropriations (S.113)	Y	
+8A	COM	TEL_PRIV-S1484	oppose data privacy (S.1484)		
+8A	COM	TRN_AIR-S2976	question about air travel (S.2976)		
+8A	COM	TRN_AIR-S3322	support air travel (S.3322)		
+8A	COM	FIN_BANK-S3458	concern about financial services and banking (S.3458)	Y	
+8A	COM	TRN_HWY-S1862	information on highway funding (S.1862)		
+8A	COM	ENV_ENERGY-S780	information on energy policy (S.780)	Y	142
+8A	COM	TRN_HWY-S206	concern about highway funding (S.206)		331
+8A	COM	TRN_AIR-S1156	question about air travel (S.1156)		
+8A	COM	DEF_VET-S2558	information on veterans benefits (S.2558)		
+8A	COM	LAB_MINWAGE-S679	oppose the minimum wage (S.679)		
+8A	COM	JUD_GUN-S3180	information on firearms legislation (S.3180)	Y	
+8A	COM	EDU_K12-S3443	information on K-12 education funding (S.3443)		160
+8A	COM	EDU_K12-S1039	support K-12 education funding (S.1039)		
+8A	COM	IMM_REFORM-S1496	oppose immigration reform (S.1496)		395
+8A	COM	HOU_GSE-S1216	oppose GSE reform (S.1216)		
+8A	COM	HEA_ACA-S3013	concern about the Affordable Care Act (S.3013)		
+8A	COM	FIN_BANK-S337	information on financial services and banking (S.337)	Y	
+8A	COM	AGR_TRADE-S3496	support agricultural trade (S.3496)		
+8A	COM	JUD_GUN-S368	question about firearms legislation (S.368)		195
+8A	COM	TEL_NET-S685	information on net neutrality (S.685)		368
+8A	COM	JUD_GUN-S1473	information on firearms legislation (S.1473)		177
+8A	COM	TRN_AIR-S1000	support air travel (S.1000)		172
+8A	COM	EDU_HE-S1522	support higher education (S.1522)	Y	352
+8A	COM	IMM_VISA-S2454	support visa processing (S.2454)		
+8A	COM	AGR_TRADE-S2353	support agricultural trade (S.2353)		
+8A	COM	AGR_FARM-S1395	support the farm bill (S.1395)		
+8A	COM	IMM_VISA-S2479	support visa processing (S.2479)		310
+8A	COM	HOU_FHA-S1945	support FHA lending (S.1945)		
+8A	COM	ENV_WATER-S3354	support clean water (S.3354)		
+8A	COM	TEL_PRIV-S373	oppose data privacy (S.373)	Y	119
+8A	COM	LAB_UNION-S1761	question about labor law (S.1761)		
+8A	COM	TRN_HWY-S1557	question about highway funding (S.1557)		234
+8A	COM	EDU_K12-S1755	oppose K-12 education funding (S.1755)		
+8A	COM	EDU_K12-S1575	oppose K-12 education funding (S.1575)		200
+8A	COM	TRN_HWY-S1193	concern about highway funding (S.1193)	Y	
+8A	COM	TRN_HWY-S2463	support highway funding (S.2463)	Y	203
+8A	COM	FIN_CREDIT-S2916	question about consumer credit (S.2916)		
+8A	COM	LAB_UNION-S3384	support labor law (S.3384)		137
+8A	COM	IMM_REFORM-S1061	concern about immigration reform (S.1061)		
+8A	COM	EDU_LOAN-S462	oppose student loan relief (S.462)	Y	
+8A	COM	IMM_VISA-S912	oppose visa processing (S.912)		
+8A	COM	DEF_BUDGET-S703	information on defense appropriations (S.703)		
+8A	COM	FIN_CREDIT-S1206	question about consumer credit (S.1206)		357
+8A	COM	FIN_SEC-S2630	information on securities regulation (S.2630)		325
+8A	COM	ENV_ENERGY-S677	concern about energy policy (S.677)		
+8A	COM	EDU_HE-S1967	support higher education (S.1967)		
+8A	COM	EDU_HE-S2659	support higher education (S.2659)	Y	
+8A	COM	TRN_HWY-S2788	support highway funding (S.2788)		
+8A	COM	FIN_BANK-S2241	information on financial services and banking (S.2241)		
+8A	COM	TEL_PRIV-S2774	question about data privacy (S.2774)		
+8A	COM	JUD_NOM-S1715	support judicial nominations (S.1715)		
+8A	COM	IMM_REFORM-S1109	information on immigration reform (S.1109)		
+8A	COM	HOU_FHA-S3340	question about FHA lending (S.3340)		
+8A	COM	EDU_K12-S2208	concern about K-12 education funding (S.2208)	Y	325
+8A	COM	HOU_GSE-S3284	question about GSE reform (S.3284)		
+8A	COM	EDU_HE-S2747	concern about higher education (S.2747)		
+8A	COM	AGR_TRADE-S1231	oppose agricultural trade (S.1231)		111
+8A	COM	FIN_TAX-S851	oppose tax policy (S.851)		
+8A	COM	HOU_FHA-S2956	support FHA lending (S.2956)		
+8A	COM	JUD_GUN-S3158	support firearms legislation (S.3158)		
+8A	COM	EDU_LOAN-S3207	concern about student loan relief (S.3207)		
+8A	COM	JUD_NOM-S1240	oppose judicial nominations (S.1240)		177
+8A	COM	IMM_VISA-S1153	question about visa processing (S.1153)		
+8A	COM	HEA_ACA-S1665	support the Affordable Care Act (S.1665)	Y	307
+8A	COM	FIN_BANK-S2528	concern about financial services and banking (S.2528)	Y	
+8A	COM	DEF_BUDGET-S1771	support defense appropriations (S.1771)		
+8A	COM	ENV_EPA-S865	information on EPA rulemaking (S.865)		
+8A	COM	HEA_VA-S2882	question about veterans health care (S.2882)	Y	
+8A	COM	DEF_VET-S146	oppose veterans benefits (S.146)	Y	
+8A	COM	TEL_NET-S1258	question about net neutrality (S.1258)		
+8A	COM	AGR_FARM-S2370	support the farm bill (S.2370)		
+8A	COM	IMM_VISA-S661	oppose visa processing (S.661)		
+8A	COM	AGR_FARM-S1529	concern about the farm bill (S.1529)	Y	
+8A	COM	HOU_GSE-S1915	information on GSE reform (S.1915)		214
+8A	COM	TEL_NET-S1328	oppose net neutrality (S.1328)		380
+8A	COM	TRN_HWY-S1530	question about highway funding (S.1530)		
+8A	COM	ENV_EPA-S3409	information on EPA rulemaking (S.3409)		258
+8A	COM	AGR_FARM-S1484	concern about the farm bill (S.1484)		
+8A	COM	HEA_ACA-S1693	information on the Affordable Care Act (S.1693)	Y	
+8A	COM	TRN_AIR-S213	question about air travel (S.213)	Y	268
+8A	COM	AGR_TRADE-S1254	oppose agricultural trade (S.1254)		
+8A	COM	JUD_GUN-S2820	concern about firearms legislation (S.2820)	Y	
+8A	COM	EDU_HE-S1237	support higher education (S.1237)		
+8A	COM	AGR_TRADE-S2673	question about agricultural trade (S.2673)		
+8A	COM	FIN_BANK-S1849	concern about financial services and banking (S.1849)
+8A	COM	HEA_ACA-S1695	concern about the Affordable Care Act (S.1695)		
+8A	COM	HEA_MEDICARE-S3397	oppose Medicare reimbursement (S.3397)		
+8A	COM	TRN_HWY-S2428	question about highway funding (S.2428)		159
+8A	COM	DEF_VET-S246	information on veterans benefits (S.246)	Y	
+8A	COM	HOU_GSE-S1765	support GSE reform (S.1765)	Y	
+8A	COM	EDU_HE-S1724	question about higher education (S.1724)	Y	
+8A	COM	DEF_BUDGET-S2459	information on defense appropriations (S.2459)		
+8A	COM	HOU_GSE-S2913	information on GSE reform (S.2913)		351
+8A	COM	IMM_REFORM-S905	support immigration reform (S.905)		
+8A	COM	HEA_SC-S244	concern about health see comments (S.244)		
+8A	COM	EDU_LOAN-S440	question about student loan relief (S.440)		
+8A	COM	FIN_SEC-S926	support securities regulation (S.926)		
+8A	COM	DEF_VET-S1530	information on veterans benefits (S.1530)		
+8A	COM	FIN_CREDIT-S3358	support consumer credit (S.3358)		
+8A	COM	ENV_EPA-S2351	concern about EPA rulemaking (S.2351)		
+8A	COM	HOU_GSE-S3435	concern about GSE reform (S.3435)		
+8A	COM	JUD_GUN-S1478	support firearms legislation (S.1478)		
+8A	COM	JUD_GUN-S625	question about firearms legislation (S.625)		
+8A	COM	ENV_ENERGY-S1693	support energy policy (S.1693)		287
+8A	COM	FIN_SEC-S243	support securities regulation (S.243)		
+8A	COM	TEL_NET-S1362	oppose net neutrality (S.1362)		142
+8A	COM	AGR_TRADE-S2128	support agricultural trade (S.2128)		239
+8A	COM	HOU_GSE-S2979	support GSE reform (S.2979)		
+8A	COM	ENV_EPA-S3187	support EPA rulemaking (S.3187)		335
+8A	COM	ENV_ENERGY-S2265	oppose energy policy (S.2265)		
+8A	COM	AGR_TRADE-S1094	question about agricultural trade (S.1094)	Y	
+8A	COM	EDU_LOAN-S2087	question about student loan relief (S.2087)		284
+8A	COM	ENV_WATER-S1848	information on clean water (S.1848)		
+8A	COM	IMM_REFORM-S691	oppose immigration reform (S.691)		
+8A	COM	HEA_ACA-S1531	information on the Affordable Care Act (S.1531)		180
+8A	COM	EDU_LOAN-S394	oppose student loan relief (S.394)		346
+8A	COM	AGR_TRADE-S2402	support agricultural trade (S.2402)		303
+8A	COM	TRN_AIR-S2272	oppose air travel (S.2272)		
+8A	COM	ENV_WATER-S2640	information on clean water (S.2640)		170
+8A	COM	HOU_FHA-S2794	information on FHA lending (S.2794)		
+8A	COM	ENV_ENERGY-S236	oppose energy policy (S.236)		179
+8A	COM	DEF_BUDGET-S1342	question about defense appropriations (S.1342)		
+8A	COM	HOU_FHA-S255	question about FHA lending (S.255)		376
+8A	COM	HEA_DRUG-S690	support prescription drug costs (S.690)		185
+8A	COM	HEA_ACA-S2661	information on the Affordable Care Act (S.2661)		149
+8A	COM	FIN_CREDIT-S2750	concern about consumer credit (S.2750)		219
+8A	COM	EDU_LOAN-S917	support student loan relief (S.917)		389
+8A	COM	JUD_GUN-S1302	concern about firearms legislation (S.1302)		
+8A	COM	IMM_VISA-S273	support visa processing (S.273)		
+8A	COM	JUD_GUN-S681	concern about firearms legislation (S.681)		201
+8A	COM	DEF_BUDGET-S603	concern about defense appropriations (S.603)		288
+8A	COM	DEF_VET-S1011	oppose veterans benefits (S.1011)	Y	
+8A	COM	ENV_ENERGY-S2256	question about energy policy (S.2256)		249
+8A	COM	HEA_VA-S2848	oppose veterans health care (S.2848)		
+8A	COM	FIN_BANK-S2964	question about financial services and banking (S.2964)		
+8A	COM	IMM_REFORM-S1702	concern about immigration reform (S.1702)		241
+8A	COM	TRN_AIR-S781	concern about air travel (S.781)		299
+8A	COM	HEA_MEDICARE-S1449	question about Medicare reimbursement (S.1449)	Y	
+8A	COM	HOU_GSE-S588	concern about GSE reform (S.588)	Y	210
+8A	COM	TRN_HWY-S192	oppose highway funding (S.192)		141
+8A	COM	IMM_VISA-S403	oppose visa processing (S.403)		219
+8A	COM	HOU_FHA-S2902	concern about FHA lending (S.2902)		256
+8A	COM	LAB_MINWAGE-S705	support the minimum wage (S.705)		300
+8A	COM	FIN_BANK-S776	information on financial services and banking (S.776)		344
+8A	COM	DEF_BUDGET-S3117	concern about defense appropriations (S.3117)		
+8A	COM	LAB_UNION-S3109	oppose labor law (S.3109)		
+8A	COM	JUD_NOM-S2092	concern about judicial nominations (S.2092)		
+8A	COM	ENV_ENERGY-S2504	concern about energy policy (S.2504)		
+8A	COM	HEA_ACA-S2259	oppose the Affordable Care Act (S.2259)		
+8A	COM	EDU_LOAN-S1951	oppose student loan relief (S.1951)		224
+8A	COM	LAB_MINWAGE-S1610	oppose the minimum wage (S.1610)		
+8A	COM	LAB_MINWAGE-S2385	oppose the minimum wage (S.2385)	Y	378
+8A	COM	HEA_MEDICARE-S266	information on Medicare reimbursement (S.266)		273
+8A	COM	JUD_GUN-S3181	information on firearms legislation (S.3181)		
+8A	COM	HEA_DRUG-S3442	information on prescription drug costs (S.3442)		164
+8A	COM	HEA_DRUG-S1910	support prescription drug costs (S.1910)		
+8A	COM	AGR_TRADE-S123	concern about agricultural trade (S.123)	Y	
+8A	COM	HOU_GSE-S3018	concern about GSE reform (S.3018)		
+8A	COM	DEF_BUDGET-S3179	oppose defense appropriations (S.3179)		
+8A	COM	AGR_TRADE-S757	concern about agricultural trade (S.757)		
+8A	COM	HEA_VA-S314	concern about veterans health care (S.314)		
+8A	COM	HOU_FHA-S739	oppose FHA lending (S.739)		
+8A	COM	ENV_ENERGY-S3403	concern about energy policy (S.3403)	Y	
+8A	COM	EDU_LOAN-S3073	concern about student loan relief (S.3073)		
+8A	COM	TRN_HWY-S659	information on highway funding (S.659)		
+8A	COM	AGR_FARM-S2973	information on the farm bill (S.2973)		
+8A	COM	LAB_MINWAGE-S2376	question about the minimum wage (S.2376)		
+8A	COM	TRN_HWY-S3415	concern about highway funding (S.3415)		171
+8A	COM	TRN_HWY-S1643	oppose highway funding (S.1643)	Y	
+8A	COM	JUD_GUN-S3064	information on firearms legislation (S.3064)		
+8A	COM	ENV_EPA-S223	concern about EPA rulemaking (S.223)		
+8A	COM	HOU_GSE-S347	support GSE reform (S.347)		
+8A	COM	EDU_LOAN-S3149	support student loan relief (S.3149)		
+8A	COM	HOU_FHA-S1252	concern about FHA lending (S.1252)		
+8A	COM	HEA_VA-S1039	question about veterans health care (S.1039)		
+8A	COM	IMM_VISA-S2078	question about visa processing (S.2078)		128
+8A	COM	TRN_HWY-S1197	question about highway funding (S.1197)	Y	
+8A	COM	EDU_LOAN-S1480	information on student loan relief (S.1480)		
+8A	COM	IMM_VISA-S2106	concern about visa processing (S.2106)		
+8A	COM	ENV_ENERGY-S2150	information on energy policy (S.2150)		
+8A	COM	ENV_ENERGY-S272	concern about energy policy (S.272)		
+8A	COM	LAB_UNION-S2017	support labor law (S.2017)		
+8A	COM	TEL_PRIV-S3035	support data privacy (S.3035)		
+8A	COM	ENV_WATER-S724	question about clean water (S.724)	Y	
+8A	COM	JUD_NOM-S759	support judicial nominations (S.759)	Y	
+8A	COM	TRN_HWY-S1534	question about highway funding (S.1534)		
+8A	COM	AGR_TRADE-S231	oppose agricultural trade (S.231)		366
+8A	COM	JUD_GUN-S295	information on firearms legislation (S.295)		
+8A	COM	TEL_PRIV-S1910	concern about data privacy (S.1910)		190
+8A	COM	FIN_TAX-S1392	question about tax policy (S.1392)	Y	335
+8A	COM	TEL_NET-S3054	information on net neutrality (S.3054)		202
+8A	COM	FIN_CREDIT-S482	oppose consumer credit (S.482)		
+8A	COM	HEA_ACA-S2774	concern about the Affordable Care Act (S.2774)		
+8A	COM	ENV_WATER-S2856	concern about clean water (S.2856)	Y	
+8A	COM	JUD_GUN-S1413	information on firearms legislation (S.1413)		
+8A	COM	EDU_K12-S2462	support K-12 education funding (S.2462)		
+8A	COM	TEL_NET-S2927	support net neutrality (S.2927)		399
+8A	COM	TRN_AIR-S2812	concern about air travel (S.2812)		120
+8A	COM	FIN_TAX-S732	question about tax policy (S.732)		
+8A	COM	FIN_SEC-S2500	oppose securities regulation (S.2500)		317
+8A	COM	IMM_VISA-S2809	concern about visa processing (S.2809)	Y	
+8A	COM	EDU_LOAN-S2633	concern about student loan relief (S.2633)		
+8A	COM	JUD_NOM-S438	information on judicial nominations (S.438)		375
+8A	COM	HOU_GSE-S1567	question about GSE reform (S.1567)		
+8A	COM	ENV_WATER-S3099	support clean water (S.3099)		252
+8A	COM	IMM_VISA-S3496	support visa processing (S.3496)		
+8A	COM	TRN_HWY-S1189	oppose highway funding (S.1189)		303
+8A	COM	ENV_EPA-S3109	information on EPA rulemaking (S.3109)	Y	
+8A	COM	AGR_FARM-S1474	oppose the farm bill (S.1474)		
+8A	COM	ENV_ENERGY-S1235	concern about energy policy (S.1235)	Y	
+8A	COM	FIN_BANK-S2776	concern about financial services and banking (S.2776)		
+8A	COM	FIN_CREDIT-S1946	concern about consumer credit (S.1946)		
+8A	COM	LAB_MINWAGE-S2477	question about the minimum wage (S.2477)	Y	
+8A	COM	EDU_LOAN-S194	information on student loan relief (S.194)		251
+8A	COM	FIN_TAX-S1497	support tax policy (S.1497)		
+8A	COM	AGR_TRADE-S1583	question about agricultural trade (S.1583)		282
+8A	COM	HOU_GSE-S1151	question about GSE reform (S.1151)		
+8A	COM	FIN_TAX-S1175	concern about tax policy (S.1175)		
+8A	COM	LAB_MINWAGE-S591	support the minimum wage (S.591)		
+8A	COM	HEA_DRUG-S212	information on prescription drug costs (S.212)	Y	104
+8A	COM	TEL_NET-S1965	support net neutrality (S.1965)		
+8A	COM	EDU_LOAN-S3279	support student loan relief (S.3279)		
+8A	COM	HEA_MEDICARE-S1704	oppose Medicare reimbursement (S.1704)		
+8A	COM	EDU_K12-S1226	support K-12 education funding (S.1226)		
+8A	COM	FIN_CREDIT-S1853	support consumer credit (S.1853)
+8A	COM	EDU_HE-S968	question about higher education (S.968)		
+8A	COM	LAB_MINWAGE-S1984	support the minimum wage (S.1984)		
+8A	COM	FIN_SEC-S679	oppose securities regulation (S.679)		
+8A	COM	LAB_UNION-S2361	concern about labor law (S.2361)		
+8A	COM	TRN_HWY-S1573	support highway funding (S.1573)		
+8A	COM	IMM_VISA-S3078	question about visa processing (S.3078)		
+8A	COM	LAB_UNION-S961	question about labor law (S.961)	Y	224
+8A	COM	ENV_ENERGY-S229	question about energy policy (S.229)	Y	
+8A	COM	TEL_PRIV-S1587	oppose data privacy (S.1587)		299
+8A	COM	TRN_HWY-S1941	concern about highway funding (S.1941)		
+8A	COM	ENV_EPA-S2842	information on EPA rulemaking (S.2842)		354
+8A	COM	IMM_REFORM-S746	information on immigration reform (S.746)		
+8A	COM	JUD_NOM-S2291	support judicial nominations (S.2291)		116
+8A	COM	IMM_VISA-S231	oppose visa processing (S.231)		
+8A	COM	ENV_WATER-S2543	question about clean water (S.2543)		
+8A	COM	TEL_PRIV-S1610	oppose data privacy (S.1610)	Y	
+8A	COM	FIN_TAX-S3123	support tax policy (S.3123)		237
+8A	COM	IMM_VISA-S1017	concern about visa processing (S.1017)	Y	
+8A	COM	IMM_VISA-S2466	question about visa processing (S.2466)		
+8A	COM	DEF_BUDGET-S565	oppose defense appropriations (S.565)		276
+8A	COM	TRN_AIR-S3380	oppose air travel (S.3380)		310
+8A	COM	HOU_GSE-S298	concern about GSE reform (S.298)		
+8A	COM	TEL_PRIV-S1421	concern about data privacy (S.1421)		
+8A	COM	AGR_TRADE-S2671	concern about agricultural trade (S.2671)		
+8A	COM	AGR_FARM-S2163	concern about the farm bill (S.2163)		
+8A	COM	TEL_PRIV-S779	oppose data privacy (S.779)		
+8A	COM	TRN_AIR-S1242	oppose air travel (S.1242)	Y	
+8A	COM	AGR_TRADE-S631	oppose agricultural trade (S.631)	Y	
+8A	COM	EDU_LOAN-S2328	support student loan relief (S.2328)		165
+8A	COM	FIN_TAX-S1605	question about tax policy (S.1605)		
+8A	COM	AGR_TRADE-S2702	oppose agricultural trade (S.2702)		177
+8A	COM	TEL_PRIV-S1875	oppose data privacy (S.1875)		280
+8A	COM	ENV_ENERGY-S1796	support energy policy (S.1796)		267
+8A	COM	TRN_AIR-S1603	oppose air travel (S.1603)		
+8A	COM	TEL_PRIV-S3085	support data privacy (S.3085)		
+8A	COM	LAB_UNION-S2026	"oppose labor law (S.2026)"		128
+8A	COM	JUD_NOM-S2983	question about judicial nominations (S.2983)		373
+8A	COM	JUD_NOM-S2079	oppose judicial nominations (S.2079)		
+8A	COM	IMM_VISA-S3043	concern about visa processing (S.3043)		256
+8A	COM	LAB_UNION-S1962	concern about labor law (S.1962)		364
+8A	COM	IMM_VISA-S2044	concern about visa processing (S.2044)		
+8A	COM	AGR_TRADE-S1884	question about agricultural trade (S.1884)		
+8A	COM	HEA_SC-S1082	information on health see comments (S.1082)		
+8A	COM	HEA_ACA-S1433	question about the Affordable Care Act (S.1433)		
+8A	COM	EDU_LOAN-S2855	information on student loan relief (S.2855)		183
+8A	COM	TEL_NET-S1702	concern about net neutrality (S.1702)	Y	391
+8A	COM	FIN_TAX-S2932	support tax policy (S.2932)		
+8A	COM	LAB_UNION-S1884	oppose labor law (S.1884)	Y	352
+8A	COM	TEL_PRIV-S804	concern about data privacy (S.804)	Y	
+8A	COM	IMM_REFORM-S2588	support immigration reform (S.2588)		159
+8A	COM	ENV_ENERGY-S2588	oppose energy policy (S.2588)		265
+8A	COM	IMM_VISA-S1251	oppose visa processing (S.1251)	Y	
+8A	COM	JUD_GUN-S3230	oppose firearms legislation (S.3230)	Y	246
+8A	COM	ENV_ENERGY-S171	concern about energy policy (S.171)		
+8A	COM	ENV_WATER-S1819	information on clean water (S.1819)		
+8A	COM	TEL_PRIV-S1563	information on data privacy (S.1563)		
+8A	COM	TRN_AIR-S1554	oppose air travel (S.1554)		159
+8A	COM	JUD_NOM-S2846	oppose judicial nominations (S.2846)		
+8A	COM	JUD_GUN-S1679	information on firearms legislation (S.1679)		218
+8A	COM	ENV_ENERGY-S2199	oppose energy policy (S.2199)		325
+8A	COM	EDU_LOAN-S2654	support student loan relief (S.2654)		
+8A	COM	IMM_REFORM-S3087	support immigration reform (S.3087)		
+8A	COM	AGR_TRADE-S2927	oppose agricultural trade (S.2927)		
+8A	COM	TEL_PRIV-S3305	concern about data privacy (S.3305)	Y	
+8A	COM	IMM_VISA-S1397	oppose visa processing (S.1397)		
+8A	COM	TRN_HWY-S3339	information on highway funding (S.3339)		
+8A	COM	FIN_SEC-S378	information on securities regulation (S.378)		
+8A	COM	EDU_K12-S1258	information on K-12 education funding (S.1258)		
+8A	COM	EDU_LOAN-S1421	concern about student loan relief (S.1421)		
+8A	COM	EDU_K12-S3339	information on K-12 education funding (S.3339)		
+8A	COM	FIN_SEC-S2799	support securities regulation (S.2799)		
+8A	COM	HOU_FHA-S1942	information on FHA lending (S.1942)		
+8A	COM	IMM_REFORM-S2221	support immigration reform (S.2221)		
+8A	COM	HEA_DRUG-S1762	question about prescription drug costs (S.1762)		
+8A	COM	JUD_GUN-S737	information on firearms legislation (S.737)		
+8A	COM	LAB_UNION-S2115	concern about labor law (S.2115)		
+8A	COM	FIN_CREDIT-S2565	oppose consumer credit (S.2565)		
+8A	COM	DEF_VET-S921	concern about veterans benefits (S.921)		
+8A	COM	TEL_NET-S1116	question about net neutrality (S.1116)		
+8A	COM	ENV_ENERGY-S2895	question about energy policy (S.2895)		
+8A	COM	DEF_BUDGET-S102	concern about defense appropriations (S.102)		
+8A	COM	LAB_UNION-S2210	concern about labor law (S.2210)		
+8A	COM	ENV_ENERGY-S2868	concern about energy policy (S.2868)		
+8A	COM	HOU_FHA-S2118	concern about FHA lending (S.2118)		
+8A	COM	DEF_BUDGET-S989	support defense appropriations (S.989)		259
+8A	COM	HEA_VA-S1141	oppose veterans health care (S.1141)	Y	
+8A	COM	AGR_TRADE-S261	concern about agricultural trade (S.261)		
+8A	COM	HOU_FHA-S2630	support FHA lending (S.2630)		
+8A	COM	LAB_UNION-S872	oppose labor law (S.872)		
+8A	COM	EDU_HE-S3273	oppose higher education (S.3273)		
+8A	COM	IMM_REFORM-S2088	support immigration reform (S.2088)		342
+8A	COM	AGR_TRADE-S1449	oppose agricultural trade (S.1449)		354
+8A	COM	FIN_CREDIT-S1601	support consumer credit (S.1601)		
+8A	COM	JUD_GUN-S2656	concern about firearms legislation (S.2656)		
+8A	COM	HEA_SC-S1579	oppose health see comments (S.1579)	Y	
+8A	COM	DEF_BUDGET-S1791	question about defense appropriations (S.1791)		
+8A	COM	HEA_MEDICARE-S791	support Medicare reimbursement (S.791)		
+8A	COM	DEF_BUDGET-S2038	oppose defense appropriations (S.2038)		
+8A	COM	HOU_FHA-S2110	concern about FHA lending (S.2110)		180
+8A	COM	HOU_FHA-S3440	question about FHA lending (S.3440)	Y	
+8A	COM	EDU_HE-S111	support higher education (S.111)		326
+8A	COM	AGR_TRADE-S1760	concern about agricultural trade (S.1760)		
+8A	COM	DEF_VET-S2884	question about veterans benefits (S.2884)		
+8A	COM	IMM_REFORM-S2281	oppose immigration reform (S.2281)	Y	371
+8A	COM	LAB_UNION-S3025	question about labor law (S.3025)		154
+8A	COM	TEL_NET-S1201	oppose net neutrality (S.1201)		
+8A	COM	HEA_ACA-S2487	support the Affordable Care Act (S.2487)		
+8A	COM	IMM_VISA-S2416	oppose visa processing (S.2416)		
+8A	COM	TRN_HWY-S755	support highway funding (S.755)		251
+8A	COM	ENV_WATER-S720	information on clean water (S.720)		
+8A	COM	ENV_EPA-S3458	oppose EPA rulemaking (S.3458)		
+8A	COM	HEA_ACA-S730	oppose the Affordable Care Act (S.730)		380
+8A	COM	IMM_REFORM-S1943	concern about immigration reform (S.1943)		
+8A	COM	LAB_MINWAGE-S852	question about the minimum wage (S.852)		
+8A	COM	ENV_EPA-S896	question about EPA rulemaking (S.896)		188
+8A	COM	TRN_AIR-S1688	question about air travel (S.1688)		
+8A	COM	IMM_REFORM-S3357	concern about immigration reform (S.3357)		
+8A	COM	DEF_VET-S3202	support veterans benefits (S.3202)		
+8A	COM	HEA_ACA-S2093	question about the Affordable Care Act (S.2093)		
+8A	COM	IMM_REFORM-S2462	concern about immigration reform (S.2462)		
+8A	COM	ENV_EPA-S2979	oppose EPA rulemaking (S.2979)		
+8A	COM	HOU_FHA-S724	information on FHA lending (S.724)		
+8A	COM	TEL_PRIV-S2860	concern about data privacy (S.2860)		
+8A	COM	HEA_VA-S2039	question about veterans health care (S.2039)	Y	
+8A	COM	ENV_EPA-S2722	oppose EPA rulemaking (S.2722)		
+8A	COM	LAB_UNION-S941	support labor law (S.941)		237
+8A	COM	ENV_WATER-S2502	support clean water (S.2502)		
+8A	COM	AGR_FARM-S3460	question about the farm bill (S.3460)		
+8A	COM	TEL_PRIV-S2911	question about data privacy (S.2911)		
+8A	COM	DEF_BUDGET-S2122	support defense appropriations (S.2122)		
+8A	COM	HOU_GSE-S2788	information on GSE reform (S.2788)		329
+8A	COM	JUD_NOM-S899	concern about judicial nominations (S.899)	Y	160
+8A	COM	AGR_FARM-S1796	question about the farm bill (S.1796)		226
+8A	COM	EDU_HE-S2349	question about higher education (S.2349)		
+8A	COM	HOU_FHA-S1156	information on FHA lending (S.1156)		
+8A	COM	EDU_LOAN-S2464	oppose student loan relief (S.2464)		
+8A	COM	TEL_NET-S1428	information on net neutrality (S.1428)		
+8A	COM	HEA_VA-S2579	question about veterans health care (S.2579)		313
+8A	COM	DEF_BUDGET-S2979	question about defense appropriations (S.2979)		
+8A	COM	AGR_TRADE-S2848	concern about agricultural trade (S.2848)		
+8A	COM	LAB_MINWAGE-S3187	oppose the minimum wage (S.3187)	Y	210
+8A	COM	JUD_GUN-S1530	question about firearms legislation (S.1530)		284
+8A	COM	TRN_AIR-S1211	oppose air travel (S.1211)		
+8A	COM	FIN_SEC-S2669	information on securities regulation (S.2669)		
+8A	COM	IMM_REFORM-S1275	concern about immigration reform (S.1275)		
+8A	COM	DEF_BUDGET-S3461	oppose defense appropriations (S.3461)		112
+8A	COM	TRN_AIR-S1624	question about air travel (S.1624)		308
+8A	COM	FIN_CREDIT-S728	oppose consumer credit (S.728)		
+8A	COM	DEF_BUDGET-S104	support defense appropriations (S.104)		127
+8A	COM	ENV_EPA-S2192	concern about EPA rulemaking (S.2192)		
+8A	COM	DEF_VET-S1308	support veterans benefits (S.1308)		
+8A	COM	LAB_MINWAGE-S2534	concern about the minimum wage (S.2534)	Y	374
+8A	COM	LAB_MINWAGE-S1851	concern about the minimum wage (S.1851)		
+8A	COM	LAB_UNION-S1439	information on labor law (S.1439)		
+8A	COM	HEA_MEDICARE-S1537	concern about Medicare reimbursement (S.1537)	Y	
+8A	COM	LAB_MINWAGE-S156	information on the minimum wage (S.156)	Y	
+8A	COM	HOU_FHA-S1964	information on FHA lending (S.1964)	Y	
+8A	COM	HEA_MEDICARE-S1860	question about Medicare reimbursement (S.1860)	Y	213
+8A	COM	FIN_BANK-S761	support financial services and banking (S.761)	Y	
+8A	COM	TRN_HWY-S2391	concern about highway funding (S.2391)		
+8A	COM	IMM_REFORM-S3195	support immigration reform (S.3195)		104
+8A	COM	AGR_FARM-S612	concern about the farm bill (S.612)		
+8A	COM	LAB_UNION-S1032	information on labor law (S.1032)		
+8A	COM	EDU_LOAN-S2343	concern about student loan relief (S.2343)		
+8A	COM	DEF_BUDGET-S2810	question about defense appropriations (S.2810)		
+8A	COM	ENV_EPA-S1217	oppose EPA rulemaking (S.1217)		224
+8A	COM	LAB_MINWAGE-S3417	concern about the minimum wage (S.3417)		
+8A	COM	EDU_K12-S2837	support K-12 education funding (S.2837)	Y	
+8A	COM	TRN_AIR-S435	oppose air travel (S.435)	Y	
+8A	COM	LAB_MINWAGE-S2016	support the minimum wage (S.2016)		371
+8A	COM	TEL_NET-S1684	question about net neutrality (S.1684)		
+8A	COM	IMM_VISA-S2595	support visa processing (S.2595)	Y	
+8A	COM	ENV_EPA-S3082	question about EPA rulemaking (S.3082)		217
+8A	COM	TEL_NET-S958	information on net neutrality (S.958)		
+8A	COM	EDU_LOAN-S345	concern about student loan relief (S.345)		200
+8A	COM	JUD_NOM-S2563	support judicial nominations (S.2563)		
+8A	COM	ENV_ENERGY-S568	information on energy policy (S.568)		
+8A	COM	TEL_NET-S894	support net neutrality (S.894)		
+8A	COM	JUD_NOM-S1336	oppose judicial nominations (S.1336)		
+8A	COM	AGR_FARM-S308	question about the farm bill (S.308)		
+8A	COM	EDU_HE-S1300	oppose higher education (S.1300)		
+8A	COM	FIN_TAX-S2458	support tax policy (S.2458)		
+8A	COM	JUD_GUN-S1622	information on firearms legislation (S.1622)		
+8A	COM	TRN_AIR-S1494	concern about air travel (S.1494)		
+8A	COM	LAB_MINWAGE-S589	concern about the minimum wage (S.589)		
+8A	COM	LAB_MINWAGE-S566	support the minimum wage (S.566)		329
+8A	COM	ENV_EPA-S1544	concern about EPA rulemaking (S.1544)		
+8A	COM	HEA_SC-S135	oppose health see comments (S.135)		
+8A	COM	IMM_VISA-S2481	information on visa processing (S.2481)		
+8A	COM	JUD_GUN-S1339	concern about firearms legislation (S.1339)		
+8A	COM	HEA_MEDICARE-S1023	question about Medicare reimbursement (S.1023)		
+8A	COM	FIN_SEC-S3149	question about securities regulation (S.3149)		150
+8A	COM	FIN_CREDIT-S559	support consumer credit (S.559)		
+8A	COM	HEA_MEDICARE-S2375	support Medicare reimbursement (S.2375)		
+8A	COM	FIN_TAX-S1106	question about tax policy (S.1106)
+8A	COM	LAB_UNION-S374	support labor law (S.374)		
+8A	COM	LAB_UNION-S2867	information on labor law (S.2867)		
+8A	COM	EDU_K12-S737	support K-12 education funding (S.737)	Y	165
+8A	COM	LAB_MINWAGE-S1445	information on the minimum wage (S.1445)		
+8A	COM	HEA_SC-S2778	oppose health see comments (S.2778)		
+8A	COM	IMM_VISA-S2157	question about visa processing (S.2157)		304
+8A	COM	TRN_AIR-S3468	information on air travel (S.3468)		
+8A	COM	EDU_HE-S3344	information on higher education (S.3344)		346
+8A	COM	HEA_MEDICARE-S2620	support Medicare reimbursement (S.2620)		
+8A	COM	TEL_PRIV-S860	question about data privacy (S.860)	Y	
+8A	COM	HEA_VA-S1890	information on veterans health care (S.1890)		150
+8A	COM	HOU_FHA-S318	support FHA lending (S.318)		
+8A	COM	ENV_EPA-S212	question about EPA rulemaking (S.212)		328
+8A	COM	HEA_MEDICARE-S2578	concern about Medicare reimbursement (S.2578)		
+8A	COM	ENV_ENERGY-S2321	concern about energy policy (S.2321)		209
+8A	COM	DEF_BUDGET-S692	information on defense appropriations (S.692)		363
+8A	COM	TEL_PRIV-S300	information on data privacy (S.300)	Y	
+8A	COM	DEF_BUDGET-S1915	question about defense appropriations (S.1915)	Y	
+8A	COM	HOU_FHA-S107	concern about FHA lending (S.107)		
+8A	COM	FIN_TAX-S1406	support tax policy (S.1406)		171
+8A	COM	JUD_GUN-S931	support firearms legislation (S.931)		
+8A	COM	HEA_SC-S844	question about health see comments (S.844)		
+8A	COM	LAB_MINWAGE-S1784	support the minimum wage (S.1784)		
+8A	COM	FIN_CREDIT-S1655	concern about consumer credit (S.1655)		
+8A	COM	HEA_DRUG-S550	question about prescription drug costs (S.550)		
+8A	COM	IMM_REFORM-S2205	support immigration reform (S.2205)		
+8A	COM	FIN_CREDIT-S3113	concern about consumer credit (S.3113)	Y	
+8A	COM	LAB_UNION-S920	oppose labor law (S.920)		
+8A	COM	HEA_DRUG-S2680	question about prescription drug costs (S.2680)	Y	
+8A	COM	TRN_AIR-S2988	information on air travel (S.2988)		
+8A	COM	JUD_GUN-S2937	oppose firearms legislation (S.2937)		
+8A	COM	EDU_K12-S1149	information on K-12 education funding (S.1149)	Y	
+8A	COM	IMM_VISA-S1194	information on visa processing (S.1194)		
+8A	COM	LAB_UNION-S1963	support labor law (S.1963)		
+8A	COM	DEF_BUDGET-S1719	oppose defense appropriations (S.1719)		
+8A	COM	IMM_REFORM-S3102	support immigration reform (S.3102)		
+8A	COM	TRN_AIR-S2110	support air travel (S.2110)		
+8A	COM	TEL_NET-S2392	information on net neutrality (S.2392)		
+8A	COM	AGR_TRADE-S103	concern about agricultural trade (S.103)	Y	
+8A	COM	ENV_ENERGY-S2111	question about energy policy (S.2111)		
+8A	COM	LAB_UNION-S2975	question about labor law (S.2975)		
+8A	COM	JUD_NOM-S1845	support judicial nominations (S.1845)		308
+8A	COM	TRN_AIR-S1436	information on air travel (S.1436)	Y	
+8A	COM	JUD_GUN-S3084	support firearms legislation (S.3084)	Y	
+8A	COM	AGR_TRADE-S1229	oppose agricultural trade (S.1229)		175
+8A	COM	ENV_ENERGY-S117	question about energy policy (S.117)	Y	
+8A	COM	DEF_BUDGET-S2864	concern about defense appropriations (S.2864)		
+8A	COM	TRN_HWY-S3263	information on highway funding (S.3263)		
+8A	COM	IMM_REFORM-S2214	support immigration reform (S.2214)	Y	
+8A	COM	TEL_NET-S1891	information on net neutrality (S.1891)		377
+8A	COM	EDU_K12-S226	question about K-12 education funding (S.226)		
+8A	COM	ENV_EPA-S2692	question about EPA rulemaking (S.2692)		175
+8A	COM	EDU_HE-S1801	question about higher education (S.1801)		309
+8A	COM	HOU_FHA-S1411	question about FHA lending (S.1411)		
+8A	COM	LAB_UNION-S221	concern about labor law (S.221)		132
+8A	COM	JUD_GUN-S1281	information on firearms legislation (S.1281)		
+8A	COM	ENV_EPA-S3304	question about EPA rulemaking (S.3304)		
+8A	COM	EDU_HE-S2308	concern about higher education (S.2308)		
+8A	COM	LAB_UNION-S762	oppose labor law (S.762)		
+8A	COM	HOU_FHA-S3193	oppose FHA lending (S.3193)		323
+8A	COM	TEL_NET-S2176	oppose net neutrality (S.2176)		
+8A	COM	HEA_SC-S3041	question about health see comments (S.3041)		258
+8A	COM	TEL_PRIV-S124	question about data privacy (S.124)		
+8A	COM	JUD_GUN-S453	oppose firearms legislation (S.453)	Y	
+8A	COM	AGR_TRADE-S1299	support agricultural trade (S.1299)		
+8A	COM	IMM_REFORM-S864	support immigration reform (S.864)		144
+8A	COM	TEL_PRIV-S1632	question about data privacy (S.1632)		
+8A	COM	JUD_GUN-S2531	support firearms legislation (S.2531)		245
+8A	COM	HEA_MEDICARE-S149	information on Medicare reimbursement (S.149)		
+8A	COM	AGR_FARM-S1968	support the farm bill (S.1968)		352
+8A	COM	ENV_ENERGY-S2825	information on energy policy (S.2825)		
+8A	COM	DEF_BUDGET-S1527	oppose defense appropriations (S.1527)		
+8A	COM	IMM_REFORM-S3245	question about immigration reform (S.3245)		
+8A	COM	ENV_EPA-S1669	oppose EPA rulemaking (S.1669)	Y	
+8A	COM	JUD_GUN-S2900	support firearms legislation (S.2900)		354
+8A	COM	JUD_NOM-S2481	oppose judicial nominations (S.2481)	Y	
+8A	COM	JUD_GUN-S2990	question about firearms legislation (S.2990)		194
+8A	COM	EDU_HE-S1719	concern about higher education (S.1719)		
+8A	COM	DEF_VET-S2290	information on veterans benefits (S.2290)	Y	
+8A	COM	DEF_BUDGET-S2933	question about defense appropriations (S.2933)		
+8A	COM	ENV_ENERGY-S819	oppose energy policy (S.819)		
+8A	COM	FIN_SEC-S3302	support securities regulation (S.3302)		
+8A	COM	TRN_HWY-S1476	question about highway funding (S.1476)	Y	397
+8A	COM	TEL_NET-S1344	oppose net neutrality (S.1344)		277
+8A	COM	HOU_FHA-S1233	information on FHA lending (S.1233)		
+8A	COM	IMM_VISA-S439	information on visa processing (S.439)	Y	
+8A	COM	JUD_NOM-S1902	concern about judicial nominations (S.1902)		399
+8A	COM	HOU_GSE-S1336	information on GSE reform (S.1336)		
+8A	COM	AGR_FARM-S930	oppose the farm bill (S.930)		
+8A	COM	FIN_CREDIT-S1292	question about consumer credit (S.1292)		114
+8A	COM	AGR_TRADE-S3165	information on agricultural trade (S.3165)	Y	
+8A	COM	EDU_K12-S1356	support K-12 education funding (S.1356)		161
+8A	COM	EDU_K12-S137	information on K-12 education funding (S.137)		
+8A	COM	HOU_GSE-S944	question about GSE reform (S.944)		
+8A	COM	IMM_REFORM-S1251	question about immigration reform (S.1251)		
+8A	COM	TEL_PRIV-S920	concern about data privacy (S.920)		
+8A	COM	LAB_MINWAGE-S1205	oppose the minimum wage (S.1205)		116
+8A	COM	EDU_HE-S443	question about higher education (S.443)		216
+8A	COM	AGR_TRADE-S1912	support agricultural trade (S.1912)		
+8A	COM	TRN_AIR-S1406	concern about air travel (S.1406)		261
+8A	COM	HEA_MEDICARE-S2206	question about Medicare reimbursement (S.2206)	Y	120
+8A	COM	TEL_PRIV-S1901	concern about data privacy (S.1901)		
+8A	COM	EDU_K12-S3490	information on K-12 education funding (S.3490)		
+8A	COM	HOU_GSE-S130	concern about GSE reform (S.130)		
+8A	COM	JUD_GUN-S3497	question about firearms legislation (S.3497)	Y	301
+8A	COM	EDU_HE-S278	concern about higher education (S.278)		179
+8A	COM	TRN_HWY-S2745	concern about highway funding (S.2745)		253
+8A	COM	JUD_NOM-S3100	information on judicial nominations (S.3100)		371
+8A	COM	TEL_PRIV-S364	information on data privacy (S.364)		
+8A	COM	HOU_GSE-S2014	oppose GSE reform (S.2014)	Y	
+8A	COM	LAB_MINWAGE-S1728	question about the minimum wage (S.1728)		120
+8A	COM	ENV_ENERGY-S877	information on energy policy (S.877)		370
+8A	COM	TRN_HWY-S728	concern about highway funding (S.728)		
+8A	COM	TRN_AIR-S885	support air travel (S.885)	Y	213
+8A	COM	JUD_GUN-S446	oppose firearms legislation (S.446)		
+8A	COM	TEL_NET-S189	support net neutrality (S.189)	Y	
+8A	COM	FIN_TAX-S1288	concern about tax policy (S.1288)		
+8A	COM	ENV_EPA-S2258	information on EPA rulemaking (S.2258)		
+8A	COM	TRN_HWY-S1691	concern about highway funding (S.1691)	Y	
+8A	COM	HEA_DRUG-S1008	oppose prescription drug costs (S.1008)		
+8A	COM	HOU_FHA-S1376	concern about FHA lending (S.1376)		154
+8A	COM	IMM_VISA-S1155	concern about visa processing (S.1155)		253
+8A	COM	LAB_UNION-S2681	support labor law (S.2681)		253
+8A	COM	ENV_EPA-S432	oppose EPA rulemaking (S.432)		
+8A	COM	HEA_VA-S773	oppose veterans health care (S.773)		304
+8A	COM	JUD_GUN-S2546	question about firearms legislation (S.2546)		
+8A	COM	AGR_FARM-S1133	question about the farm bill (S.1133)	Y	
+8A	COM	FIN_TAX-S277	support tax policy (S.277)		
+8A	COM	HOU_FHA-S1547	oppose FHA lending (S.1547)		
+8A	COM	HOU_FHA-S2385	support FHA lending (S.2385)	Y	
+8A	COM	AGR_FARM-S1793	oppose the farm bill (S.1793)		
+8A	COM	TEL_NET-S266	question about net neutrality (S.266)		
+8A	COM	HOU_FHA-S2526	question about FHA lending (S.2526)		
+8A	COM	TEL_NET-S2707	oppose net neutrality (S.2707)		
+8A	COM	AGR_TRADE-S1052	support agricultural trade (S.1052)		
+8A	COM	IMM_REFORM-S3169	support immigration reform (S.3169)		234
+8A	COM	JUD_GUN-S2021	oppose firearms legislation (S.2021)		
+8A	COM	ENV_ENERGY-S3289	information on energy policy (S.3289)		
+8A	COM	EDU_K12-S3141	support K-12 education funding (S.3141)	Y	
+8A	COM	EDU_LOAN-S963	information on student loan relief (S.963)		
+8A	COM	AGR_FARM-S1369	oppose the farm bill (S.1369)		
+8A	COM	IMM_VISA-S1303	oppose visa processing (S.1303)
+8A	COM	TEL_NET-S1202	oppose net neutrality (S.1202)	Y	383
+8A	COM	HEA_ACA-S3481	oppose the Affordable Care Act (S.3481)		
+8A	COM	IMM_VISA-S501	question about visa processing (S.501)		
+8A	COM	HOU_GSE-S117	concern about GSE reform (S.117)		
+8A	COM	TEL_PRIV-S2392	information on data privacy (S.2392)		
+8A	COM	ENV_WATER-S1537	information on clean water (S.1537)		
+8A	COM	IMM_REFORM-S2964	support immigration reform (S.2964)		
+8A	COM	JUD_NOM-S1721	information on judicial nominations (S.1721)		
+8A	COM	EDU_HE-S1057	question about higher education (S.1057)		146
+8A	COM	HEA_SC-S1573	support health see comments (S.1573)		141
+8A	COM	HEA_MEDICARE-S1485	question about Medicare reimbursement (S.1485)	Y	
+8A	COM	TRN_AIR-S2230	question about air travel (S.2230)		
+8A	COM	ENV_ENERGY-S1258	information on energy policy (S.1258)		
+8A	COM	TEL_NET-S2348	question about net neutrality (S.2348)		135
+8A	COM	LAB_UNION-S3190	concern about labor law (S.3190)	Y	
+8A	COM	FIN_SEC-S530	information on securities regulation (S.530)		
+8A	COM	FIN_BANK-S2117	oppose financial services and banking (S.2117)		
+8A	COM	HOU_FHA-S249	concern about FHA lending (S.249)		
+8A	COM	FIN_BANK-S2465	oppose financial services and banking (S.2465)		
+8A	COM	FIN_BANK-S224	information on financial services and banking (S.224)		
+8A	COM	HEA_MEDICARE-S2190	information on Medicare reimbursement (S.2190)		302
+8A	COM	TRN_AIR-S2954	concern about air travel (S.2954)		
+8A	COM	HEA_VA-S1520	question about veterans health care (S.1520)		347
+8A	COM	EDU_LOAN-S1282	question about student loan relief (S.1282)		
+8A	COM	AGR_TRADE-S3454	concern about agricultural trade (S.3454)		
+8A	COM	FIN_BANK-S2154	question about financial services and banking (S.2154)		
+8A	COM	FIN_TAX-S3083	oppose tax policy (S.3083)		
+8A	COM	FIN_SEC-S2462	question about securities regulation (S.2462)	Y	
+8A	COM	FIN_CREDIT-S705	question about consumer credit (S.705)		
+8A	COM	FIN_SEC-S1754	information on securities regulation (S.1754)	Y	
+8A	COM	TEL_PRIV-S2388	oppose data privacy (S.2388)		
+8A	COM	LAB_UNION-S2199	information on labor law (S.2199)		
+8A	COM	AGR_FARM-S1667	information on the farm bill (S.1667)		
+8A	COM	ENV_EPA-S1867	concern about EPA rulemaking (S.1867)		
+8A	COM	TEL_PRIV-S2443	question about data privacy (S.2443)		
+8A	COM	FIN_CREDIT-S765	oppose consumer credit (S.765)	Y	348
+8A	COM	AGR_TRADE-S3068	support agricultural trade (S.3068)		
+8A	COM	LAB_MINWAGE-S3328	oppose the minimum wage (S.3328)		
+8A	COM	TRN_AIR-S3122	information on air travel (S.3122)	Y	
+8A	COM	JUD_GUN-S261	question about firearms legislation (S.261)		189
+8A	COM	LAB_UNION-S115	oppose labor law (S.115)	Y	254
+8A	COM	JUD_NOM-S2604	concern about judicial nominations (S.2604)		
+8A	COM	ENV_ENERGY-S1039	concern about energy policy (S.1039)		
+8A	COM	FIN_SEC-S2412	information on securities regulation (S.2412)		
+8A	COM	HOU_FHA-S2567	question about FHA lending (S.2567)		179
+8A	COM	DEF_VET-S2629	information on veterans benefits (S.2629)		
+8A	COM	ENV_ENERGY-S287	information on energy policy (S.287)	Y	
+8A	COM	TRN_AIR-S3093	question about air travel (S.3093)		
+8A	COM	LAB_UNION-S2964	information on labor law (S.2964)		
+8A	COM	IMM_VISA-S1100	information on visa processing (S.1100)		381
+8A	COM	LAB_UNION-S1351	support labor law (S.1351)		132
+8A	COM	TEL_NET-S2817	concern about net neutrality (S.2817)		
+8A	COM	JUD_GUN-S1824	concern about firearms legislation (S.1824)		
+8A	COM	TRN_AIR-S409	information on air travel (S.409)		
+8A	COM	FIN_SEC-S2938	question about securities regulation (S.2938)	Y	
+8A	COM	IMM_REFORM-S2846	question about immigration reform (S.2846)	Y	362
+8A	COM	TEL_PRIV-S979	support data privacy (S.979)		
+8A	COM	AGR_FARM-S2244	oppose the farm bill (S.2244)		
+8A	COM	EDU_LOAN-S1031	information on student loan relief (S.1031)		
+8A	COM	HEA_VA-S2051	question about veterans health care (S.2051)	Y	337
+8A	COM	EDU_LOAN-S3364	oppose student loan relief (S.3364)		
+8A	COM	LAB_MINWAGE-S517	concern about the minimum wage (S.517)		
+8A	COM	DEF_BUDGET-S2852	oppose defense appropriations (S.2852)	Y	
+8A	COM	HEA_SC-S1840	support health see comments (S.1840)		
+8A	COM	FIN_TAX-S1453	question about tax policy (S.1453)	Y	
+8A	COM	FIN_TAX-S1721	oppose tax policy (S.1721)	Y	273
+8A	COM	TRN_AIR-S2033	question about air travel (S.2033)		251
+8A	COM	LAB_UNION-S1136	question about labor law (S.1136)		
+8A	COM	IMM_REFORM-S3373	concern about immigration reform (S.3373)		
+8A	COM	AGR_TRADE-S1244	oppose agricultural trade (S.1244)		193
+8A	COM	DEF_BUDGET-S1264	information on defense appropriations (S.1264)		226
+8A	COM	AGR_TRADE-S3004	question about agricultural trade (S.3004)		
+8A	COM	HOU_FHA-S1891	support FHA lending (S.1891)		150
+8A	COM	TRN_AIR-S3270	information on air travel (S.3270)		274
+8A	COM	TRN_HWY-S182	information on highway funding (S.182)	Y	
+8A	COM	ENV_WATER-S1639	support clean water (S.1639)		178
+8A	COM	IMM_REFORM-S245	question about immigration reform (S.245)		
+8A	COM	TEL_NET-S1355	support net neutrality (S.1355)		
+8A	COM	EDU_LOAN-S760	concern about student loan relief (S.760)	Y	391
+8A	COM	DEF_BUDGET-S2956	oppose defense appropriations (S.2956)		
+8A	COM	JUD_NOM-S2742	concern about judicial nominations (S.2742)		
+8A	COM	FIN_CREDIT-S2486	oppose consumer credit (S.2486)		316
+8A	COM	FIN_SEC-S1078	support securities regulation (S.1078)		
+8A	COM	EDU_K12-S3489	concern about K-12 education funding (S.3489)		202
+8A	COM	HOU_FHA-S2563	question about FHA lending (S.2563)	Y	
+8A	COM	DEF_BUDGET-S3204	support defense appropriations (S.3204)	Y	
+8A	COM	AGR_TRADE-S1078	support agricultural trade (S.1078)		
+8A	COM	HEA_ACA-S1851	information on the Affordable Care Act (S.1851)		
+8A	COM	HEA_SC-S1327	question about health see comments (S.1327)	Y	329
+8A	COM	TEL_NET-S3234	question about net neutrality (S.3234)		169
+8A	COM	ENV_EPA-S337	concern about EPA rulemaking (S.337)		
+8A	COM	JUD_NOM-S1919	information on judicial nominations (S.1919)	Y	196
+8A	COM	IMM_VISA-S2162	concern about visa processing (S.2162)	Y	
+8A	COM	ENV_WATER-S205	concern about clean water (S.205)	Y	213
+8A	COM	HOU_GSE-S109	concern about GSE reform (S.109)		363
+8A	COM	HEA_VA-S2887	question about veterans health care (S.2887)		
+8A	COM	TEL_PRIV-S3217	concern about data privacy (S.3217)		
+8A	COM	HOU_GSE-S1698	support GSE reform (S.1698)		
+8A	COM	DEF_BUDGET-S1442	oppose defense appropriations (S.1442)	Y	309
+8A	COM	JUD_GUN-S164	question about firearms legislation (S.164)		
+8A	COM	IMM_REFORM-S516	support immigration reform (S.516)		372
+8A	COM	HOU_GSE-S1818	oppose GSE reform (S.1818)		
+8A	COM	AGR_TRADE-S199	question about agricultural trade (S.199)		347
+8A	COM	TRN_AIR-S2943	concern about air travel (S.2943)		
+8A	COM	HEA_ACA-S121	oppose the Affordable Care Act (S.121)	Y	
+8A	COM	IMM_VISA-S2080	question about visa processing (S.2080)
+8A	COM	HEA_VA-S557	question about veterans health care (S.557)		
+8A	COM	AGR_FARM-S3220	question about the farm bill (S.3220)	Y	351
+8A	COM	TRN_AIR-S858	support air travel (S.858)	Y	
+8A	COM	ENV_ENERGY-S3221	support energy policy (S.3221)	Y	
+8A	COM	DEF_VET-S3052	question about veterans benefits (S.3052)		
+8A	COM	TRN_HWY-S895	concern about highway funding (S.895)		200
+8A	COM	FIN_SEC-S204	concern about securities regulation (S.204)		
+8A	COM	AGR_FARM-S3348	concern about the farm bill (S.3348)		
+8A	COM	TRN_AIR-S1561	oppose air travel (S.1561)		
+8A	COM	IMM_REFORM-S2452	information on immigration reform (S.2452)		
+8A	COM	AGR_FARM-S1346	information on the farm bill (S.1346)	Y	366
+8A	COM	DEF_VET-S424	support veterans benefits (S.424)		
+8A	COM	ENV_WATER-S2388	oppose clean water (S.2388)		
+8A	COM	AGR_TRADE-S2836	concern about agricultural trade (S.2836)		
+8A	COM	JUD_GUN-S3414	question about firearms legislation (S.3414)		
+8A	COM	FIN_CREDIT-S1526	concern about consumer credit (S.1526)		311
+8A	COM	TRN_AIR-S2193	question about air travel (S.2193)		178
+8A	COM	AGR_TRADE-S1711	information on agricultural trade (S.1711)		140
+8A	COM	TEL_NET-S289	support net neutrality (S.289)	Y	139
+8A	COM	JUD_NOM-S1037	information on judicial nominations (S.1037)	Y	384
+8A	COM	ENV_ENERGY-S773	oppose energy policy (S.773)		
+8A	COM	LAB_UNION-S1760	oppose labor law (S.1760)		325
+8A	COM	IMM_VISA-S183	concern about visa processing (S.183)	Y	
+8A	COM	ENV_WATER-S489	information on clean water (S.489)		
+8A	COM	JUD_NOM-S1990	concern about judicial nominations (S.1990)		388
+8A	COM	TRN_AIR-S871	information on air travel (S.871)		
+8A	COM	AGR_FARM-S217	information on the farm bill (S.217)	Y	223
+8A	COM	IMM_VISA-S2724	support visa processing (S.2724)		
+8A	COM	AGR_FARM-S3088	question about the farm bill (S.3088)		106
+8A	COM	HEA_VA-S1953	question about veterans health care (S.1953)		
+8A	COM	AGR_TRADE-S2043	support agricultural trade (S.2043)		
+8A	COM	JUD_GUN-S1214	information on firearms legislation (S.1214)		
+8A	COM	TEL_PRIV-S663	oppose data privacy (S.663)		310
+8A	COM	TRN_HWY-S482	information on highway funding (S.482)		
+8A	COM	IMM_VISA-S2771	information on visa processing (S.2771)		
+8A	COM	AGR_TRADE-S639	oppose agricultural trade (S.639)		
+8A	COM	HEA_VA-S1716	question about veterans health care (S.1716)		381
+8A	COM	DEF_VET-S3040	information on veterans benefits (S.3040)		
+8A	COM	HOU_GSE-S1037	information on GSE reform (S.1037)		
+8A	COM	TRN_AIR-S247	question about air travel (S.247)	Y	
+8A	COM	ENV_ENERGY-S2862	question about energy policy (S.2862)		244
+8A	COM	LAB_UNION-S1381	concern about labor law (S.1381)		196
+8A	COM	HOU_GSE-S2645	concern about GSE reform (S.2645)		
+8A	COM	HOU_FHA-S1619	concern about FHA lending (S.1619)		307
+8A	COM	IMM_REFORM-S1561	question about immigration reform (S.1561)		
+8A	COM	DEF_VET-S1286	concern about veterans benefits (S.1286)		357
+8A	COM	AGR_TRADE-S242	information on agricultural trade (S.242)		266
+8A	COM	FIN_TAX-S3287	oppose tax policy (S.3287)	Y	
+8A	COM	IMM_VISA-S2011	question about visa processing (S.2011)		
+8A	COM	LAB_UNION-S1942	information on labor law (S.1942)	Y	281
+8A	COM	EDU_K12-S175	question about K-12 education funding (S.175)		139
+8A	COM	IMM_REFORM-S318	concern about immigration reform (S.318)		139
+8A	COM	TRN_AIR-S411	information on air travel (S.411)		383
+8A	COM	HEA_ACA-S2102	support the Affordable Care Act (S.2102)		301
+8A	COM	AGR_TRADE-S201	concern about agricultural trade (S.201)		
+8A	COM	HOU_FHA-S1092	oppose FHA lending (S.1092)		
+8A	COM	DEF_BUDGET-S2879	information on defense appropriations (S.2879)	Y	
+8A	COM	FIN_SEC-S3048	support securities regulation (S.3048)		377
+8A	COM	FIN_CREDIT-S703	question about consumer credit (S.703)		
+8A	COM	DEF_VET-S3396	support veterans benefits (S.3396)		
+8A	COM	LAB_MINWAGE-S3463	information on the minimum wage (S.3463)		
+8A	COM	IMM_REFORM-S574	oppose immigration reform (S.574)		180
+8A	COM	EDU_HE-S1293	information on higher education (S.1293)		
+8A	COM	DEF_BUDGET-S2074	information on defense appropriations (S.2074)		
+8A	COM	ENV_ENERGY-S2350	oppose energy policy (S.2350)		
+8A	COM	FIN_SEC-S2262	information on securities regulation (S.2262)		
+8A	COM	JUD_GUN-S2283	concern about firearms legislation (S.2283)		
+8A	COM	ENV_WATER-S780	oppose clean water (S.780)		284
+8A	COM	HOU_FHA-S133	oppose FHA lending (S.133)		
+8A	COM	AGR_TRADE-S404	question about agricultural trade (S.404)		
+8A	COM	IMM_VISA-S3211	concern about visa processing (S.3211)		
+8A	COM	LAB_UNION-S3494	oppose labor law (S.3494)		
+8A	COM	IMM_REFORM-S2463	question about immigration reform (S.2463)		
+8A	COM	TRN_HWY-S1486	concern about highway funding (S.1486)		
+8A	COM	HEA_SC-S1145	concern about health see comments (S.1145)		
+8A	COM	EDU_HE-S785	question about higher education (S.785)		
+8A	COM	ENV_EPA-S1869	question about EPA rulemaking (S.1869)		
+8A	COM	IMM_REFORM-S1506	question about immigration reform (S.1506)		
+8A	COM	TRN_AIR-S2020	concern about air travel (S.2020)		159
+8A	COM	HOU_FHA-S593	information on FHA lending (S.593)		
+8A	COM	HOU_FHA-S1463	support FHA lending (S.1463)		196
+8A	COM	EDU_HE-S3486	question about higher education (S.3486)		
+8A	COM	DEF_BUDGET-S3216	oppose defense appropriations (S.3216)		
+8A	COM	TEL_PRIV-S3053	support data privacy (S.3053)		260
+8A	COM	IMM_REFORM-S3207	support immigration reform (S.3207)		
+8A	COM	HOU_FHA-S309	concern about FHA lending (S.309)		
+8A	COM	DEF_VET-S1887	concern about veterans benefits (S.1887)	Y	
+8A	COM	TEL_PRIV-S2606	support data privacy (S.2606)	Y	235
+8A	COM	AGR_FARM-S2707	question about the farm bill (S.2707)		
+8A	COM	LAB_MINWAGE-S1009	concern about the minimum wage (S.1009)		
+8A	COM	IMM_REFORM-S933	information on immigration reform (S.933)		
+8A	COM	TEL_PRIV-S603	information on data privacy (S.603)		
+8A	COM	EDU_K12-S1412	support K-12 education funding (S.1412)		
+8A	COM	EDU_LOAN-S3401	concern about student loan relief (S.3401)		307
+8A	COM	HOU_FHA-S993	question about FHA lending (S.993)		252
+8A	COM	JUD_NOM-S920	information on judicial nominations (S.920)		
+8A	COM	DEF_VET-S320	information on veterans benefits (S.320)		
+8A	COM	HEA_SC-S1706	oppose health see comments (S.1706)	Y	266
+8A	COM	DEF_VET-S234	oppose veterans benefits (S.234)	Y	
+8A	COM	TEL_NET-S2419	information on net neutrality (S.2419)	Y	246
+8A	COM	TEL_PRIV-S3099	oppose data privacy (S.3099)		
+8A	COM	TRN_HWY-S1640	support highway funding (S.1640)		234
+8A	COM	FIN_SEC-S1286	question about securities regulation (S.1286)	Y	
+8A	COM	ENV_WATER-S1173	question about clean water (S.1173)		
+8A	COM	IMM_REFORM-S2330	oppose immigration reform (S.2330)		
+8A	COM	IMM_REFORM-S1538	support immigration reform (S.1538)		
+8A	COM	AGR_TRADE-S1489	oppose agricultural trade (S.1489)		
+8A	COM	EDU_HE-S195	question about higher education (S.195)		
+8A	COM	FIN_SEC-S2317	oppose securities regulation (S.2317)		
+8A	COM	LAB_MINWAGE-S3025	information on the minimum wage (S.3025)		
+8A	COM	HEA_VA-S1447	question about veterans health care (S.1447)		
+8A	COM	FIN_BANK-S2565	information on financial services and banking (S.2565)		
+8A	COM	TEL_PRIV-S857	oppose data privacy (S.857)		329
+8A	COM	IMM_VISA-S2961	question about visa processing (S.2961)		395
+8A	COM	EDU_K12-S1509	oppose K-12 education funding (S.1509)		
+8A	COM	AGR_FARM-S2847	question about the farm bill (S.2847)		
+8A	COM	EDU_K12-S1860	information on K-12 education funding (S.1860)	Y	394
+8A	COM	EDU_HE-S2604	information on higher education (S.2604)		212
+8A	COM	DEF_VET-S3308	information on veterans benefits (S.3308)		337
+8A	COM	HOU_GSE-S2694	information on GSE reform (S.2694)		
+8A	COM	FIN_TAX-S237	support tax policy (S.237)		216
+8A	COM	LAB_UNION-S1495	concern about labor law (S.1495)		
+8A	COM	AGR_TRADE-S613	oppose agricultural trade (S.613)		
+8A	COM	TRN_HWY-S2532	oppose highway funding (S.2532)		
+8A	COM	EDU_K12-S1777	question about K-12 education funding (S.1777)	Y	
+8A	COM	HOU_GSE-S1736	support GSE reform (S.1736)		
+8A	COM	IMM_VISA-S1138	question about visa processing (S.1138)		
+8A	COM	IMM_VISA-S2932	information on visa processing (S.2932)		
+8A	COM	HOU_GSE-S2597	support GSE reform (S.2597)		
+8A	COM	DEF_BUDGET-S2831	oppose defense appropriations (S.2831)		
+8A	COM	ENV_EPA-S2780	information on EPA rulemaking (S.2780)		
+8A	COM	LAB_MINWAGE-S2019	support the minimum wage (S.2019)		
+8A	COM	LAB_MINWAGE-S1808	information on the minimum wage (S.1808)		
+8A	COM	TEL_PRIV-S1373	information on data privacy (S.1373)		
+8A	COM	TEL_PRIV-S1284	information on data privacy (S.1284)		
+8A	COM	LAB_UNION-S2672	information on labor law (S.2672)	Y	
+8A	COM	LAB_MINWAGE-S1811	information on the minimum wage (S.1811)		
+8A	COM	HEA_SC-S2378	concern about health see comments (S.2378)	Y	
+8A	COM	ENV_EPA-S1318	concern about EPA rulemaking (S.1318)		287
+8A	COM	LAB_MINWAGE-S1505	information on the minimum wage (S.1505)		
+8A	COM	EDU_K12-S706	concern about K-12 education funding (S.706)		
+8A	COM	HEA_SC-S2454	question about health see comments (S.2454)		343
+8A	COM	EDU_LOAN-S3332	support student loan relief (S.3332)		
+8A	COM	HEA_ACA-S1234	information on the Affordable Care Act (S.1234)	Y	
+8A	COM	FIN_TAX-S771	oppose tax policy (S.771)		
+8A	COM	LAB_MINWAGE-S647	information on the minimum wage (S.647)		362
+8A	COM	EDU_HE-S1851	information on higher education (S.1851)		225
+8A	COM	TEL_PRIV-S2749	information on data privacy (S.2749)		
+8A	COM	AGR_FARM-S2166	support the farm bill (S.2166)		
+8A	COM	FIN_SEC-S1509	concern about securities regulation (S.1509)		288
+8A	COM	LAB_UNION-S3199	question about labor law (S.3199)		
+8A	COM	TEL_PRIV-S2474	support data privacy (S.2474)		
+8A	COM	LAB_MINWAGE-S2224	oppose the minimum wage (S.2224)		
+8A	COM	DEF_VET-S2971	question about veterans benefits (S.2971)		
+8A	COM	HOU_GSE-S2989	support GSE reform (S.2989)		
+8A	COM	FIN_SEC-S3495	information on securities regulation (S.3495)		254
+8A	COM	JUD_GUN-S2214	information on firearms legislation (S.2214)		252
+
+
+*********************
+8A	COM	LAB_MINWAGE-S2686	oppose the minimum wage (S.2686)	Y	
+8A	COM	AGR_FARM-S2149	information on the farm bill (S.2149)		197
+8A	COM	JUD_GUN-S2307	oppose firearms legislation (S.2307)		
+8A	COM	ENV_EPA-S1019	information on EPA rulemaking (S.1019)	Y	
+8A	COM	TRN_HWY-S3459	support highway funding (S.3459)		
+8A	COM	DEF_VET-S708	concern about veterans benefits (S.708)		
+8A	COM	FIN_TAX-S2214	oppose tax policy (S.2214)		
+8A	COM	EDU_K12-S3270	support K-12 education funding (S.3270)		
+8A	COM	LAB_UNION-S2748	support labor law (S.2748)		129
+8A	COM	IMM_REFORM-S2403	concern about immigration reform (S.2403)		
+8A	COM	EDU_K12-S2889	information on K-12 education funding (S.2889)		
+8A	COM	JUD_NOM-S2400	information on judicial nominations (S.2400)		218
+8A	COM	IMM_REFORM-S2366	support immigration reform (S.2366)		
+8A	COM	HEA_MEDICARE-S402	oppose Medicare reimbursement (S.402)	Y	
+8A	COM	IMM_VISA-S3206	information on visa processing (S.3206)		213
+8A	COM	LAB_MINWAGE-S2554	support the minimum wage (S.2554)		311
+8A	COM	EDU_HE-S1423	information on higher education (S.1423)		
+8A	COM	EDU_HE-S820	concern about higher education (S.820)	Y	
+8A	COM	HOU_FHA-S2032	concern about FHA lending (S.2032)		
+8A	COM	TRN_HWY-S1147	oppose highway funding (S.1147)		149
+8A	COM	JUD_GUN-S787	question about firearms legislation (S.787)	Y	
+8A	COM	EDU_HE-S855	question about higher education (S.855)		
+8A	COM	AGR_FARM-S2245	oppose the farm bill (S.2245)		
+8A	COM	AGR_TRADE-S2737	concern about agricultural trade (S.2737)		
+8A	COM	IMM_REFORM-S589	information on immigration reform (S.589)		
+8A	COM	HEA_VA-S370	information on veterans health care (S.370)		
+8A	COM	LAB_MINWAGE-S1005	information on the minimum wage (S.1005)		
+8A	COM	IMM_REFORM-S2304	oppose immigration reform (S.2304)		
+8A	COM	IMM_REFORM-S2957	question about immigration reform (S.2957)	Y	
+8A	COM	JUD_GUN-S2953	concern about firearms legislation (S.2953)		
+8A	COM	EDU_K12-S1167	concern about K-12 education funding (S.1167)		
+8A	COM	HEA_DRUG-S2918	support prescription drug costs (S.2918)		142
+8A	COM	TRN_AIR-S1166	oppose air travel (S.1166)	Y	
+8A	COM	LAB_UNION-S2653	question about labor law (S.2653)		
+8A	COM	AGR_FARM-S1687	information on the farm bill (S.1687)		
+8A	COM	DEF_BUDGET-S1434	concern about defense appropriations (S.1434)		
+8A	COM	HOU_GSE-S2982	support GSE reform (S.2982)		260
+8A	COM	TRN_AIR-S1174	support air travel (S.1174)	Y	
+8A	COM	EDU_K12-S1669	question about K-12 education funding (S.1669)		
+8A	COM	HOU_FHA-S2451	question about FHA lending (S.2451)		155
+8A	COM	EDU_HE-S2998	concern about higher education (S.2998)	Y	
+8A	COM	TRN_AIR-S1267	information on air travel (S.1267)		177
+8A	COM	FIN_CREDIT-S3246	oppose consumer credit (S.3246)		
+8A	COM	HEA_MEDICARE-S515	information on Medicare reimbursement (S.515)		347
+8A	COM	IMM_VISA-S1465	concern about visa processing (S.1465)	Y	
+8A	COM	LAB_UNION-S2257	concern about labor law (S.2257)		
+8A	COM	FIN_CREDIT-S283	oppose consumer credit (S.283)		
+8A	COM	EDU_HE-S1772	oppose higher education (S.1772)		231
+8A	COM	JUD_GUN-S386	oppose firearms legislation (S.386)		
+8A	COM	JUD_GUN-S1539	question about firearms legislation (S.1539)	Y	190
+8A	COM	HEA_VA-S1276	information on veterans health care (S.1276)		197
+8A	COM	IMM_VISA-S877	concern about visa processing (S.877)		282
+8A	COM	ENV_ENERGY-S3346	concern about energy policy (S.3346)		
+8A	COM	LAB_MINWAGE-S781	question about the minimum wage (S.781)		
+8A	COM	EDU_LOAN-S1122	concern about student loan relief (S.1122)		114
+8A	COM	EDU_HE-S1186	support higher education (S.1186)	Y	
+8A	COM	DEF_BUDGET-S786	concern about defense appropriations (S.786)	Y	
+8A	COM	JUD_NOM-S690	information on judicial nominations (S.690)		
+8A	COM	IMM_VISA-S1284	oppose visa processing (S.1284)	Y	
+8A	COM	TRN_AIR-S408	information on air travel (S.408)		316
+8A	COM	DEF_VET-S1757	oppose veterans benefits (S.1757)		
+8A	COM	TEL_NET-S1905	question about net neutrality (S.1905)		
+8A	COM	LAB_MINWAGE-S708	concern about the minimum wage (S.708)		
+8A	COM	HOU_FHA-S2200	question about FHA lending (S.2200)		342
+8A	COM	ENV_ENERGY-S2397	support energy policy (S.2397)	Y	
+8A	COM	TRN_AIR-S263	question about air travel (S.263)		113
+8A	COM	AGR_TRADE-S156	information on agricultural trade (S.156)		
+8A	COM	HOU_FHA-S1367	support FHA lending (S.1367)		
+8A	COM	HEA_DRUG-S1971	oppose prescription drug costs (S.1971)		177
+8A	COM	EDU_K12-S2479	information on K-12 education funding (S.2479)		226
+8A	COM	JUD_GUN-S562	information on firearms legislation (S.562)		258
+8A	COM	AGR_TRADE-S1413	question about agricultural trade (S.1413)		
+8A	COM	LAB_UNION-S283	information on labor law (S.283)		
+8A	COM	HOU_FHA-S1321	information on FHA lending (S.1321)		258
+8A	COM	HEA_MEDICARE-S2545	oppose Medicare reimbursement (S.2545)	Y	
+8A	COM	IMM_REFORM-S333	oppose immigration reform (S.333)		
+8A	COM	IMM_REFORM-S485	oppose immigration reform (S.485)		
+8A	COM	ENV_WATER-S1028	support clean water (S.1028)		
+8A	COM	IMM_VISA-S471	concern about visa processing (S.471)		
+8A	COM	HOU_FHA-S158	question about FHA lending (S.158)		
+8A	COM	DEF_VET-S2852	support veterans benefits (S.2852)		
+8A	COM	IMM_REFORM-S1441	oppose immigration reform (S.1441)	Y	
+8A	COM	AGR_TRADE-S1997	support agricultural trade (S.1997)		
+8A	COM	TRN_HWY-S3114	information on highway funding (S.3114)	Y	311
+8A	COM	TRN_HWY-S723	support highway funding (S.723)		183
+8A	COM	DEF_VET-S1983	concern about veterans benefits (S.1983)		260
+8A	COM	HEA_MEDICARE-S2657	support Medicare reimbursement (S.2657)		
+8A	COM	HEA_DRUG-S235	oppose prescription drug costs (S.235)		256
+8A	COM	HEA_ACA-S3261	oppose the Affordable Care Act (S.3261)		398
+8A	COM	AGR_TRADE-S407	information on agricultural trade (S.407)		
+8A	COM	HEA_MEDICARE-S2200	concern about Medicare reimbursement (S.2200)		
+8A	COM	HOU_GSE-S1321	information on GSE reform (S.1321)	Y	
+8A	COM	IMM_VISA-S1171	concern about visa processing (S.1171)		274
+8A	COM	TRN_AIR-S529	information on air travel (S.529)	Y	
+8A	COM	TRN_HWY-S1731	concern about highway funding (S.1731)		
+8A	COM	HEA_SC-S169	information on health see comments (S.169)		
+8A	COM	EDU_HE-S1642	support higher education (S.1642)		237
+8A	COM	LAB_UNION-S2143	question about labor law (S.2143)		
+8A	COM	TEL_NET-S219	information on net neutrality (S.219)		
+8A	COM	AGR_FARM-S1790	concern about the farm bill (S.1790)		
+8A	COM	EDU_HE-S3139	support higher education (S.3139)	Y	270
+8A	COM	EDU_HE-S2845	question about higher education (S.2845)	Y	
+8A	COM	FIN_BANK-S1825	concern about financial services and banking (S.1825)		
+8A	COM	DEF_BUDGET-S891	support defense appropriations (S.891)	Y	
+8A	COM	HOU_FHA-S1350	information on FHA lending (S.1350)		
+8A	COM	DEF_BUDGET-S3499	support defense appropriations (S.3499)		
+8A	COM	LAB_UNION-S2020	information on labor law (S.2020)		375
+8A	COM	HOU_FHA-S2915	question about FHA lending (S.2915)		
+8A	COM	TRN_HWY-S1633	concern about highway funding (S.1633)		
+8A	COM	HEA_MEDICARE-S3321	information on Medicare reimbursement (S.3321)		
+8A	COM	EDU_LOAN-S1666	concern about student loan relief (S.1666)	Y	
+8A	COM	HOU_GSE-S2027	oppose GSE reform (S.2027)		
+8A	COM	AGR_TRADE-S729	information on agricultural trade (S.729)		
+8A	COM	TEL_PRIV-S1478	concern about data privacy (S.1478)		209
+8A	COM	EDU_HE-S2354	information on higher education (S.2354)		
+8A	COM	TEL_NET-S909	question about net neutrality (S.909)		
+8A	COM	FIN_TAX-S3444	oppose tax policy (S.3444)	Y	
+8A	COM	EDU_LOAN-S2332	question about student loan relief (S.2332)		
+8A	COM	IMM_VISA-S1765	question about visa processing (S.1765)		299
+8A	COM	JUD_NOM-S2835	information on judicial nominations (S.2835)		389
+8A	COM	FIN_TAX-S2851	concern about tax policy (S.2851)		
+8A	COM	HEA_ACA-S972	information on the Affordable Care Act (S.972)		
+8A	COM	AGR_TRADE-S309	support agricultural trade (S.309)		328
+8A	COM	HOU_GSE-S3101	information on GSE reform (S.3101)		127
+8A	COM	HOU_GSE-S346	information on GSE reform (S.346)		
+8A	COM	TRN_HWY-S2192	oppose highway funding (S.2192)		
+8A	COM	DEF_VET-S2496	information on veterans benefits (S.2496)	Y	
+8A	COM	AGR_FARM-S3253	oppose the farm bill (S.3253)		274
+8A	COM	EDU_HE-S1600	oppose higher education (S.1600)		
+8A	COM	JUD_NOM-S395	concern about judicial nominations (S.395)		
+8A	COM	TEL_PRIV-S1847	question about data privacy (S.1847)		
+8A	COM	DEF_BUDGET-S2244	support defense appropriations (S.2244)	Y	
+8A	COM	DEF_VET-S2878	question about veterans benefits (S.2878)	Y	
+8A	COM	HOU_FHA-S909	information on FHA lending (S.909)		
+8A	COM	JUD_NOM-S2265	concern about judicial nominations (S.2265)		
+8A	COM	HOU_FHA-S3329	support FHA lending (S.3329)		
+8A	COM	ENV_ENERGY-S2944	support energy policy (S.2944)		
+8A	COM	TEL_NET-S1663	support net neutrality (S.1663)		226
+8A	COM	IMM_VISA-S1783	concern about visa processing (S.1783)	Y	
+8A	COM	TEL_PRIV-S1756	oppose data privacy (S.1756)		
+8A	COM	HOU_FHA-S3372	support FHA lending (S.3372)		
+8A	COM	DEF_VET-S1350	question about veterans benefits (S.1350)		
+8A	COM	DEF_VET-S242	support veterans benefits (S.242)		
+8A	COM	ENV_WATER-S1913	oppose clean water (S.1913)		
+8A	COM	IMM_REFORM-S3349	question about immigration reform (S.3349)		
+8A	COM	FIN_BANK-S3163	concern about financial services and banking (S.3163)	Y	
+8A	COM	EDU_K12-S677	question about K-12 education funding (S.677)		360
+8A	COM	IMM_REFORM-S3441	support immigration reform (S.3441)		
+8A	COM	TEL_NET-S721	support net neutrality (S.721)		
+8A	COM	JUD_GUN-S3211	question about firearms legislation (S.3211)		
+8A	COM	AGR_FARM-S1178	information on the farm bill (S.1178)		236
+8A	COM	JUD_NOM-S2091	information on judicial nominations (S.2091)		
+8A	COM	FIN_BANK-S1892	concern about financial services and banking (S.1892)		258
+8A	COM	HOU_GSE-S1049	support GSE reform (S.1049)		
+8A	COM	TEL_NET-S1430	oppose net neutrality (S.1430)		176
+8A	COM	TRN_AIR-S3243	question about air travel (S.3243)		
+8A	COM	EDU_HE-S637	question about higher education (S.637)		
+8A	COM	DEF_BUDGET-S2326	support defense appropriations (S.2326)	Y	
+8A	COM	HEA_VA-S2975	support veterans health care (S.2975)		
+8A	COM	HOU_GSE-S1406	support GSE reform (S.1406)		142
+8A	COM	EDU_LOAN-S1750	information on student loan relief (S.1750)		
+8A	COM	AGR_TRADE-S3439	concern about agricultural trade (S.3439)		304
+8A	COM	TRN_AIR-S920	oppose air travel (S.920)		241
+8A	COM	TEL_NET-S1591	support net neutrality (S.1591)		
+8A	COM	EDU_K12-S1324	support K-12 education funding (S.1324)		311
+8A	COM	JUD_GUN-S3461	question about firearms legislation (S.3461)		124
+8A	COM	IMM_VISA-S3301	question about visa processing (S.3301)		178
+8A	COM	HOU_GSE-S1618	oppose GSE reform (S.1618)	Y	
+8A	COM	AGR_TRADE-S1314	oppose agricultural trade (S.1314)		
+8A	COM	ENV_EPA-S1917	question about EPA rulemaking (S.1917)		
+8A	COM	HOU_FHA-S1325	question about FHA lending (S.1325)		286
+8A	COM	TEL_NET-S1443	question about net neutrality (S.1443)		
+8A	COM	ENV_ENERGY-S2097	information on energy policy (S.2097)	Y	
+8A	COM	LAB_MINWAGE-S3039	concern about the minimum wage (S.3039)		172
+8A	COM	IMM_REFORM-S1514	question about immigration reform (S.1514)		
+8A	COM	LAB_UNION-S1298	information on labor law (S.1298)		
+8A	COM	EDU_K12-S1942	oppose K-12 education funding (S.1942)		
+8A	COM	EDU_K12-S1497	oppose K-12 education funding (S.1497)		
+8A	COM	TEL_PRIV-S2859	support data privacy (S.2859)	Y	259
+8A	COM	HOU_GSE-S3280	oppose GSE reform (S.3280)		
+8A	COM	JUD_GUN-S3328	support firearms legislation (S.3328)		
+8A	COM	JUD_GUN-S418	concern about firearms legislation (S.418)		244
+8A	COM	EDU_K12-S356	oppose K-12 education funding (S.356)		
+8A	COM	JUD_NOM-S822	question about judicial nominations (S.822)		
+8A	COM	LAB_MINWAGE-S1901	support the minimum wage (S.1901)		
+8A	COM	DEF_BUDGET-S1532	oppose defense appropriations (S.1532)	Y	
+8A	COM	DEF_VET-S2025	question about veterans benefits (S.2025)		397
+8A	COM	TEL_PRIV-S2164	support data privacy (S.2164)		
+8A	COM	DEF_VET-S2660	oppose veterans benefits (S.2660)		
+8A	COM	ENV_ENERGY-S188	question about energy policy (S.188)		
+8A	COM	HEA_VA-S1323	oppose veterans health care (S.1323)		
+8A	COM	EDU_HE-S988	oppose higher education (S.988)		
+8A	COM	HEA_ACA-S754	support the Affordable Care Act (S.754)	Y	
+8A	COM	AGR_TRADE-S1081	question about agricultural trade (S.1081)	Y	155
+8A	COM	HOU_GSE-S703	support GSE reform (S.703)		
+8A	COM	ENV_EPA-S1438	support EPA rulemaking (S.1438)	Y	
+8A	COM	AGR_TRADE-S2579	information on agricultural trade (S.2579)		
+8A	COM	HOU_GSE-S2674	support GSE reform (S.2674)		309
+8A	COM	TEL_NET-S2410	oppose net neutrality (S.2410)		
+8A	COM	ENV_ENERGY-S2514	information on energy policy (S.2514)		
+8A	COM	EDU_HE-S2287	oppose higher education (S.2287)		197
+8A	COM	HOU_FHA-S277	oppose FHA lending (S.277)		217
+8A	COM	TRN_HWY-S2773	concern about highway funding (S.2773)		
+8A	COM	JUD_NOM-S543	support judicial nominations (S.543)		
+8A	COM	ENV_EPA-S3249	question about EPA rulemaking (S.3249)		
+8A	COM	TRN_AIR-S2487	information on air travel (S.2487)		
+8A	COM	FIN_BANK-S2489	question about financial services and banking (S.2489)		
+8A	COM	DEF_BUDGET-S825	oppose defense appropriations (S.825)		
+8A	COM	LAB_UNION-S2987	question about labor law (S.2987)		124
+8A	COM	IMM_VISA-S1387	question about visa processing (S.1387)		
+8A	COM	LAB_UNION-S2412	information on labor law (S.2412)		
+8A	COM	TEL_NET-S1955	question about net neutrality (S.1955)		353
+8A	COM	AGR_FARM-S1053	information on the farm bill (S.1053)		
+8A	COM	ENV_EPA-S1946	information on EPA rulemaking (S.1946)		
+8A	COM	AGR_FARM-S1813	support the farm bill (S.1813)	Y	
+8A	COM	FIN_BANK-S401	oppose financial services and banking (S.401)		
+8A	COM	FIN_SEC-S2668	concern about securities regulation (S.2668)		
+8A	COM	AGR_FARM-S400	oppose the farm bill (S.400)		
+8A	COM	JUD_NOM-S1965	oppose judicial nominations (S.1965)		
+8A	COM	DEF_BUDGET-S417	information on defense appropriations (S.417)		
+8A	COM	FIN_SEC-S2160	oppose securities regulation (S.2160)		
+8A	COM	HEA_MEDICARE-S2813	information on Medicare reimbursement (S.2813)		
+8A	COM	TEL_PRIV-S965	question about data privacy (S.965)		261
+8A	COM	JUD_NOM-S2489	oppose judicial nominations (S.2489)		
+8A	COM	DEF_VET-S2665	question about veterans benefits (S.2665)		
+8A	COM	LAB_MINWAGE-S2489	information on the minimum wage (S.2489)		138
+8A	COM	HEA_ACA-S1488	support the Affordable Care Act (S.1488)		324
+8A	COM	TRN_HWY-S1560	concern about highway funding (S.1560)		
+8A	COM	FIN_TAX-S2023	oppose tax policy (S.2023)		
+8A	COM	TRN_AIR-S3090	information on air travel (S.3090)		102
+8A	COM	TEL_PRIV-S2300	concern about data privacy (S.2300)		
+8A	COM	LAB_UNION-S1315	support labor law (S.1315)		
+8A	COM	DEF_BUDGET-S1234	concern about defense appropriations (S.1234)		
+8A	COM	TRN_AIR-S1777	oppose air travel (S.1777)	Y	
+8A	COM	TRN_HWY-S3362	information on highway funding (S.3362)		
+8A	COM	LAB_UNION-S2467	oppose labor law (S.2467)	Y	293
+8A	COM	EDU_HE-S2434	information on higher education (S.2434)		
+8A	COM	EDU_HE-S3265	question about higher education (S.3265)		
+8A	COM	AGR_FARM-S464	concern about the farm bill (S.464)		259
+8A	COM	ENV_EPA-S2630	information on EPA rulemaking (S.2630)	Y	202
+8A	COM	DEF_VET-S1351	information on veterans benefits (S.1351)		308
+8A	COM	FIN_BANK-S693	question about financial services and banking (S.693)		
+8A	COM	LAB_UNION-S1974	concern about labor law (S.1974)		235
+8A	COM	TEL_PRIV-S2796	support data privacy (S.2796)		
+8A	COM	TRN_AIR-S2579	concern about air travel (S.2579)		
+8A	COM	HOU_GSE-S2277	concern about GSE reform (S.2277)	Y	
+8A	COM	FIN_CREDIT-S2058	oppose consumer credit (S.2058)		
+8A	COM	HOU_GSE-S2716	information on GSE reform (S.2716)		
+8A	COM	TRN_AIR-S2938	question about air travel (S.2938)		
+8A	COM	FIN_SEC-S2466	support securities regulation (S.2466)	Y	184
+8A	COM	HEA_MEDICARE-S1519	concern about Medicare reimbursement (S.1519)		
+8A	COM	AGR_TRADE-S694	question about agricultural trade (S.694)		212
+8A	COM	EDU_K12-S1424	information on K-12 education funding (S.1424)	Y	183
+8A	COM	AGR_FARM-S1981	support the farm bill (S.1981)	Y	
+8A	COM	FIN_TAX-S1160	concern about tax policy (S.1160)		
+8A	COM	TEL_NET-S2128	information on net neutrality (S.2128)		
+8A	COM	IMM_REFORM-S1477	support immigration reform (S.1477)		
+8A	COM	EDU_LOAN-S2248	oppose student loan relief (S.2248)	Y	
+8A	COM	FIN_BANK-S3350	question about financial services and banking (S.3350)		
+8A	COM	LAB_MINWAGE-S1862	oppose the minimum wage (S.1862)	Y	
+8A	COM	DEF_BUDGET-S2989	oppose defense appropriations (S.2989)		
+8A	COM	LAB_UNION-S513	concern about labor law (S.513)		
+8A	COM	HEA_SC-S437	concern about health see comments (S.437)		135
+8A	COM	HEA_MEDICARE-S1689	oppose Medicare reimbursement (S.1689)		301
+8A	COM	LAB_UNION-S591	information on labor law (S.591)	Y	
+8A	COM	TRN_HWY-S3208	question about highway funding (S.3208)		
+8A	COM	ENV_EPA-S1306	concern about EPA rulemaking (S.1306)		
+8A	COM	TRN_AIR-S2959	information on air travel (S.2959)		371
+8A	COM	TEL_PRIV-S2620	oppose data privacy (S.2620)	Y	150
+8A	COM	ENV_EPA-S1049	information on EPA rulemaking (S.1049)		
+8A	COM	DEF_VET-S970	oppose veterans benefits (S.970)		123
+8A	COM	ENV_WATER-S2709	concern about clean water (S.2709)		
+8A	COM	HOU_FHA-S468	oppose FHA lending (S.468)	Y	396
+8A	COM	TRN_AIR-S543	information on air travel (S.543)		
+8A	COM	IMM_VISA-S1947	information on visa processing (S.1947)		
+8A	COM	HOU_FHA-S3131	concern about FHA lending (S.3131)	Y	
+8A	COM	TEL_PRIV-S2866	information on data privacy (S.2866)		110
+8A	COM	EDU_LOAN-S3158	question about student loan relief (S.3158)	Y	
+8A	COM	AGR_TRADE-S1414	oppose agricultural trade (S.1414)		
+8A	COM	LAB_MINWAGE-S556	question about the minimum wage (S.556)	Y	
+8A	COM	EDU_LOAN-S1037	concern about student loan relief (S.1037)		
+8A	COM	TRN_AIR-S399	information on air travel (S.399)		
+8A	COM	LAB_MINWAGE-S244	information on the minimum wage (S.244)		
+8A	COM	AGR_FARM-S903	information on the farm bill (S.903)		288
+8A	COM	HOU_FHA-S2780	concern about FHA lending (S.2780)	Y	
+8A	COM	EDU_HE-S3407	question about higher education (S.3407)		349
+8A	COM	EDU_LOAN-S2800	oppose student loan relief (S.2800)		
+8A	COM	TEL_NET-S2339	concern about net neutrality (S.2339)		
+8A	COM	JUD_GUN-S1193	question about firearms legislation (S.1193)		
+8A	COM	FIN_BANK-S3477	oppose financial services and banking (S.3477)	Y	128
+8A	COM	LAB_MINWAGE-S3091	concern about the minimum wage (S.3091)		
+8A	COM	JUD_GUN-S971	support firearms legislation (S.971)		
+8A	COM	JUD_GUN-S2830	question about firearms legislation (S.2830)		337
+8A	COM	ENV_ENERGY-S3004	oppose energy policy (S.3004)		
+8A	COM	FIN_CREDIT-S3153	concern about consumer credit (S.3153)		137
+8A	COM	EDU_HE-S3322	oppose higher education (S.3322)	Y	310
+8A	COM	JUD_GUN-S2836	support firearms legislation (S.2836)	Y	268
+8A	COM	TEL_PRIV-S3103	information on data privacy (S.3103)		
+8A	COM	ENV_EPA-S2039	support EPA rulemaking (S.2039)		
+8A	COM	IMM_VISA-S1365	information on visa processing (S.1365)		
+8A	COM	EDU_K12-S1763	oppose K-12 education funding (S.1763)		
+8A	COM	HEA_SC-S1273	question about health see comments (S.1273)		309
+8A	COM	IMM_VISA-S2274	question about visa processing (S.2274)		
+8A	COM	TRN_HWY-S617	information on highway funding (S.617)		
+8A	COM	DEF_VET-S2079	information on veterans benefits (S.2079)		124
+8A	COM	TEL_PRIV-S806	oppose data privacy (S.806)		331
+8A	COM	HEA_ACA-S1216	question about the Affordable Care Act (S.1216)		
+8A	COM	IMM_VISA-S3417	information on visa processing (S.3417)	Y	
+8A	COM	IMM_REFORM-S1428	information on immigration reform (S.1428)	Y	
+8A	COM	ENV_ENERGY-S3256	oppose energy policy (S.3256)	Y	
+8A	COM	ENV_EPA-S2316	question about EPA rulemaking (S.2316)		
+8A	COM	TRN_AIR-S777	oppose air travel (S.777)		
+8A	WORK	SCOUTS	Scouts workflow		
+8A	WORK	CASEWORK	Casework		
+8A	WORK	FLAG	Flag requests		
+8A	WORK	TOURS	Tours		
+8A	WORK	ACADEMY	Academy nominations		
+8A	WORK	APPT	Appointments		
+8A	WORK	GRANT	Grant support		
+8A	WORK	VA	Veterans Affairs		
+8A	WORK	SSA	Social Security		
+8A	WORK	IMMIG	Immigration		
+8A	WORK	IRS	IRS		
+8A	WORK	WF.001	Workflow category 1		
+8A	WORK	WF.002	Workflow category 2		
+8A	WORK	WF.003	Workflow category 3		
+8A	WORK	WF.004	Workflow category 4		
+8A	WORK	WF.005	Workflow category 5		
+8A	WORK	WF.006	Workflow category 6		
+8A	WORK	WF.007	Workflow category 7		
+8A	WORK	WF.008	Workflow category 8		
+8A	WORK	WF.009	Workflow category 9		
+8A	WORK	WF.010	Workflow category 10		
+8A	WORK	WF.011	Workflow category 11		
+8A	WORK	WF.012	Workflow category 12		
+8A	WORK	WF.013	Workflow category 13		
+8A	WORK	WF.014	Workflow category 14		
+8A	WORK	WF.015	Workflow category 15		
+8A	WORK	WF.016	Workflow category 16		
+8A	WORK	WF.017	Workflow category 17		
+8A	WORK	WF.018	Workflow category 18		
+8A	WORK	WF.019	Workflow category 19		
+8A	WORK	WF.020	Workflow category 20		
+8A	WORK	WF.021	Workflow category 21		
+8A	WORK	WF.022	Workflow category 22		
+8A	WORK	WF.023	Workflow category 23		
+8A	WORK	WF.024	Workflow category 24		
+8A	WORK	WF.025	Workflow category 25		
+8A	WORK	WF.026	Workflow category 26		
+8A	WORK	WF.027	Workflow category 27		
+8A	WORK	WF.028	Workflow category 28		
+8A	WORK	WF.029	Workflow category 29		
+8A	WORK	WF.030	Workflow category 30		
+8A	WORK	WF.031	Workflow category 31		
+8A	WORK	WF.032	Workflow category 32		
+8A	WORK	WF.033	Workflow category 33		
+8A	WORK	WF.034	Workflow category 34		
+8A	WORK	WF.035	Workflow category 35		
+8A	WORK	WF.036	Workflow category 36		
+8A	WORK	WF.037	Workflow category 37		
+8A	WORK	WF.038	Workflow category 38		
+8A	WORK	WF.039	Workflow category 39		
+8A	WORK	WF.040	Workflow category 40		
+8A	WORK	WF.041	Workflow category 41		
+8A	WORK	WF.042	Workflow category 42		
+8A	WORK	WF.043	Workflow category 43		
+8A	WORK	WF.044	Workflow category 44		
+8A	WORK	WF.045	Workflow category 45		
+8A	WORK	WF.046	Workflow category 46		
+8A	WORK	WF.047	Workflow category 47		
+8A	WORK	WF.048	Workflow category 48		
+8A	WORK	WF.049	Workflow category 49		
+8A	WORK	WF.050	Workflow category 50		
+8A	WORK	WF.051	Workflow category 51		
+8A	WORK	WF.052	Workflow category 52		
+8A	WORK	WF.053	Workflow category 53		
+8A	WORK	WF.054	Workflow category 54		
+8A	WORK	WF.055	Workflow category 55		
+8A	WORK	WF.056	Workflow category 56		
+8A	WORK	WF.057	Workflow category 57		
+8A	WORK	WF.058	Workflow category 58		
+8A	WORK	WF.059	Workflow category 59		
+8A	WORK	WF.060	Workflow category 60		
+8A	WORK	WF.061	Workflow category 61		
+8A	WORK	WF.062	Workflow category 62		
+8A	WORK	WF.063	Workflow category 63		
+8A	WORK	WF.064	Workflow category 64		
+8A	WORK	WF.065	Workflow category 65		
+8A	WORK	WF.066	Workflow category 66		
+8A	WORK	WF.067	Workflow category 67		
+8A	WORK	WF.068	Workflow category 68		
+8A	WORK	WF.069	Workflow category 69		
+8A	WORK	WF.070	Workflow category 70		
+8A	WORK	WF.071	Workflow category 71		
+8A	WORK	WF.072	Workflow category 72		
+8A	WORK	WF.073	Workflow category 73		
+8A	WORK	WF.074	Workflow category 74		
+8A	WORK	WF.075	Workflow category 75		
+8A	WORK	WF.076	Workflow category 76		
+8A	WORK	WF.077	Workflow category 77		
+8A	WORK	WF.078	Workflow category 78		
+8A	WORK	WF.079	Workflow category 79		
+8A	WORK	WF.080	Workflow category 80		
+8A	WORK	WF.081	Workflow category 81		
+8A	WORK	WF.082	Workflow category 82		
+8A	WORK	WF.083	Workflow category 83		
+8A	WORK	WF.084	Workflow category 84		
+8A	WORK	WF.085	Workflow category 85		
+8A	WORK	WF.086	Workflow category 86		
+8A	WORK	WF.087	Workflow category 87		
+8A	WORK	WF.088	Workflow category 88		
+8A	WORK	WF.089	Workflow category 89		
+8A	WORK	WF.090	Workflow category 90		
+8A	WORK	WF.091	Workflow category 91		
+8A	WORK	WF.092	Workflow category 92		
+8A	WORK	WF.093	Workflow category 93		
+8A	WORK	WF.094	Workflow category 94		
+8A	WORK	WF.095	Workflow category 95		
+8A	WORK	WF.096	Workflow category 96		
+8A	WORK	WF.097	Workflow category 97		
+8A	WORK	WF.098	Workflow category 98		
+8A	WORK	WF.099	Workflow category 99		
+8A	WORK	WF.100	Workflow category 100		
+8A	WORK	WF.101	Workflow category 101		
+8A	WORK	WF.102	Workflow category 102		
+8A	WORK	WF.103	Workflow category 103		
+8A	WORK	WF.104	Workflow category 104		
+8A	WORK	WF.105	Workflow category 105		
+8A	WORK	WF.106	Workflow category 106		
+8A	WORK	WF.107	Workflow category 107		
+8A	WORK	WF.108	Workflow category 108		
+8A	WORK	WF.109	Workflow category 109		
+8A	WORK_CAT	CASE	Casework		
+8A	WORK_CAT	EAGLE	Eagle Scout		
+8A	WORK_CAT	STATE	State agency		
+8A	WORK_CAT	FED	Federal agency		
+8A	WORK_CAT	VA	Veterans		
+8A	WORK_CAT	SSA	Social Security		
+8A	WORK_CAT	IRS	IRS		
+8A	WORK_CAT	MIL	Military		
+8A	WORK_CAT	IMM	Immigration		
+8A	WORK_CAT	OTH	Other		
+8A	STAFF	176	Jennifer James	Y	
+8A	STAFF	230	Charles Ångström		
+8A	STAFF	395	Alice McDonald		
+8A	STAFF	135	Gayanne Walker	Y	
+8A	STAFF	379	Karen Sanchez	Y	
+8A	STAFF	119	Gerald Gibson	Y	
+8A	STAFF	356	Harold Edwards	Y	
+8A	STAFF	299	Barbara Hunter	Y	
+8A	STAFF	128	Frances Sanders	Y	
+8A	STAFF	235	Steven Smith		
+8A	STAFF	343	Noah Murray		
+8A	STAFF	194	Charlotte Williams	Y	
+8A	STAFF	352	Billy Dunn	Y	
+
+8A	STAFF	163	Jonathan Anderson	Y	
+8A	STAFF	201	Diane Sanchez		
+8A	STAFF	263	Lewis King		
+8A	STAFF	313	Douglas Meyer		
+8A	STAFF	184	Joshua Castillo		
+8A	STAFF	284	Raymond Cole		
+8A	STAFF	234	Judith Hill		
+8A	STAFF	390	Dorothy Miller		
+8A	STAFF	293	Anna Davis		
+8A	STAFF	180	Margaret Richardson	Y	
+8A	STAFF	309	Helen Cole		
+8A	STAFF	370	Lisa Kennedy	Y	
+8A	STAFF	224	Samuel Butler	Y	
+8A	STAFF	231	Dylan Graham	Y	
+8A	STAFF	372	Richard Wright		
+8A	STAFF	116	Frank Russell	Y	
+8A	STAFF	328	Harold Bell		
+8A	STAFF	375	Kevin Burns		
+8A	STAFF	229	Ralph Marshall		
+8A	STAFF	138	Brenda Meyer	Y	
+8A	STAFF	346	Zachary Grant		
+8A	STAFF	156	Joshua McDonald	Y	
+8A	STAFF	170	Diana Ramos		
+8A	STAFF	165	Arthur Ritchey	Y	
+8A	STAFF	120	Raymond Parker	Y	
+8A	STAFF	126	Gabriel Green	Y	
+8A	STAFF	300	Patricia Herrera		
+8A	STAFF	397	Bryan Barnes		
+8A	STAFF	213	Gary Miller	Y	
+8A	STAFF	342	Amy Garza		
+8A	STAFF	365	Joyce Daniels		
+8A	STAFF	388	Betty Peña		
+8A	STAFF	253	Marilyn Romero		
+8A	STAFF	270	Carl Miller	Y	
+8A	STAFF	210	Helen Hunt	Y	
+8A	STAFF	132	Judy Palmer	Y	
+8A	STAFF	112	Peter Mills		
+8A	STAFF	384	Eugene Robertson	Y	
+8A	STAFF	332	Brenda Wells		
+8A	STAFF	193	Kyle Garcia	Y	
+8A	STAFF	308	Hunter Brown		
+8A	STAFF	349	Lauren Adams		
+8A	STAFF	340	Kelly Smith		
+8A	STAFF	324	Elijah Chavez		
+8A	STAFF	148	Lawrence Schmidt	Y	
+8A	STAFF	301	Dorothy Hunt	Y	
+8A	STAFF	392	Brian Baker		
+8A	STAFF	145	Michelle Rivera	Y	
+8A	STAFF	238	Gerald Henry	Y	
+8A	STAFF	104	Lawrence Kelley		
+8A	STAFF	139	Kathryn Guzman	Y	
+8A	STAFF	127	Stephanie Hill		
+8A	STAFF	320	Catherine Cox	Y	
+8A	STAFF	209	Gregory Foster		
+8A	STAFF	258	Julie Hughes	Y	
+8A	STAFF	360	Natalie Kelley		
+8A	STAFF	271	Kenneth Gordon		
+8A	STAFF	131	Donald Morales		
+8A	STAFF	396	Alice Wright		
+8A	STAFF	144	Madison Castillo		
+8A	STAFF	326	Diane Cook		
+8A	STAFF	177	Kathleen Alexander	Y	
+8A	STAFF	380	Kevin Hughes		
+8A	STAFF	134	Elizabeth Weaver		
+8A	STAFF	225	Kristen Smith		
+8A	STAFF	260	Ashley Gomez		
+8A	STAFF	371	Andrew Morgan	Y	
+8A	STAFF	187	Ashley Walker	Y	
+8A	STAFF	381	Judy Palmer	Y	
+8A	STAFF	275	Douglas Perez		
+8A	STAFF	188	Joan Rivera		
+8A	STAFF	102	Jean O'Connor		
+8A	STAFF	115	Timothy Bland	Y	
+8A	STAFF	316	Lauren Chen		
+8A	STAFF	347	Andrew González		
+8A	STAFF	307	Kathryn Reed		
+8A	STAFF	357	Matthew Kennedy	Y	
+8A	STAFF	189	Patricia Evans		
+8A	STAFF	239	Cynthia Collins		
+8A	STAFF	276	Gloria Soto		
+8A	STAFF	208	Dennis Hunter	Y	
+8A	STAFF	268	André Herrera		
+8A	STAFF	155	Kenneth Gardner		
+8A	STAFF	146	Douglas Edwards	Y	
+8A	STAFF	348	Nancy Campbell		
+8A	STAFF	314	Samantha Tucker	Y	
+8A	STAFF	159	Keon Payne	Y	
+8A	STAFF	137	Jean Garza	Y	
+8A	STAFF	266	Russell Allen	Y	
+8A	STAFF	277	Andrea Gomez		
+8A	STAFF	248	Ann Hall		
+8A	STAFF	161	Christine Adams		
+8A	STAFF	249	Cynthia Herrera	Y	
+8A	STAFF	354	Peter Martin		
+8A	STAFF	283	Billy Myers		
+8A	STAFF	142	Julie Powell		
+8A	STAFF	315	María Hernandez	Y	
+8A	STAFF	111	Amy Gonzalez		
+8A	STAFF	302	Theresa Hamilton	Y	
+8A	STAFF	317	Brandon Salazar		
+8A	STAFF	267	Jason Rice		
+8A	STAFF	323	Mateo Nelson		
+8A	STAFF	237	Ethan Black		
+8A	STAFF	212	Donna Fisher		
+8A	STAFF	261	Ruth Hayes	Y	
+8A	STAFF	363	David Sanchez		
+8A	STAFF	274	Jonathan Hernández	Y	
+8A	STAFF	366	Pamela James		
+8A	STAFF	376	Hunter Freeman		
+8A	STAFF	351	Carolyn Freeman		
+8A	STAFF	150	Mateo Ramirez	Y	
+8A	STAFF	245	Edward Gardner	Y	
+8A	STAFF	113	Christina Schmidt		
+8A	STAFF	399	Ronald Payne		
+8A	STAFF	304	Ethan Marshall		
+8A	STAFF	214	Dennis Peterson		
+8A	STAFF	325	Patrick White		
+8A	STAFF	141	Edward Gardner	Y	
+8A	STAFF	216	Sharon Ortiz	Y	
+8A	STAFF	289	Eric Walker		
+8A	STAFF	220	Charles Cruz	Y	
+8A	STAFF	368	Renée Tran	Y	
+8A	STAFF	171	Jesse Wallace	Y	
+8A	STAFF	319	Dennis Thomas		
+8A	STAFF	196	Dennis González	Y	
+8A	STAFF	185	Kathleen Crislip		
+8A	STAFF	329	Dennis Cox		
+8A	STAFF	273	Laura Cole		
+8A	STAFF	242	Shirley Perry	Y	
+8A	STAFF	140	Brandon Burns		
+8A	STAFF	166	Barbara Martin	Y	
+8A	STAFF	281	Catherine Soto		
+8A	STAFF	232	Gloria Kim	Y	
+8A	STAFF	246	Benjamin Herrera	Y	
+8A	STAFF	288	Stephanie Ritchey		
+8A	STAFF	335	Shirley Rivera		
+8A	STAFF	269	Shirley Palmer		
+8A	STAFF	369	Don Diaz	Y	
+8A	STAFF	202	Madison Wood		
+8A	STAFF	160	Ruth Avery	Y	
+8A	STAFF	353	Larry Castillo		
+8A	STAFF	282	Robert Mendez	Y	
+8A	STAFF	362	Stephen Weaver		
+8A	STAFF	236	Samantha Jones		
+8A	STAFF	391	Janet Miller		
+8A	STAFF	286	José Clark		
+8A	STAFF	129	María Robinson		
+8A	STAFF	178	Henry Reynolds		
+8A	STAFF	124	Judy Kelly	Y	
+8A	STAFF	223	Renée Campbell		
+8A	STAFF	394	Victoria Guzman		
+8A	STAFF	311	Dennis Ramírez		
+8A	STAFF	377	Victoria Thomas	Y	
+8A	STAFF	114	Carl Gomez		
+8A	STAFF	244	Christina Coleman		
+8A	STAFF	306	Russell Medina	Y	
+8A	STAFF	118	Frank Tucker		
+8A	STAFF	192	Deborah Butler		
+8A	STAFF	364	Jessica Murphy		
+8A	STAFF	106	Douglas Alvarez		
+8A	STAFF	337	Doris Tucker	Y	
+8A	STAFF	257	Charles Bell		
+8A	STAFF	206	José Wells	Y	
+8A	STAFF	303	Aaron Rodriguez		
+8A	STAFF	344	Stephen Jenkins	Y	
+8A	STAFF	254	Gabriel Roehl		
+8A	STAFF	174	Jacob McAllister		
+8A	STAFF	383	Carol Young		
+8A	STAFF	172	Sharon Anderson	Y	
+8A	STAFF	331	Michelle Müller	Y	
+8A	STAFF	153	Noah Traverse		
+8A	STAFF	154	Kimberly Cooper	Y	
+8A	STAFF	398	Joyce Woods		
+8A	STAFF	251	Russell Johnson		
+8A	STAFF	195	Jean Hawkins		
+8A	STAFF	217	Kimberly Henry	Y	
+8A	STAFF	252	Jessica Reynolds		
+8A	STAFF	117	Justin Garcia-Lopez	Y	
+8A	STAFF	149	Joyce Peterson		
+8A	STAFF	200	Natalie Ortiz	Y	
+8A	STAFF	373	Wayne Kennedy		
+8A	STAFF	190	Arthur Rodriguez	Y	
+8A	STAFF	169	Elizabeth Turner		
+8A	STAFF	197	Kathryn Phillips	Y	
+8A	STAFF	389	Arthur Ferguson	Y	
+8A	STAFF	219	Dylan Howard		
+8A	STAFF	287	Bobby Jenkins	Y	
+8A	STAFF	272	Denise Fox		
+8A	STAFF	183	María Ryan		
+8A	STAFF	374	Ronald Morales	Y	
+8A	STAFF	175	Diana Fox		
+8A	STAFF	179	Philip Hunter	Y	
+8A	STAFF	310	Mark Ferguson	Y	
+8A	STAFF	199	Raymond Aguilar	Y	
+8A	STAFF	226	Aaron Stone		
+8A	STAFF	221	Lori Hunter	Y	
+8A	STAFF	378	Alan Olson		
+8A	STAFF	256	Debra Peterson		
+8A	STAFF	259	Debra Cooper	Y	
+8A	STAFF	164	Sandra Bell		
+8A	STAFF	123	Joan Webb		
+8A	STAFF	265	Sarah Reed	Y	
+8A	STAFF	218	Jacob Morgan		
+8A	STAFF	203	María Hall	Y	
+8A	STAFF	280	Kevin Kim	Y	
+8A	STAFF	241	Douglas Lee		
+8A	STAFF	110	Helen Wells	Y	
+8A	STAFF	QC	QC		
