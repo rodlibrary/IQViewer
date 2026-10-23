@@ -15,6 +15,14 @@ services:
     container_name: tika_service
     ports:
         - "9998:9998"
+  charts:
+    build:
+        context: ./charts-service
+    container_name: ccdt_charts
+    environment:
+        - CHARTS_SERVICE_TOKEN=${CHARTS_SERVICE_TOKEN:-}
+    expose:
+        - "8000"
   app:
     build: 
         context: ./
@@ -37,5 +45,6 @@ services:
     links:
         - database
         - tika
+        - charts
 volumes:
   mysql_data:

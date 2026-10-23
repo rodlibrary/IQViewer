@@ -29,6 +29,8 @@ class Kernel extends ConsoleKernel
         Commands\setCmsCollection::class,
         Commands\createSrchIndex::class,
         Commands\optimizeSrchIndex::class,  
+        Commands\indexTable::class,
+        Commands\summaryTable::class,
     ];
 
     /**

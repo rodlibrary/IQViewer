@@ -86,3 +86,14 @@ Route::prefix('admin/jobs')->name('jobs.')->group(function() {
 
 // Alias for search route expected by search.blade.php
 Route::post('data/{curTable}', [App\Http\Controllers\DataViewController::class, 'search'])->name('dataSearch');
+
+// Chart builder (matplotlib charts of imported tables); any signed-in user,
+// or administrators only when config charts.admin_only is set
+Route::prefix('charts')->name('charts.')->group(function() {
+    Route::get('/', 'ChartController@index')->name('index');
+    Route::get('table/{id}', 'ChartController@describe')->name('describe');
+    Route::get('table/{id}/with/{other}', 'ChartController@describeJoin')->name('describe.join');
+    Route::post('render', 'ChartController@render')->name('render');
+    Route::post('save', 'ChartController@save')->name('save');
+    Route::post('delete', 'ChartController@delete')->name('delete');
+});
