@@ -7,3 +7,20 @@ data/
 env/
 env/*
 env/.*
+src/project-css/.env.testing
+src/project-css/.env
+
+
+# generated test data (tools/)
+scdif_data/
+scdif_redacted/
+tools/**/__pycache__/
+
+# PII pipeline outputs contain personal data: never commit them
+pii_results_*.csv
+anonymization_summary_*.csv
+iq_policy_report_*.csv
+*_rejected.txt
+anonymized_*
+tools/pii/results/
+tools/pii/iq_results/

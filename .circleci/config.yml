@@ -1,18 +1,22 @@
+# NOTE: updated for the ccdt/ layout, PHP 8.2 and MySQL 8 when lw_working_branch
+# was merged into main. This file has not been run on CircleCI yet; expect to
+# adjust it after the first build.
 version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/php:7.3-node
-
-      - image: cimg/mysql:5.7
+      - image: cimg/php:8.2-node
+      - image: cimg/mysql:8.0
         environment:
           MYSQL_ROOT_PASSWORD: rootpw
           MYSQL_DATABASE: css_testing
           MYSQL_USER: user
           MYSQL_PASSWORD: circleci
       - image: logicalspark/docker-tikaserver
+        ports:
+          - "9998:9998"
 
-    working_directory: ~/laravel/src/project-css
+    working_directory: ~/laravel/ccdt
 
     steps:
       - checkout:
@@ -24,64 +28,52 @@ jobs:
 
       - run:
           name: Create exports folder
-          command: mkdir -p ~/laravel/src/project-css/storage/app/exports
+          command: mkdir -p ~/laravel/ccdt/storage/app/exports
 
       - run:
-          name: Install PHP extensions
+          name: Install system packages and PHP extensions
           command: |
             sudo apt-get update
             sudo apt-get install -y default-mysql-client libzip-dev
-            sudo pecl install zip || true
-            php -m | grep -q zip || echo "zip already enabled"
+            sudo docker-php-ext-install zip pdo_mysql || true
 
       - run:
-          name: Install xdebug (pinned for PHP 7.3)
+          name: Install Xdebug (coverage) if missing
           command: |
-            sudo pecl install xdebug-3.1.6
-            XDEBUG_SO=$(find /usr/lib/php -name xdebug.so | head -1)
-            sudo mkdir -p /etc/php/7.3/cli/conf.d
-            echo "zend_extension=$XDEBUG_SO" | sudo tee /etc/php/7.3/cli/conf.d/20-xdebug.ini
+            php -m | grep -qi xdebug || sudo pecl install xdebug || true
 
       - run: sudo composer self-update
 
       - restore_cache:
           keys:
-            - composer-v1-{{ checksum "composer.lock" }}
-            - composer-v1-
+            - composer-v2-{{ checksum "composer.lock" }}
+            - composer-v2-
 
       - run: composer install -n --prefer-dist
 
       - save_cache:
-          key: composer-v1-{{ checksum "composer.lock" }}
+          key: composer-v2-{{ checksum "composer.lock" }}
           paths:
             - vendor
 
       - run:
-          name: Wait for db
-          command: dockerize -wait tcp://localhost:3306 -timeout 1m
+          name: Wait for database
+          command: dockerize -wait tcp://localhost:3306 -timeout 2m
+
+      - run: php artisan key:generate
+      - run: php artisan config:cache
+      - run: php artisan migrate --force
 
       - run:
-          name: Set the key
-          command: php artisan key:generate
-
-      - run:
-          name: Reset Cached Config
-          command: php artisan config:cache
-
-      - run:
-          name: Database Migrate
-          command: php artisan migrate --force
-
-      - run:
-          name: Run tests
-          command: |
-            sudo XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-clover clover.xml
+          name: Run tests with coverage
+          command: sudo XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-clover clover.xml
 
       - run:
           name: Install Qlty
-          command: curl https://qlty.sh | sh
+          command: |
+            curl -fsSL https://qlty.sh | bash
+            echo 'export PATH="$HOME/.qlty/bin:$PATH"' >> "$BASH_ENV"
 
-      # Changed QLTY Coverage Token
       - run:
-          name: Upload coverage to Qlty
-          command: ~/.qlty/bin/qlty coverage publish --strip-prefix /home/circleci/laravel/src/project-css/ clover.xml
+          name: Publish coverage to Qlty
+          command: qlty coverage publish --strip-prefix /home/circleci/laravel/ccdt/ clover.xml

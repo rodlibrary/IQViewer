@@ -1,7 +1,7 @@
-FROM php:7.3.12-fpm
+FROM php:8.1-fpm
 
 WORKDIR /var/www
-ADD src/project-css /var/www
+ADD ccdt /var/www
 
 # Fix debconf warnings upon build
 ARG DEBIAN_FRONTEND=noninteractive
@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg62-turbo-dev \
     libfreetype6-dev \
+    libonig-dev \
+    libxml2-dev \
     locales \
     libzip-dev \
     jpegoptim optipng pngquant gifsicle \
@@ -44,7 +46,7 @@ RUN chown -R www-data:www-data \
         /var/www/bootstrap/cache
 
 # set php
-ADD ./serverConfiguration/php.ini /usr/local/etc/php/
+ADD ./config/php.ini /usr/local/etc/php/
 
 EXPOSE 9000
 

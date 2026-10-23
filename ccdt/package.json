@@ -1,0 +1,26 @@
+{
+  "name": "CCDT",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "prod": "npm run production",
+    "dev": "npm run development",
+    "development": "mix",
+    "production": "mix --production",
+    "watch": "mix watch"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "laravel-mix": "^6.0.0",
+    "lodash": "^4.17.20",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.32.0",
+    "sass-loader": "^11.0.0",
+    "vue": "^2.6.12",
+    "vue-resource": "^1.5.1"
+  },
+  "dependencies": {
+    "accessibilityjs": "^1.1.2"
+  }
+}

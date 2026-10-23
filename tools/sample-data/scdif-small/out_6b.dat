@@ -1,0 +1,227 @@
+6B	101595	field_1	Award Name
+6B	101595	field_2	Issue
+6B	102088	field_1	Bill Number
+6B	102088	field_2	Issue
+6B	105010	field_1	Issue
+6B	105010	field_2	Award Name
+6B	106202	field_1	Issue
+6B	106202	field_2	Agency
+6B	107167	field_1	Agency
+6B	107167	field_2	Issue
+6B	108361	field_1	Date
+6B	108720	field_1	Bill Number
+6B	108720	field_2	Award Name
+6B	109560	field_1	Issue
+6B	110592	field_1	Name
+6B	110592	field_2	Issue
+6B	111903	field_1	Agency
+6B	115396	field_1	Agency
+6B	115396	field_2	Date
+6B	116030	field_1	Agency
+6B	116030	field_2	Award Name
+6B	120403	field_1	Date
+6B	120478	field_1	Date
+6B	120478	field_2	Name
+6B	121811	field_1	Bill Number
+6B	121811	field_2	Issue
+6B	126482	field_1	Date
+6B	126482	field_2	Date
+6B	126482	field_3	Issue
+6B	128729	field_1	Agency
+6B	128729	field_2	Name
+6B	128729	field_3	Name
+6B	129163	field_1	Issue
+6B	130439	field_1	Date
+6B	130439	field_2	Issue
+6B	133662	field_1	Name
+6B	133662	field_2	Issue
+6B	133662	field_3	Award Name
+6B	145970	field_1	Date
+6B	145970	field_2	Name
+6B	146806	field_1	Bill Number
+6B	149407	field_1	Issue
+6B	149407	field_2	Name
+6B	151430	field_1	Name
+6B	151430	field_2	Award Name
+6B	153767	field_1	Bill Number
+6B	153767	field_2	Issue
+6B	155721	field_1	Issue
+6B	155721	field_2	Name
+6B	155721	field_3	Issue
+6B	157672	field_1	Issue
+6B	157672	field_2	Name
+6B	157672	field_3	Award Name
+6B	158148	field_1	Agency
+6B	158148	field_2	Bill Number
+6B	160281	field_1	Issue
+6B	160281	field_2	Bill Number
+6B	161903	field_1	Issue
+6B	164238	field_1	Issue
+6B	164238	field_2	Date
+6B	164302	field_1	Issue
+6B	164302	field_2	Date
+6B	164944	field_1	Name
+6B	165270	field_1	Date
+6B	165270	field_2	Name
+6B	166474	field_1	Bill Number
+6B	166474	field_2	Award Name
+6B	167055	field_1	Date
+6B	167175	field_1	Award Name
+6B	167175	field_2	Bill Number
+6B	167175	field_3	Bill Number
+6B	167876	field_1	Name
+6B	171460	field_1	Agency
+6B	173562	field_1	Issue
+6B	175571	field_1	Issue
+6B	175571	field_2	Name
+6B	175571	field_3	Award Name
+6B	176479	field_1	Name
+6B	176479	field_2	Agency
+6B	177871	field_1	Name
+6B	177871	field_2	Bill Number
+6B	182262	field_1	Issue
+6B	182262	field_2	Date
+6B	189232	field_1	Bill Number
+6B	189744	field_1	Name
+6B	189744	field_2	Date
+6B	189921	field_1	Bill Number
+6B	192279	field_1	Name
+6B	192279	field_2	Date
+6B	194052	field_1	Agency
+6B	196033	field_1	Agency
+6B	196033	field_2	Issue
+6B	197910	field_1	Bill Number
+6B	199004	field_1	Issue
+6B	203168	field_1	Bill Number
+6B	203168	field_2	Date
+6B	204519	field_1	Issue
+6B	204519	field_2	Award Name
+6B	205195	field_1	Issue
+6B	205195	field_2	Bill Number
+6B	205329	field_1	Date
+6B	205620	field_1	Issue
+6B	205620	field_2	Name
+6B	210589	field_1	Issue
+6B	210589	field_2	Agency
+6B	213936	field_1	Name
+6B	216758	field_1	Bill Number
+6B	216758	field_2	Agency
+6B	221892	field_1	Agency
+6B	226584	field_1	Name
+6B	226584	field_2	Award Name
+6B	226584	field_3	Award Name
+6B	227664	field_1	Award Name
+6B	229183	field_1	Award Name
+6B	229183	field_2	Award Name
+6B	230712	field_1	Agency
+6B	230712	field_2	Bill Number
+6B	233201	field_1	Name
+6B	233201	field_2	Name
+6B	233740	field_1	Agency
+6B	234643	field_1	Agency
+6B	235032	field_1	Bill Number
+6B	235032	field_2	Award Name
+6B	237169	field_1	Date
+6B	237169	field_2	Date
+6B	237426	field_1	Issue
+6B	237426	field_2	Bill Number
+6B	237426	field_3	Award Name
+6B	239224	field_1	Award Name
+6B	239224	field_2	Award Name
+6B	246455	field_1	Award Name
+6B	250224	field_1	Issue
+6B	250469	field_1	Bill Number
+6B	256352	field_1	Agency
+6B	256352	field_2	Agency
+6B	267166	field_1	Issue
+6B	267973	field_1	Name
+6B	267973	field_2	Award Name
+6B	268275	field_1	Date
+6B	268275	field_2	Agency
+6B	270066	field_1	Agency
+6B	279465	field_1	Agency
+6B	279465	field_2	Agency
+6B	279465	field_3	Date
+6B	281164	field_1	Award Name
+6B	281164	field_2	Bill Number
+6B	283623	field_1	Date
+6B	283742	field_1	Issue
+6B	283742	field_2	Issue
+6B	285606	field_1	Agency
+6B	285606	field_2	Date
+6B	290846	field_1	Bill Number
+6B	291185	field_1	Bill Number
+6B	294207	field_1	Award Name
+6B	294207	field_2	Name
+6B	295003	field_1	Date
+6B	295003	field_2	Award Name
+6B	296022	field_1	Award Name
+6B	296022	field_2	Bill Number
+6B	299061	field_1	Name
+6B	299061	field_2	Date
+6B	300061	field_1	Agency
+6B	300061	field_2	Issue
+6B	302231	field_1	Date
+6B	302231	field_2	Name
+6B	302928	field_1	Bill Number
+6B	302928	field_2	Name
+6B	306370	field_1	Agency
+6B	311992	field_1	Name
+6B	311992	field_2	Agency
+6B	311992	field_3	Bill Number
+6B	313129	field_1	Award Name
+6B	313129	field_2	Award Name
+6B	313129	field_3	Award Name
+6B	320335	field_1	Award Name
+6B	320335	field_2	Issue
+6B	322120	field_1	Name
+6B	322120	field_2	Award Name
+6B	323257	field_1	Bill Number
+6B	323257	field_2	Agency
+6B	324208	field_1	Date
+6B	336456	field_1	Award Name
+6B	336668	field_1	Agency
+6B	336668	field_2	Date
+6B	337960	field_1	Agency
+6B	340069	field_1	Award Name
+6B	340069	field_2	Name
+6B	340288	field_1	Name
+6B	342873	field_1	Name
+6B	342873	field_2	Agency
+6B	342873	field_3	Issue
+6B	342886	field_1	Name
+6B	342886	field_2	Name
+6B	343340	field_1	Award Name
+6B	343340	field_2	Award Name
+6B	344684	field_1	Award Name
+6B	344696	field_1	Bill Number
+6B	344696	field_2	Issue
+6B	352328	field_1	Agency
+6B	352328	field_2	Date
+6B	352328	field_3	Agency
+6B	366062	field_1	Date
+6B	366062	field_2	Issue
+6B	367715	field_1	Name
+6B	373658	field_1	Date
+6B	373658	field_2	Award Name
+6B	374886	field_1	Award Name
+6B	377361	field_1	Award Name
+6B	381196	field_1	Issue
+6B	381250	field_1	Name
+6B	381250	field_2	Issue
+6B	381600	field_1	Name
+6B	382038	field_1	Issue
+6B	382837	field_1	Bill Number
+6B	383758	field_1	Agency
+6B	387112	field_1	Issue
+6B	387954	field_1	Agency
+6B	387954	field_2	Bill Number
+6B	390088	field_1	Issue
+6B	390216	field_1	Name
+6B	390216	field_2	Date
+6B	393554	field_1	Name
+6B	393554	field_2	Name
+6B	393628	field_1	Date
+6B	393628	field_2	Bill Number
+6B	396275	field_1	Date
+6B	399167	field_1	Award Name
