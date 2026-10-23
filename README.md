@@ -17,20 +17,3 @@ After bringing up the project with docker run the setup script from your termina
 
 To PHP Unit tests execute the following from your terminal
 `docker exec -it ccdt_php vendor/bin/phpunit` 
-
-**Ideas/Bugs/Questions**
-
-Feel free to share ideas/bugs/questions using [issues](https://github.com/wvulibraries/ccdt/issues)
-
-**Author(s)**
-
-[Ajay Kavui](http://pseudoaj.com) ([@pseudoaj](https://github.com/pseudoaj))
-[Tracy McCormick](http://tracyamccormick.com) ([@trmccormick](https://github.com/trmccormick))
-
-**Team**
-
-[WVU Libraries Systems Department](https://lib.wvu.edu/about/directory/departments/68/employees/)
-
-**Contributors**
-
-Following are the contributors for the project: [contributors](https://github.com/wvulibraries/ccdt/graphs/contributors)
