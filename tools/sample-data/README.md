@@ -14,10 +14,10 @@ Made with: `python3 tools/scdif/generate_scdif.py --out-dir scdif-small --total-
 
 ## Try the mixed pipe file
 
-Copy it into the app's flatfiles folder and run the import in the app container:
+Copy it into the flat-files folder (`data/flatfiles/`; create it if it is missing) and run the import in the app container:
 
 ```
-cp tools/sample-data/scdif-small-mixed-pipe.txt ccdt/storage/app/flatfiles/
+cp tools/sample-data/scdif-small-mixed-pipe.txt data/flatfiles/
 docker exec -it ccdt_php php artisan import:large-dataset scdif-small-mixed-pipe.txt "Sample collection"
 ```
 
