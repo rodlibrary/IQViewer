@@ -3,6 +3,8 @@
 namespace App\Jobs;
 
 use App\Adapters\ImportAdapter;
+use App\Helpers\TableIndexHelper;
+use App\Models\Table;
 use Illuminate\Bus\Queueable;
 use Illuminate\Http\Request;
 use Illuminate\Queue\SerializesModels;
@@ -53,6 +55,35 @@ class FileImport implements ShouldQueue
     {
         $adapter = new ImportAdapter($this->tblNme, $this->fltFlePath, $this->fltFle);
         // import file into table
-        $adapter->process();        
+        $adapter->process();
+
+        // Index the ID columns so charts can join this table to others. The
+        // rows are already imported at this point, so a failure here must not
+        // fail the job (a retry would import the file a second time).
+        if (config('charts.index_on_import')) {
+            try {
+                $columns = (new TableIndexHelper)->addMissing($this->tblNme);
+                if (count($columns) > 0) {
+                    Log::info("Import for table {$this->tblNme}: indexed " . implode(', ', $columns));
+                }
+            } catch (\Throwable $e) {
+                Log::warning("Import for table {$this->tblNme}: could not add ID indexes: " . $e->getMessage());
+            }
+        }
+
+        // New rows make stored chart results out of date: move the table's
+        // updated_at (part of every chart cache key), then rebuild the
+        // ready-made charts in the background. Same rule: never fail the job.
+        try {
+            $table = Table::where('tblNme', $this->tblNme)->first();
+            if ($table) {
+                $table->touch();
+                if (config('charts.summary_on_import')) {
+                    RefreshChartSummaries::dispatch($this->tblNme)->onQueue('low')->delay(now()->addMinutes(2));
+                }
+            }
+        } catch (\Throwable $e) {
+            Log::warning("Import for table {$this->tblNme}: could not queue chart summaries: " . $e->getMessage());
+        }
     }
 }

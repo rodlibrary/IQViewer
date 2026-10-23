@@ -13,6 +13,10 @@ IQViewer is a fork of West Virginia's [Constituent Correspondence Data Tool](htt
 After bringing up the project with docker run the setup script from your terminal with the following command to run the database migrations.
  `docker exec -it ccdt_php sh ./scripts/setup.sh`
 
+## Chart Builder
+
+Signed-in users can draw charts of imported tables (matplotlib), including charts that combine two tables of a collection. See [docs/charts.md](docs/charts.md) for setup.
+
 ## PHPUnit
 
 To PHP Unit tests execute the following from your terminal

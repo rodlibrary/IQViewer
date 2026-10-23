@@ -156,11 +156,13 @@ class ImportAdapter {
         // Validate the tokens and filter them
         $this->tkns = $this->csvHelper->fltrTkns($this->tkns);
 
-        // Lines with no delimiter at all carry no usable data (blank
-        // lines, or stray comment/section-separator rows some legacy
-        // exports include between blocks of records) - skip them without
-        // disturbing any pending merge state.
-        if (count($this->tkns) <= 1) {
+        // Blank lines, and (in files with more than one column) lines with
+        // no delimiter at all, carry no usable data - e.g. the stray
+        // comment/section-separator rows some legacy exports include between
+        // blocks of records. Skip them without disturbing any pending merge
+        // state. In a single-column file every line is one token, so only
+        // blank lines are skipped there.
+        if (trim($curLine) === '' || (count($this->tkns) <= 1 && $this->orgCount > 1)) {
             return false;
         }
 

@@ -108,6 +108,27 @@ class CSVHelper {
      }
 
      /**
+      * Pass as $readCount to determineTypes() / checkFile() to examine every
+      * line of the file instead of a sample.
+      */
+     const SCAN_ALL = PHP_INT_MAX;
+
+     /**
+      * True only for values that can be stored in an integer column without
+      * changing them: digits only, no sign, no decimal point, and no leading
+      * zero (except for "0" itself). Values such as 02134, 1.5, -3 or 1e5 are
+      * numeric to PHP's is_numeric() but would be altered by an integer column.
+      *
+      * @param string $value
+      * @return boolean
+      */
+     public function isPlainInteger($value) {
+       return ($value !== "")
+         && ctype_digit($value)
+         && ($value === "0" || $value[0] !== "0");
+     }
+
+     /**
       * Returns Multidimensional Array
       * function determines if the field is numeric or string type
       * along with the max character count detected in the column
@@ -149,22 +170,38 @@ class CSVHelper {
          // Validate the tokens and filter them
          $tkns = $this->fltrTkns($tkns);
 
+         // Blank lines (including the empty "line" SplFileObject returns after
+         // the final newline) and stray single-value separator lines such as
+         // ********* carry no field values. They must not influence the type
+         // of the first column.
+         if (trim($hdr) === "" || (count($tkns) <= 1 && count($checkArray) > 1)) {
+           continue;
+         }
+
          foreach($tkns as $x=>$x_value) {
            // array pos isn't set then we set
            // our default values
+           // [0] = 1 while every value seen so far is a plain integer,
+           // [1] = max length seen,
+           // [2] = true once any value that is NOT a plain integer was seen
            if (!isset($checkArray[$x])) {
-             $checkArray[$x] = [0, 0];
+             $checkArray[$x] = [0, 0, false];
            }
 
-           // change type if we detect field as numeric
-           if (is_numeric($x_value) && ($x_value != "")) {
-             $checkArray[$x][0] = 1;          
+           if (!$checkArray[$x][2] && $this->isPlainInteger($x_value)) {
+             $checkArray[$x][0] = 1;
            }
-           elseif ($checkArray[$x][0] != 0) {
-             // if we detect that it isn't numeric and 
-             // the field isn't set to text/string we set
-             // it back
+           else {
+             // Anything that is not a plain integer - text, blanks, decimals,
+             // signed numbers, numbers with leading zeros (zip codes, ID
+             // strings) or PII redaction placeholders such as <PERSON> -
+             // makes the column text permanently. Previously the type was
+             // decided by whichever row was read LAST, so a text column whose
+             // final row was numeric was created as an integer column and the
+             // text, blanks and leading zeros were silently stored as
+             // 0 or truncated.
              $checkArray[$x][0] = 0;
+             $checkArray[$x][2] = true;
            }
 
            // save character count if higher than last pass
@@ -192,6 +229,18 @@ class CSVHelper {
          // call checkFile process the passed file
          $checkArray = $this->checkFile($hasheader, $fltFleAbsPth, $readCount);
 
+         // checkFile returns false when the file cannot be opened
+         return is_array($checkArray) ? $this->fieldTypesFromCheck($checkArray) : [];
+     }
+
+     /**
+      * Turns the per-column findings of checkFile() into field types.
+      *
+      * @param array $checkArray one entry per column: [0] = 1 while every value
+      *   was a plain integer, [1] = longest value seen, [2] = a non-integer was seen
+      * @return array one entry per column: [type, size, longest value]
+      */
+     public function fieldTypesFromCheck(array $checkArray) {
          $fieldType = [];
 
          // determine final field types
@@ -223,16 +272,12 @@ class CSVHelper {
             }
           }
           elseif ($x_value[0] == 1) {
-            switch ($x_value[1]) {
-              case $x_value[1] < 4:
-                array_push($fieldType, ['integer', 'default', $x_value[1]]);                  
-                break;              
-              case $x_value[1] < 8:
-                array_push($fieldType, ['integer', 'medium', $x_value[1]]);                  
-                break;
-              default:
-                array_push($fieldType, ['integer', 'big', $x_value[1]]);
-            }
+            // Every value in the column is a plain integer of at most 10
+            // digits. INT holds all 9-digit numbers (max 2,147,483,647);
+            // only 10-digit numbers need BIGINT. MEDIUMINT (max 8,388,607) is
+            // not used: it cannot hold every 7-digit number, and with strict
+            // mode off MySQL silently clamps larger values to the maximum.
+            array_push($fieldType, ['integer', ($x_value[1] < 10 ? 'default' : 'big'), $x_value[1]]);
           }
        }
 

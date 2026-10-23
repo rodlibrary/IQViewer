@@ -24,6 +24,17 @@ services:
     restart: always
     ports:
         - "9998:9998"
+  # matplotlib render service for the chart builder (only reachable by
+  # the app container; no port is published to the host)
+  charts:
+    build:
+        context: ./charts-service
+    container_name: ccdt_charts
+    environment:
+        - CHARTS_SERVICE_TOKEN=${CHARTS_SERVICE_TOKEN:-}
+    expose:
+        - "8000"
+    restart: always
   app:
     build:
         context: ./

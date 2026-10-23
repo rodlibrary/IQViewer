@@ -66,6 +66,25 @@ return [
             'engine' => null,
         ],     
 
+        /*
+         * Connection used only by the chart builder (config/charts.php).
+         * Give it a SELECT-only MySQL user with CHARTS_DB_USERNAME /
+         * CHARTS_DB_PASSWORD; without them it uses the application's login.
+         */
+        'mysql_charts' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('CHARTS_DB_USERNAME', env('DB_USERNAME', 'forge')),
+            'password' => env('CHARTS_DB_PASSWORD', env('DB_PASSWORD', '')),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
+            'engine' => null,
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', 'localhost'),
