@@ -1,6 +1,5 @@
 IQViewer is a fork of West Virginia's [Constituent Correspondence Data Tool](https://github.com/wvulibraries/ccdt), developed to transform **congressional data** into **information** and **information** into **insights.** The project aims to provide a holistic interface for importing `flat-files` and provide tools to **research and visualize.**
------------- | -------------
- [![Documentation](docs/images/i1.png)](https://github.com/wvulibraries/ccdt/wiki)
+
 
 ## Contents
 
