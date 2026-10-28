@@ -58,7 +58,6 @@ If your Docker only has the newer syntax, type `docker compose` (with a space) w
    ```
    git clone https://github.com/rodlibrary/IQViewer.git
    cd IQViewer
-   git checkout lw_working_branch
    ```
    **Windows:** run `git config core.autocrlf false` *before* cloning (or clone with
    `git clone -c core.autocrlf=false ...`). Git otherwise changes line endings in the `.sh` scripts, and the
@@ -305,7 +304,7 @@ See [tools/README.md](tools/README.md).
 
 ## Contributing
 
-1. Create a branch from `lw_working_branch`: `git checkout -b my-change`.
+1. Create a branch from `main`: `git checkout main && git pull && git checkout -b my-change`.
 2. Make the change and run the tests (above). Add tests for new behavior.
-3. Commit with a clear message, push, and open a pull request into `lw_working_branch`.
+3. Commit with a clear message, push, and open a pull request into `main`.
 4. Never commit real constituent data, passwords or files from the PII pipeline's output.
