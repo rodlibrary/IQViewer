@@ -53,7 +53,7 @@ The `data/` folder (created on first start, not committed) holds what the app co
 
 You do not need PHP, Composer, Node or MySQL installed on your computer; the app container has them (PHP 8.2,
 Composer, Node 18). The chart service has its own container (Python 3.12). The Python tools in `tools/` run on any
-Python 3 and need nothing from the app.
+Python 3 and need nothing from the app, as well as the scripts inside of the generate_fake_data_scripts folder.
 
 ## Installation
 
